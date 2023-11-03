@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: poppins;
 }
 a{
     text-decoration: none;
@@ -29,7 +30,7 @@ header ul{
 }
 
 header ul li{
-    margin: 0 10px;
+    margin: 0 8px;
     
 }
 
@@ -66,12 +67,12 @@ nav ul{
     margin-left: 5px;
     margin: auto;
     justify-content: space-between;
+    align-items: center;
 }
 
 nav ul li{
-    margin-left: 20px;
     align-items: center;
-    margin-top: 20px;
+    margin: 0 8px;
     
 }
 
@@ -86,9 +87,8 @@ nav ul li, a:hover{
 }
 .img{
     margin-left: 20px;
-    
     margin-top: 1px;
-
+    align-items: center;
 }
 
 .search {
@@ -179,7 +179,7 @@ span.btn2:hover, a.devis{
     justify-content: center;
     
 }
-.valeurs span, h2{
+.valeurs span, h3{
     color: white;
     text-align: center;
 }
@@ -330,7 +330,7 @@ span.valeur4{
 .service{
     display: block;
     width: 250px;
-    height: 350px;
+    height: 355px;
     border-radius: 50px;
     background-color: #001730;
   
@@ -346,7 +346,7 @@ span.valeur4{
 
 .foot{
     width: 250px;
-    height: 150px;
+    height: 155px;
     border-radius: 0 0 50px 50px;
     background-color: #2671F8;
 }
@@ -356,7 +356,7 @@ span.valeur4{
     color: white;
 }
 
-.foot, h3 h4{
+.foot, h3 h5{
     text-align: center;
     color: white;
 }
