@@ -7,15 +7,15 @@ from utilisateurs.models import Utilisateurs
 
 class Commande(models.Model):
 
-    STATUE = {
-        'attente': 'en attente',
-        'non livré': 'non livré',
-        'livré': 'livré',
-    }
+    STATUE = [
+        ('attente', 'en attente'),
+        ('non livré', 'non livré'),
+        ('livré', 'livré'),
+    ]
 
     id_commande = models.AutoField(primary_key=True)
-    username = models.ForeignKey(Utilisateurs, on_delete=True)
-    statue_commande = models.CharField(choices=STATUE, default='attente')
+    username = models.ForeignKey(Utilisateurs, on_delete=models.CASCADE)
+    statue_commande = models.CharField(max_length = 255, choices=STATUE, default='attente')
     quantite = models.PositiveSmallIntegerField()
     service = models.ForeignKey(
         Services, on_delete=models.CASCADE, to_field='nom')
