@@ -1,0 +1,469 @@
+/****************** global *********************/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+}
+a{
+    text-decoration: none;
+}
+
+/****************** Entete *********************/
+
+header{
+    width: 100%;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    margin: 0%;
+    padding: 5px;
+    z-index: 1;
+   /** box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); **/
+
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+
+}
+
+header ul li{
+    margin: 0 8px;
+    
+}
+
+header ul li, a{
+    align-items: center;
+    
+}
+
+header ul li, h5{
+    padding: 3px;
+    
+}
+
+
+/****************** menu principal *********************/
+
+
+nav{
+    width: 100%;
+    height: 60px;
+    background-color: #2671F8;
+    position: fixed;
+    margin-top: 40px;
+    padding: 5px;
+    z-index: 2;
+  /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);*/
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    margin-left: 5px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li{
+    align-items: center;
+    margin: 0 25px;
+    
+}
+
+nav ul li, a{
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    
+}
+nav ul li, a:hover{
+    color: #001730;
+}
+.img{
+    margin-left: 20px;
+    margin-top: 1px;
+    align-items: center;
+}
+
+.search {
+    position: relative;
+    margin-left: 5px;
+    border-radius: 5px;
+    border-color: #ffffff;
+    height: 30px;
+    
+}
+/***
+section.container {
+    position: relative;
+    display: inline-block;
+    background-color: #2671F8;
+    width: 1920px;
+    height: 300px;
+    
+  }
+***/
+
+
+/************* image slider  **********************/
+
+section.container{
+    width: 100%;
+}
+
+div.overlay{
+    width: 100%;
+    position: relative;
+}
+
+.overlay img {
+    width: 100%;
+    height: auto;
+  }
+
+
+.text{
+    position:absolute;
+    top: 0px;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background: #00173083;
+    /** background: linear-gradient (rgb(208, 90, 11, .4), rgb(38, 113, 248, .3) );**/
+
+}
+
+span.btn1 {
+    width: 100px;
+    height: 30;
+    background-color: #2671F8;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+span.btn1:hover{
+    background-color: white;
+}
+
+
+span.btn2 {
+    width: 100px;
+    height: 30;
+    background-color: #ffffff00;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: white;
+    border: 1px solid;
+}
+
+span.btn2:hover{
+    background-color: #D05A0B;
+}
+span.btn2:hover, a.devis{
+    color:rgb(255, 255, 255);
+}
+
+
+
+
+/************* section valeurs **********************/
+.valeurs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.valeurs span, h3{
+    color: white;
+    text-align: center;
+}
+
+.valeurs span, img.val{
+    width: 40px;
+}
+span.valeur1{
+    background-color: #2671F8;
+    border-radius: 10px 0 0 10px;
+    width: 180px;
+    height: 60px;
+    padding: 15px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+span.valeur2{
+    background-color: #D05A0B;
+    width: 180px;
+    height: 60px;
+    padding: 15px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+span.valeur3{
+    background-color: #2671F8;
+    width: 180px;
+    height: 60px;
+    padding: 15px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+span.valeur4{
+    background-color: #D05A0B;
+    border-radius: 0 10px 10px 0;
+    width: 180px;
+    height: 60px;
+    padding: 15px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+/************* section a propos **********************/
+
+.apropos{
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+/************* section a propos (gauche) **********************/
+.apropos div.gauche{
+     background-color: #001730;
+     width: 500px;
+     height: 350px;
+     border-radius: 10px 0 0 10px;
+     padding: 10px;
+}
+
+.apropos div.gauche, h2{
+     color: #ffffff;
+}
+
+.apropos div.gauche, p{
+    line-height: 1.5;
+    color: #ffffff;
+    text-align: justify;
+}
+
+.aproposplus{
+    width: 100px;
+    height: 25px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color:white;
+    
+
+}
+
+.aproposplus .voir1{
+    color: #D05A0B;
+}
+/************* section a propos (droite) **********************/
+
+.apropos div.droite{
+    background-color: #D05A0B;
+    width: 500px;
+    border-radius: 0 10px 10px 0;
+    padding: 10px;
+}
+
+.imgdroite{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+
+/************* section nos services **********************/
+
+/************* Entete section nos services **********************/
+.services{
+    display: flex;
+    align-content:center;
+    align-items: center;
+    justify-content: center;
+}
+
+.paraservice{
+    margin: auto;
+    width: 700px;
+
+}
+
+.paraservice h2{
+    text-justify: center;
+    color: #001730;
+    text-align: center;
+}
+.services span.traitservice1{
+    width: 50px;
+    height: 3px;
+    background-color: #001730;
+}
+
+.services span.traitservice2{
+    width: 50px;
+    height: 3px;
+    background-color: #001730;
+}
+
+.services span.traitservice{
+    text-align: center;
+    color: #001730;
+    
+}
+
+
+/************* corps section nos services **********************/
+
+.nosservices{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.service{
+    display: block;
+    width: 250px;
+    height: 355px;
+    border-radius: 50px;
+    background-color: #001730;
+  
+    
+}
+
+.head{
+    width: 250px;
+    height: 200px;
+    border-radius: 50px 50px 0 0;
+    background-color: #001730;
+}
+
+.foot{
+    width: 250px;
+    height: 155px;
+    border-radius: 0 0 50px 50px;
+    background-color: #2671F8;
+}
+
+.foot, h3{
+    text-align: center;
+    color: white;
+}
+
+.foot, h3 h5{
+    text-align: center;
+    color: white;
+}
+
+.serviceplus{
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.voir2{
+    color: #D05A0B;
+}
+
+img.imgservice{
+    width: 100%;
+    height: 100%;
+    border-radius: 50px 50px 0 0;
+   
+}
+
+/************* section pourquoi nous choisir **********************/
+
+/************* Entete section nous choisir **********************/
+.choix{
+    display: flex;
+    align-content:center;
+    align-items: center;
+    justify-content: center;
+}
+
+.parachoix{
+    margin: auto;
+    width: 700px;
+
+}
+
+.parachoix h2{
+    text-justify: center;
+    color: #001730;
+}
+.choix span.traitchoix1{
+    width: 50px;
+    height: 3px;
+    background-color: #001730;
+}
+
+.choix span.traitchoix2{
+    width: 50px;
+    height: 3px;
+    background-color: #001730;
+}
+
+.choix span.traitchoix{
+    text-align: center;
+    color: #001730;   
+}
+
+/************* fin Entete section nous choisir **********************/
+
+/************* debut corps section nous choisir **********************/
+.choisir{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+}
+
+.choisir div.choisir1{
+    width: 400px;
+    height: 400px;
+    background-color: #ffffff;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.choisir div.choisirmilieu{
+    width: 400px;
+    height: 400px;
+    background-color: #D05A0B;
+    border-radius: 30px;
+}
+
+.video1{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.case{
+    width: 300px;
+    height: 300px;
+    background-color: #D05A0B;
+    border-radius: 10px;
+    padding: 15px;
+    align-items: center;
+    padding-bottom: 3px;
+}
+
+.case, img.icon{
+    width: 30px;   
+}
+
+.parachoisir{
+    color: #001730;
+}
