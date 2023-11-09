@@ -6,6 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acceuil</title>
+    <script src="script.js" defer></script>
+
 </head>
 <body>
     <!-- header -->
@@ -72,25 +74,6 @@
         
     </section>
     <br><br>
-    <script>
-        // Liste des images à faire défiler
-        const images = [
-            "images/header_slide1.jpg",
-            "images/header_slide2.jpg",
-            "images/header_slide3.jpg",
-        ];
-    
-        const imgElement = document.querySelector(".overlay img");
-        let currentIndex = 0;
-    
-        function changeImage() {
-            imgElement.src = images[currentIndex];
-            currentIndex = (currentIndex + 1) % images.length;
-        }
-    
-        // Démarrez le défilement automatique toutes les 3 secondes (3000 ms)
-        setInterval(changeImage, 3000);
-    </script>
     
     <!--   section valeurs -->
     <div class="valeurs">
@@ -236,26 +219,7 @@
             </div>
         </div>
         <br><br>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script>
-            // Fonction pour appliquer l'effet d'overlay sur l'image
-            function applyImageOverlay() {
-                const img = document.getElementById("img1"); // Remplacez "img1" par l'ID de votre image
-                img.addEventListener("mouseenter", () => {
-                    img.style.transition = "transform 0.3s";
-                    img.style.transform = "scale(1.1)"; // Ajustez la valeur pour agrandir l'image
-                });
         
-                img.addEventListener("mouseleave", () => {
-                    img.style.transform = "scale(1)"; // Rétablir la taille d'origine
-                });
-            }
-        
-            // Appel de la fonction d'effet d'overlay
-            applyImageOverlay();
-        </script>
-        
-
         <!-- fin section service -->
 
          <!--  Section pourquoi nous choisir -->

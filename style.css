@@ -100,6 +100,15 @@ nav ul li, a:hover{
     height: 30px;
     
 }
+
+.overlay {
+    overflow: hidden;
+    position: relative;
+}
+
+.overlay img {
+    transition: transform 1s ease-in-out; /* Transition de 1 seconde avec un effet d'entrée et de sortie en douceur */
+}
 /***
 section.container {
     position: relative;
@@ -172,8 +181,6 @@ span.btn2:hover{
 span.btn2:hover, a.devis{
     color:rgb(255, 255, 255);
 }
-
-
 
 
 /************* section valeurs **********************/
@@ -382,6 +389,27 @@ img.imgservice{
     border-radius: 50px 50px 0 0;
    
 }
+
+/* CSS pour l'overlay */
+.imgservice {
+    position: relative;
+  }
+  
+  .imgservice:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Couleur d'overlay et niveau d'opacité */
+    opacity: 0; /* L'overlay est initialement invisible */
+    transition: opacity 0.3s; /* Animation de l'opacité */
+  }
+  
+  .imgservice:hover:before {
+    opacity: 1; /* Lorsque vous survolez l'image, l'overlay devient visible */
+  }
 
 /************* section pourquoi nous choisir **********************/
 
