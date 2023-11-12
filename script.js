@@ -48,18 +48,21 @@ function applyImageOverlay() {
             img.style.transition = "transform 0.3s, filter 0.3s";
             img.style.transform = "scale(1.1)";
             img.style.filter = "brightness(80%)"; // Réduit la luminosité pour mettre en évidence l'image
+            img.style.zIndex = "1"; // Place l'image au-dessus des autres
         });
 
         img.addEventListener("mouseleave", () => {
             img.style.transition = "transform 0.3s, filter 0.3s";
             img.style.transform = "scale(1)";
             img.style.filter = "brightness(100%)"; // Rétablit la luminosité à la normale
+            img.style.zIndex = "0"; // Rétablit la position Z à la normale
         });
     });
 }
 
 // Appel de la fonction d'effet de superposition
 applyImageOverlay();
+
 
 
 
