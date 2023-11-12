@@ -5,7 +5,7 @@ from utilisateurs.models import Utilisateurs
 # Create your models here.
 
 
-class Commande(models.Model):
+class Commandes(models.Model):
 
     STATUE = [
         ('attente', 'en attente'),
@@ -20,6 +20,10 @@ class Commande(models.Model):
     service = models.ForeignKey(
         Services, on_delete=models.CASCADE, to_field='nom')
     date_commande = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        verbose_name = "Commande"
+        verbose_name_plural = "Commandes"
 
     def __str__(self):
         return self.id_commande

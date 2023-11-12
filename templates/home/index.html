@@ -4,328 +4,516 @@
 
 <head>
 
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acceuil</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="{% static 'bootstrap-footer-20/bootstrap-footer-20/css/ionicons.min.css' %}">
+  <link rel="stylesheet" href="{% static 'bootstrap-footer-20/bootstrap-footer-20/css/style.css' %}">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Acceuil</title>
+  <script src="{% static 'script.js' %}" defer></script>
+
 </head>
 
 <body>
-    <!-- header -->
-    <!-- adresses et icones reseaux -->
-    <header>
-        <ul>
-            <li><a href="https://maps.app.goo.gl/Q3yaSTd4J3cmWXrU8"><img src="assets/Address.png" width="25"></a></li>
-            <li><a href="https://maps.app.goo.gl/Q3yaSTd4J3cmWXrU8"></a>
-                <h5>GY-129 Hlm Grand-Yoff</h5>
-            </li>
-            <li><a href=""><img src="assets/Clock.png" width="25"></a></li>
-            <li><a href=""></a>
-                <h5>Lun- Ven : 09.00 AM - 05.00 PM</h5>
-            </li>
-            <li><a href="https://maps.app.goo.gl/Q3yaSTd4J3cmWXrU8"><img src="assets/Call.png" width="25"></a></li>
-            <li><a href="https://maps.app.goo.gl/Q3yaSTd4J3cmWXrU8"></a>
-                <h5>+221 77 723 40 84 / +242 06 485 3160</h5>
-            </li>
-            <li><a href="https://maps.app.goo.gl/Q3yaSTd4J3cmWXrU8"></a>
-                <h5></h5>
-            </li>
-            <li><a href="https://maps.app.goo.gl/Q3yaSTd4J3cmWXrU8"></a>
-                <h5></h5>
-            </li>
-            <li><a href="https://maps.app.goo.gl/Q3yaSTd4J3cmWXrU8"></a>
-                <h5></h5>
-            </li>
-            <li><a href="https://maps.app.goo.gl/Q3yaSTd4J3cmWXrU8"></a>
-                <h5></h5>
-            </li>
-            <li><a href="https://maps.app.goo.gl/Q3yaSTd4J3cmWXrU8"></a>
-                <h5></h5>
-            </li>
-            <li><a href="https://maps.app.goo.gl/Q3yaSTd4J3cmWXrU8"></a>
-                <h5></h5>
-            </li>
-            <li><a href="https://maps.app.goo.gl/Q3yaSTd4J3cmWXrU8"></a>
-                <h5></h5>
-            </li>
-            <li><a href="https://maps.app.goo.gl/Q3yaSTd4J3cmWXrU8"></a>
-                <h5></h5>
-            </li>
-            <li><a href="https://maps.app.goo.gl/Q3yaSTd4J3cmWXrU8"></a>
-                <h5></h5>
-            </li>
-            <li><a href="https://www.facebook.com/people/Dave-Procode/100090052973249/"><img
-                        src="assets/Facebook Circled.png" width="20"></a></li>
-            <li><a href="https://www.instagram.com/daveprocode/tagged/"><img src="assets/Instagram Circle.png"
-                        width="22"></a></li>
-            <li><a href="https://maps.app.goo.gl/Q3yaSTd4J3cmWXrU8"><img src="assets/LinkedIn Circled.png"
-                        width="20"></a></li>
 
+
+  <!--  menu principal   -->
+  <nav class="navbar  navbar-expand-lg container-fluid"
+    style="position: fixed; z-index: 10; background-color:#2671F8; margin-top: 0px;">
+    <div class="container-fluid">
+      <a class="navbar-brand " href="https://maps.app.goo.gl/Q3yaSTd4J3cmWXrU8"><img
+          src="images/Logo dave procode officiel_Plan de travail 1.png" width="60"></a>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto ms-10 mb-2 mb-lg-0">
+          <li class="nav-item ">
+            <a class="nav-link active " aria-current="page" href="/" style="color: white;">Acceuil</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="about.html" style="color: white;">A propos</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+              style="color: white;">
+              Services
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#" style="color: #001730;">Developpement web</a></li>
+              <li><a class="dropdown-item" href="#" style="color: #001730;">Marketing Digital</a></li>
+              <li><a class="dropdown-item" href="#" style="color: #001730;">Maintenace informatique</a></li>
+              <li><a class="dropdown-item" href="#" style="color: #001730;">Photographie & vidéographie</a></li>
+              <li><a class="dropdown-item" href="#" style="color: #001730;">Infographie</a></li>
+              <li><a class="dropdown-item" href="#" style="color: #001730;">Design</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+              style="color: white;">
+              Formations
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#" style="color: #001730;">Developpement web</a></li>
+              <li><a class="dropdown-item" href="#" style="color: #001730;">Marketing Digital</a></li>
+              <li><a class="dropdown-item" href="#" style="color: #001730;">Infographie</a></li>
+              <li><a class="dropdown-item" href="#" style="color: #001730;">Design</a></li>
+              <li><a class="dropdown-item" href="#" style="color: #001730;">Bureautique</a></li>
+            </ul>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="projets.html" style="color: white;">Projets</a>
+          </li>
+
+          <li class="nav-item r">
+            <a class="nav-link" href="contact.html" style="color: white;">Contact</a>
+          </li>
         </ul>
-    </header>
-
-    <!--  menu principal   -->
-    <nav>
-        <ul>
-            <li><img src="images/Logo dave procode officiel_Plan de travail 1.png" width="60" class="img"></li>
-            <br><br><br>
-
-            <li><a href="index.html">Acceuil</a></li>
-            <li><a href="A propos.html">A propos</a></li>
-            <li><a href="Services.html">Services</a></li>
-            <li><a href="Projets.html">Projets</a></li>
-            <li><a href="Contact.html">Contact</a></li>
-            <li><input type="search" class="search" placeholder="recherche"></li>
-        </ul>
-    </nav>
-
-    <!--  section entete de slide d'acceuil   -->
-
-    <section class="container">
-        <div class="overlay">
-            <img src="images/header_slide3.jpg" alt="image1">
-            <div class="text">
-                <br><br><br><br><br>
-                <h1>L'alliance Parfaite de la creation et du code</h1><br>
-                <center>
-                    <h4> Nous sommes votre partenaire de confiance <br>
-                        pour des solutions informatiques fiables et innovantes
-                    </h4>
-                    <br><br>
-                    <span class="btn1"><a href="#apropos" class="propos">A propos</a> </span>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <span class="btn2"><a href="#" class="devis">Demander un dévis</a></span>
-                </center>
-
-            </div>
-        </div>
-
-    </section>
-    <br><br>
-    <!--   section valeurs -->
-    <div class="valeurs">
-        <span class="valeur1"><img src="assets/Creativite.png" class="val"><br>
-            <h3>Créativité</h3>
-        </span>
-        <span class="valeur2"><img src="assets/professionalisme.png" class="val"><br>
-            <h3>Professionnalisme</h3>
-        </span>
-        <span class="valeur3"><img src="assets/perfection.png" class="val"><br>
-            <h3>Perfection</h3>
-        </span>
-        <span class="valeur4"><img src="assets/efficacite.png" class="val"><br>
-            <h3>Efficacité</h3>
-        </span>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn" type="submit" style="background-color: #D05A0B;"><img src="/images/assets/search.png"
+              alt="" width="30"></button>
+        </form>
+      </div>
     </div>
-    <br><br>
-    <!-- fin section valeurs-->
+  </nav>
 
-    <!-- section a propos-->
 
-    <section class="apropos">
-        <div class="gauche" id="apropos">
-            <h2>A propos</h2>
-            <br>
-            <p>DAVE PROCODE, fondée en février 2023, est une entreprise spécialisée
-                en technologies de l'information, basée au Sénégal (Dakar) et au Congo-Brazzaville.
-                Elle propose une variété de services informatiques, y compris la création d'identités
-                de marque et des solutions web pour répondre aux besoins de clients particuliers
-                et entreprises, les aidant à concrétiser leurs projets ambitieux.</p>
-            <br>
 
-            <span class="aproposplus"><a href="#" class="voir1">Voir plus</a></span>
-            <br><br>
-            <span class="client1"><img src="assets/Guardian.png" width="40"></span>
-            <span class="client1"><strong>20+ Clients satisfaits</strong></span>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <span class="client1"><img src="assets/ProjectSetup.png" width="40"></span>
-            <span class="client1"><strong>30+ projets réalisés</strong></span>
+  <!--  section entete de slide d'acceuil   -->
 
-        </div>
-        <div class="droite">
-            <img src="images/header_slide2.jpg" alt="" class="imgdroite">
-        </div>
-
-    </section>
-    <br><br>
-
-    <!-- fin section a propos -->
-
-    <!--  Section nos services -->
-
-    <!--  Entete  -->
-    <div class="services">
-
-        <span class="traitservice1"></span>
-        &nbsp;&nbsp;
-        <span class="traitservice"><strong>
-                <font size="5">NOS SERVICES</font>
-            </strong></span>
-        &nbsp;&nbsp;
-        <span class="traitservice2"></span>
-
+  <div id="carouselExampleCaptions" class="carousel slide" style="z-index: 1;">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
     </div>
-    <br><br>
-    <div class="paraservice">
-        <h2>Découvrez notre éventail de solutions informatiques
-            innovantes conçues pour répondre à vos besoins, car
-            votre succès est au cœur de notre expertise.</h2>
+    <div class="carousel-inner">
+      <div class="carousel-item active text-center">
+        <img src="/images/header_slide11.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block vertical-center">
+          <h1 style="margin-top: 0%;">L'alliance Parfaite de la creation et du code</h1><br>
+          <p>Nous sommes votre partenaire de confiance
+            pour des solutions informatiques fiables et innovantes</p>
+        </div>
+      </div>
+      <div class="carousel-item text-center">
+        <img src="images/header_slide22.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block vertical-center">
+          <h1 style="margin-top: 0%;">L'alliance Parfaite de la creation et du code</h1><br>
+          <p>Nous sommes votre partenaire de confiance
+            pour des solutions informatiques fiables et innovantes</p>
+        </div>
+      </div>
+      <div class="carousel-item text-center">
+        <img src="images/header_slide33.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block vertical-center">
+          <h1 style="margin-top: 0%;">L'alliance Parfaite de la creation et du code</h1><br>
+          <p>Nous sommes votre partenaire de confiance
+            pour des solutions informatiques fiables et innovantes</p>
+        </div>
+      </div>
     </div>
-    <br><br>
-    <!--  Fin Entete  -->
-
-    <!-- corps de la section services-->
-
-    <div class="nosservices">
-
-        <!--service 1-->
-        <div class="service">
-            <div class="head">
-                <img src="images/webimg.jpg" alt="" class="imgservice">
-            </div>
-            <div class="foot"><br>
-                <h3>Developpement web</h3>
-                <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5><br>
-                <span class="serviceplus"><a href="#" class="voir2">Voir plus</a></span>
-            </div>
-        </div>
-
-        <!--service 2-->
-        <div class="service">
-            <div class="head">
-                <img src="images/marketingimg.jpg" alt="" class="imgservice">
-            </div>
-            <div class="foot"><br>
-                <h3>Marketing Digital</h3>
-                <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5><br>
-                <span class="serviceplus"><a href="#" class="voir2">Voir plus</a></span>
-            </div>
-        </div>
-
-        <!--service 3-->
-        <div class="service">
-            <div class="head">
-                <img src="images/infographieimg.jpg" alt="" class="imgservice">
-            </div>
-            <div class="foot"><br>
-                <h3>Infographie</h3>
-                <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5><br>
-                <span class="serviceplus"><a href="#" class="voir2">Voir plus</a></span>
-            </div>
-        </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+    <div class="centered-buttons d-flex justify-content-center mt-3">
+      <a class="btn me-2" href="#" style="background-color: #D05A0B; width: 150px; height: auto;">
+        <font color="white" size="3">A propos</font>
+      </a>
+      <a class="btn ms-2" href="#" style="background-color: #2671F8; width: 200px; height: auto;">
+        <font color="white" size="3">Demander un devis</font>
+      </a>
     </div>
+  </div>
 
-    <br><br><br>
-    <div class="nosservices">
+  <!--   section valeurs -->
 
-        <!--service 4-->
-        <div class="service">
-            <div class="head">
-                <img src="images/webimg.jpg" alt="" class="imgservice">
-            </div>
-            <div class="foot"><br>
-                <h3>Design</h3>
-                <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5><br>
-                <span class="serviceplus"><a href="#" class="voir2">Voir plus</a></span>
-            </div>
-        </div>
+  <br><br>
 
-        <!--service 5-->
-        <div class="service">
-            <div class="head">
-                <img src="images/marketingimg.jpg" alt="" class="imgservice">
-            </div>
-            <div class="foot"><br>
-                <h3>Maintenace informatique</h3>
-                <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5><br>
-                <span class="serviceplus"><a href="#" class="voir2">Voir plus</a></span>
-            </div>
-        </div>
-
-        <!--service 6-->
-        <div class="service">
-            <div class="head">
-                <img src="images/infographieimg.jpg" alt="" class="imgservice">
-            </div>
-            <div class="foot"><br>
-                <h3>Formations informatique</h3>
-                <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5><br>
-                <span class="serviceplus"><a href="#" class="voir2">Voir plus</a></span>
-            </div>
-        </div>
+  <div class="container text-center">
+    <div class="row align-items-center">
+      <div class="col" style="background-color: #2671F8;">
+        <img src="/images/assets/Creativite.png" class="val"><br>
+        <h4>
+          <font color="white">Créativité</font>
+        </h4>
+      </div>
+      <div class="col" style="background-color: #D05A0B;">
+        <img src="/images/assets/professionalisme.png" class="val"><br>
+        <h4>
+          <font color="white">Professionnalisme</font>
+        </h4>
+      </div>
+      <div class="col" style="background-color: #2671F8;">
+        <img src="/images/assets/perfection.png" class="val"><br>
+        <h4>
+          <font color="white">Perfection</font>
+        </h4>
+      </div>
+      <div class="col" style="background-color: #D05A0B;">
+        <img src="/images/assets/efficacite.png" class="val"><br>
+        <h4>
+          <font color="white">Efficacité</font>
+        </h4>
+      </div>
     </div>
-    <br><br>
-    <!-- fin section service -->
+  </div>
 
-    <!--  Section pourquoi nous choisir -->
+  <br><br>
+  <!-- fin section valeurs-->
 
-    <!--  Entete  -->
-    <div class="choix">
+  <!-- section a propos-->
 
-        <span class="traitchoix1"></span>
-        &nbsp;&nbsp;
-        <span class="traitchoix"><strong>
-                <font size="5">POURQUOI NOUS CHOISIR</font>
-            </strong></span>
-        &nbsp;&nbsp;
-        <span class="traitchoix2"></span>
+
+
+  <section class="apropos">
+    <div class="gauche" id="apropos">
+      <h2>A propos</h2>
+      <br>
+      <p>DAVE PROCODE, fondée en février 2023, est une entreprise spécialisée
+        en technologies de l'information, basée au Sénégal (Dakar) et au Congo-Brazzaville.
+        Elle propose une variété de services informatiques, y compris la création d'identités
+        de marque et des solutions web pour répondre aux besoins de clients particuliers
+        et entreprises, les aidant à concrétiser leurs projets ambitieux.</p>
+      <br>
+
+      <span class="aproposplus"><a href="#" class="voir1">Voir plus</a></span>
+      <br><br>
+      <span class="client1"><img src="/images/assets/Guardian.png" width="40"></span>
+      <span class="client1"><strong>20+ Clients satisfaits</strong></span>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <span class="client1"><img src="/images/assets/ProjectSetup.png" width="40"></span>
+      <span class="client1"><strong>30+ projets réalisés</strong></span>
 
     </div>
-    <br><br>
-    <div class="parachoix">
-        <h2>Optez pour nous. Nos solutions informatiques de qualité et notre
-            service client exceptionnel font la différence</h2>
+    <div class="droite">
+      <img src="images/header_slide2.jpg" alt="" class="imgdroite">
     </div>
-    <br><br>
 
-    <!--  Fin Entete  -->
+  </section>
+  <br><br>
 
-    <!--  corps de section pourquoi nous choisir -->
+  <!-- fin section a propos -->
 
-    <section class="choisir">
-        <div class="choisir1">
-            <span class="case"><img src="assets/best.png" alt="" class="icon"></span>
-            <span class="titre"><strong>Meilleur de l'industrie</strong></span><br><br>
-            <p class="parachoisir">Notre équipe d'experts en informatique
-                reste à la pointe des dernières technologies
-                et des meilleures pratiques de l'industrie
-                grâce à une formation continue.
-            </p>
-            <br>
-            <span class="case"><img src="assets/reward.png" alt="" class="icon"></span>
-            <span class="titre"><strong>Recompenses</strong></span><br><br>
-            <p class="parachoisir">Nous sommes honorés pour notre expertise
-                technique de haut niveau dans le développement
-                de logiciels personnalisés, adaptés aux
-                besoins uniques de chaque entreprise.
-            </p>
-            <br>
+  <!--  Section nos services -->
+  <div class="card" style="width: 18rem;">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+        content.</p>
+    </div>
+  </div>
+
+  <!--  Entete  -->
+  <div class="services">
+
+    <span class="traitservice1"></span>
+    &nbsp;&nbsp;
+    <span class="traitservice"><strong>
+        <font size="5">NOS SERVICES</font>
+      </strong></span>
+    &nbsp;&nbsp;
+    <span class="traitservice2"></span>
+
+  </div>
+  <br><br>
+  <div class="paraservice">
+    <h2>Découvrez notre éventail de solutions informatiques
+      innovantes conçues pour répondre à vos besoins, car
+      votre succès est au cœur de notre expertise.</h2>
+  </div>
+  <br><br>
+  <!--  Fin Entete  -->
+
+  <!-- corps de la section services-->
+
+  <div class="nosservices">
+
+    <!--service 1-->
+    <div class="service">
+      <div class="head">
+        <img src="images/webimg.jpg" alt="" class="imgservice">
+      </div>
+      <div class="foot"><br>
+        <h3>Developpement web</h3>
+        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5><br>
+        <span class="serviceplus"><a href="#" class="voir2">Voir plus</a></span>
+      </div>
+    </div>
+
+    <!--service 2-->
+    <div class="service">
+      <div class="head">
+        <img src="images/marketingimg.jpg" alt="" class="imgservice">
+      </div>
+      <div class="foot"><br>
+        <h3>Marketing Digital</h3>
+        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5><br>
+        <span class="serviceplus"><a href="#" class="voir2">Voir plus</a></span>
+      </div>
+    </div>
+
+    <!--service 3-->
+    <div class="service">
+      <div class="head">
+        <img src="images/infographieimg.jpg" alt="" class="imgservice">
+      </div>
+      <div class="foot"><br>
+        <h3>Infographie</h3>
+        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5><br>
+        <span class="serviceplus"><a href="#" class="voir2">Voir plus</a></span>
+      </div>
+    </div>
+  </div>
+
+  <br><br><br>
+  <div class="nosservices">
+
+    <!--service 4-->
+    <div class="service">
+      <div class="head">
+        <img src="images/webimg.jpg" alt="" class="imgservice">
+      </div>
+      <div class="foot"><br>
+        <h3>Design</h3>
+        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5><br>
+        <span class="serviceplus"><a href="#" class="voir2">Voir plus</a></span>
+      </div>
+    </div>
+
+    <!--service 5-->
+    <div class="service">
+      <div class="head">
+        <img src="images/marketingimg.jpg" alt="" class="imgservice">
+      </div>
+      <div class="foot"><br>
+        <h3>Maintenace informatique</h3>
+        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5><br>
+        <span class="serviceplus"><a href="#" class="voir2">Voir plus</a></span>
+      </div>
+    </div>
+
+    <!--service 6-->
+    <div class="service">
+      <div class="head">
+        <img src="images/infographieimg.jpg" alt="" class="imgservice">
+      </div>
+      <div class="foot"><br>
+        <h3>Formations informatique</h3>
+        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5><br>
+        <span class="serviceplus"><a href="#" class="voir2">Voir plus</a></span>
+      </div>
+    </div>
+  </div>
+  <br><br>
+
+  <!-- fin section service -->
+
+  <!--  Section pourquoi nous choisir -->
+
+  <!--  Entete  -->
+  <div class="choix">
+
+    <span class="traitchoix1"></span>
+    &nbsp;&nbsp;
+    <span class="traitchoix"><strong>
+        <font size="5">POURQUOI NOUS CHOISIR</font>
+      </strong></span>
+    &nbsp;&nbsp;
+    <span class="traitchoix2"></span>
+
+  </div>
+  <br><br>
+  <div class="parachoix">
+    <h2>Optez pour nous. Nos solutions informatiques de qualité et notre
+      service client exceptionnel font la différence</h2>
+  </div>
+  <br><br>
+
+  <!--  Fin Entete  -->
+
+  <!--  corps de section pourquoi nous choisir -->
+
+  <section class="choisir">
+    <div class="choisir1">
+      <span class="case"><img src="/images/assets/best.png" alt="" class="icon"></span>
+      <span class="titre"><strong>Meilleur de l'industrie</strong></span><br><br>
+      <p class="parachoisir">Notre équipe d'experts en informatique
+        reste à la pointe des dernières technologies
+        et des meilleures pratiques de l'industrie
+        grâce à une formation continue.
+      </p>
+      <br>
+      <span class="case"><img src="/images/assets/reward.png" alt="" class="icon"></span>
+      <span class="titre"><strong>Recompenses</strong></span><br><br>
+      <p class="parachoisir">Nous sommes honorés pour notre expertise
+        technique de haut niveau dans le développement
+        de logiciels personnalisés, adaptés aux
+        besoins uniques de chaque entreprise.
+      </p>
+      <br>
+    </div>
+    <div class="choisirmilieu">
+      <video width="320" height="240" controls class="video1">
+        <source src="video.mp4" type="video/mp4">
+        <source src="video.webm" type="video/webm">
+        <source src="video.ogv" type="video/ogg">
+      </video>
+    </div>
+    <div class="choisir1">
+      <span class="case"><img src="/images/assets/pro.png" alt="" class="icon"></span>
+      <span class="titre"><strong>Travail professionel</strong></span><br><br>
+      <p class="parachoisir">Nous nous engageons à offrir des solutions
+        informatiques innovantes et durables pour
+        les entreprises, en respectant les normes
+        de qualité et de professionnalisme les plus élevées.
+      </p>
+      <br>
+      <span class="case"><img src="/images/assets/appel.png" alt="" class="icon"></span>
+      <span class="titre"><strong>Assistance</strong></span><br><br>
+      <p class="parachoisir">
+        Notre équipe vous assiste du lundi à
+        dimanche selon les horaires de Travail.
+      </p>
+      <br>
+    </div>
+  </section>
+
+  <!-- debut footer -->
+  <footer class="footer-10">
+    <div class="container">
+      <div class="row mb-5 pb-3 no-gutters">
+        <div class="col-md-4 mb-md-0 mb-4 d-flex">
+          <div class="con con-1 w-100 py-5">
+            <div class="con-info w-100 text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="ion-ios-call"></span>
+              </div>
+              <div class="text">
+                <span>+221 77 723 40 84</span><br>
+                <span>+242 06 485 3160</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="choisirmilieu">
-            <video width="320" height="240" controls class="video1">
-                <source src="video.mp4" type="video/mp4">
-                <source src="video.webm" type="video/webm">
-                <source src="video.ogv" type="video/ogg">
-            </video>
+        <div class="col-md-4 mb-md-0 mb-4 d-flex">
+          <div class="con con-2 w-100 py-5">
+            <div class="con-info w-100 text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="ion-ios-mail"></span>
+              </div>
+              <div class="text">
+                <span>procodedave@gmail.com</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="choisir1">
-            <span class="case"><img src="assets/pro.png" alt="" class="icon"></span>
-            <span class="titre"><strong>Travail professionel</strong></span><br><br>
-            <p class="parachoisir">Nous nous engageons à offrir des solutions
-                informatiques innovantes et durables pour
-                les entreprises, en respectant les normes
-                de qualité et de professionnalisme les plus élevées.
-            </p>
-            <br>
-            <span class="case"><img src="assets/appel.png" alt="" class="icon"></span>
-            <span class="titre"><strong>Assistance</strong></span><br><br>
-            <p class="parachoisir">
-                Notre équipe vous assiste du lundi à
-                dimanche selon les horaires de Travail.
-            </p>
-            <br>
+        <div class="col-md-4 mb-md-0 mb-4 d-flex">
+          <div class="con con-3 w-100 py-5">
+            <div class="con-info w-100 text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="ion-ios-pin"></span>
+              </div>
+              <div class="text">
+                <span>GY-129 HLM Grand-Yoff</span>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
+      </div>
+      <div class="row">
+        <div class="col-md-7">
+          <div class="row">
+            <div class="col-md-4 mb-md-0 mb-4">
+              <h2 class="footer-heading"><a href="about.html">A propos</a> </h2>
+              <ul class="list-unstyled">
+                <li><a href="about.html" class="d-block">Notre histoire</a></li>
+                <li><a href="index.html" class="d-block">Acceuil</a></li>
+                <li><a href="about.html" class="d-block">Notre Equipe</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 mb-md-0 mb-4">
+              <h2 class="footer-heading">Dave procode</h2>
+              <ul class="list-unstyled">
+                <li><a href="services.html" class="d-block">Nos services</a></li>
+                <li><a href="projets.html" class="d-block">Projets</a></li>
+                <li><a href="contact.html" class="d-block">Contact</a></li>
+                <li><a href="formation.html" class="d-block">Formations</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 mb-md-0 mb-4">
+              <h2 class="footer-heading">Resources</h2>
+              <ul class="list-unstyled">
+                <li><a href="projets.html" class="d-block">Projets</a></li>
+                <li><a href="#" class="d-block">Newsletter</a></li>
+                <li><a href="#" class="d-block">Règles de confidentialité</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 mb-md-0 mb-4">
+          <h2 class="footer-heading">S'inscrire</h2>
+          <form class="subscribe-form" method="POST">
+            {% csrf_token %}
+            <div class="form-group d-flex">
+              {{message}}
+              <input type="email" class="form-control rounded-left" placeholder="Enter email address"
+                name="email_news_letter">
+              <button type="submit" class="form-control submit rounded-right" name="btn_news_letter">S'inscrire</button>
+            </div>
+            <span class="subheading">Ne manquer pas nos actualités sur nos différents articles</span>
+          </form>
+        </div>
+      </div>
+      <div class="row mt-5 pt-4 border-top">
+        <div class="col-md-6 col-lg-8 mb-md-0 mb-4">
+          <p class="copyright mb-0">
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;
+            <script>document.write(new Date().getFullYear());</script> All rights reserved Dave Procode. | This template
+            is made with <i class="ion-ios-heart" aria-hidden="true"></i> by <a href="https://colorlib.com"
+              target="_blank">Colorlib.com</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          </p>
+        </div>
+        <div class="col-md-6 col-lg-4 text-md-right">
+          <ul class="ftco-footer-social p-0">
+            <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><span
+                  class="ion-logo-twitter"></span></a></li>
+            <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><span
+                  class="ion-logo-facebook"></span></a></li>
+            <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><span
+                  class="ion-logo-instagram"></span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- fin footer -->
+  <script src="{% static 'bootstrap-footer-20/bootstrap-footer-20/js/jquery.min.js' %}"></script>
+  <script src="{ % static 'bootstrap-footer-20/bootstrap-footer-20/js/popper.js' %}"></script>
+  <script src="{ % static 'bootstrap-footer-20/bootstrap-footer-20/js/bootstrap.min.js' %}"></script>
+  <script src="{ % static 'bootstrap-footer-20/bootstrap-footer-20/js/main.js' %}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

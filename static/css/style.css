@@ -1,3 +1,4 @@
+
 /****************** global *********************/
 
 * {
@@ -5,173 +6,45 @@
     padding: 0;
     font-family: poppins;
 }
+body {
+    overflow-x: hidden;
+}
+
 a{
     text-decoration: none;
 }
 
-/****************** Entete *********************/
-
-header{
-    width: 100%;
-    height: 30px;
-    background-color: rgb(255, 255, 255);
-    position: fixed;
-    margin: 0%;
-    padding: 5px;
-    z-index: 1;
-   /** box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); **/
-
-}
-
-header ul{
-    display: flex;
-    list-style: none;
-
-}
-
-header ul li{
-    margin: 0 8px;
-    
-}
-
-header ul li, a{
-    align-items: center;
-    
-}
-
-header ul li, h5{
-    padding: 3px;
-    
-}
-
-
 /****************** menu principal *********************/
 
 
-nav{
-    width: 100%;
-    height: 60px;
-    background-color: #2671F8;
-    position: fixed;
-    margin-top: 40px;
-    padding: 5px;
-    z-index: 2;
-  /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);*/
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
-
+.navbar-nav li.nav-item:hover {
+    background-color: #D05A0B; /* Couleur de fond au survol */
+}
+.navbar-nav li.nav-item {
+    margin-right: 15px; /* Ajoutez l'espace souhaité entre les éléments de la liste */
 }
 
-nav ul{
-    display: flex;
-    list-style: none;
-    margin-left: 5px;
-    margin: auto;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav ul li{
-    align-items: center;
-    margin: 0 25px;
-    
-}
-
-nav ul li, a{
-    text-decoration: none;
-    color: white;
-    align-items: center;
-    
-}
-nav ul li, a:hover{
-    color: #001730;
-}
-.img{
-    margin-left: 20px;
-    margin-top: 1px;
-    align-items: center;
-}
-
-.search {
-    position: relative;
-    margin-left: 5px;
-    border-radius: 5px;
-    border-color: #ffffff;
-    height: 30px;
-    
-}
-/***
-section.container {
-    position: relative;
-    display: inline-block;
-    background-color: #2671F8;
-    width: 1920px;
-    height: 300px;
-    
-  }
-***/
 
 
 /************* image slider  **********************/
 
-section.container{
-    width: 100%;
-}
 
-div.overlay{
-    width: 100%;
-    position: relative;
-}
-
-.overlay img {
-    width: 100%;
-    height: auto;
+.vertical-center {
+    position: absolute;
+    top: 400px;
+    transform: translateY(-50%);
   }
 
+.vertical-center p {
+    transform: translateY(-50%);
+  }
 
-.text{
-    position:absolute;
-    top: 0px;
-    color: white;
-    font-size: 30px;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    background: #00173083;
-    /** background: linear-gradient (rgb(208, 90, 11, .4), rgb(38, 113, 248, .3) );**/
-
+.centered-buttons{
+    position: absolute;
+    top: 500px;
+    left: 500px;
+    
 }
-
-span.btn1 {
-    width: 100px;
-    height: 30;
-    background-color: #2671F8;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-
-span.btn1:hover{
-    background-color: white;
-}
-
-
-span.btn2 {
-    width: 100px;
-    height: 30;
-    background-color: #ffffff00;
-    padding: 10px;
-    border-radius: 10px;
-    border-color: white;
-    border: 1px solid;
-}
-
-span.btn2:hover{
-    background-color: #D05A0B;
-}
-span.btn2:hover, a.devis{
-    color:rgb(255, 255, 255);
-}
-
 
 
 
@@ -381,6 +254,27 @@ img.imgservice{
     border-radius: 50px 50px 0 0;
    
 }
+
+/* CSS pour l'overlay */
+.imgservice {
+    position: relative;
+  }
+  
+  .imgservice:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Couleur d'overlay et niveau d'opacité */
+    opacity: 0; /* L'overlay est initialement invisible */
+    transition: opacity 0.3s; /* Animation de l'opacité */
+  }
+  
+  .imgservice:hover:before {
+    opacity: 1; /* Lorsque vous survolez l'image, l'overlay devient visible */
+  }
 
 /************* section pourquoi nous choisir **********************/
 

@@ -10,5 +10,9 @@ class Services(models.Model):
     stock = models.PositiveSmallIntegerField()
     description = models.TextField(blank=True)
 
+    class Meta:
+        verbose_name = "Service"
+        verbose_name_plural = "Services"
+
     def __str__(self):
         return self.nom
