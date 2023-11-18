@@ -10,31 +10,44 @@ document.addEventListener("DOMContentLoaded", function () {
     let currentIndex = 0;
 
     function changeImage() {
-        imgElement.style.transition = "transform 0.5s"; // Transition plus rapide
+        if (currentIndex === 0) {
+            // Slide 1: De la droite vers la gauche
+            imgElement.style.transform = "translateX(100%)";
 
-        if (currentIndex < images.length - 1) {
-            currentIndex++;
+            setTimeout(() => {
+                imgElement.src = images[currentIndex];
+                imgElement.style.transform = "translateX(0)";
+                currentIndex = (currentIndex + 1) % images.length;
+            }, 1000);
+        } else if (currentIndex === 1) {
+            // Slide 2: De la gauche vers la droite
+            imgElement.style.transform = "translateX(-100%)";
+
+            setTimeout(() => {
+                imgElement.src = images[currentIndex];
+                imgElement.style.transform = "translateX(0)";
+                currentIndex = (currentIndex + 1) % images.length;
+            }, 1000);
         } else {
-            currentIndex = 0;
+            // Slide 3: Du bas vers le haut
+            imgElement.style.transform = "translateY(100%)";
+
+            setTimeout(() => {
+                imgElement.src = images[currentIndex];
+                imgElement.style.transform = "translateY(0)";
+                currentIndex = (currentIndex + 1) % images.length;
+            }, 1000);
         }
-
-        imgElement.style.transform = "translateX(-100%)";
-
-        setTimeout(() => {
-            imgElement.src = images[currentIndex];
-            imgElement.style.transform = "translateX(0)";
-        }, 500); // Délai plus court entre les transitions
 
         imgElement.classList.add("scrollEffect");
 
         setTimeout(() => {
             imgElement.classList.remove("scrollEffect");
-        }, 500); // Délai plus court entre les transitions
+        }, 1000);
     }
 
     setInterval(changeImage, 10000); // Changement toutes les 10 secondes
 });
-
 
 
 
@@ -46,24 +59,19 @@ function applyImageOverlay() {
     images.forEach((img) => {
         img.addEventListener("mouseenter", () => {
             img.style.transition = "transform 0.3s, filter 0.3s";
-            img.style.transform = "scale(1.1)";
-            img.style.filter = "brightness(80%)"; // Réduit la luminosité pour mettre en évidence l'image
-            img.style.zIndex = "1"; // Place l'image au-dessus des autres
+            img.style.transform = "scale(0.9)"; // Rétrécit l'image
+            img.style.filter = "blur(5px)";
         });
 
         img.addEventListener("mouseleave", () => {
             img.style.transition = "transform 0.3s, filter 0.3s";
             img.style.transform = "scale(1)";
-            img.style.filter = "brightness(100%)"; // Rétablit la luminosité à la normale
-            img.style.zIndex = "0"; // Rétablit la position Z à la normale
+            img.style.filter = "blur(0)";
         });
     });
 }
 
 // Appel de la fonction d'effet de superposition
 applyImageOverlay();
-
-
-
 
   

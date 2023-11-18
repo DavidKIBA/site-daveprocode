@@ -19,23 +19,24 @@
 </head>
 <body>
 
-
     <!--  menu principal   -->
-    <nav class="navbar  navbar-expand-lg container-fluid" style="position: fixed; z-index: 10; background-color:#2671F8; margin-top: 0px;" >
+    <nav class="navbar  navbar-expand-lg container-fluid navbar-light" style="position: fixed; z-index: 10; background-color:#2671F8; margin-top: 0px;" >
         <div class="container-fluid">
           <a class="navbar-brand " href="https://maps.app.goo.gl/Q3yaSTd4J3cmWXrU8"><img src="images/Logo dave procode officiel_Plan de travail 1.png" width="60"></a>
-          
+          <button class="navbar-toggler navbar-toggler-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button> 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto ms-10 mb-2 mb-lg-0">
               <li class="nav-item ">
-                <a class="nav-link active " aria-current="page" href="index.html" style="color: white;">Acceuil</a>
+                <a class="nav-link active " aria-current="page" href="index.html" style="color: white;"><strong>Acceuil</strong></a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link" href="about.html" style="color: white;">A propos</a>
+                <a class="nav-link" href="about.html" style="color: white;"><strong>A propos</strong></a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
-                  Services
+                <strong>Services</strong>
                 </a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#" style="color: #001730;">Developpement web</a></li>
@@ -49,7 +50,7 @@
 
               <li class="nav-item dropdown ">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
-                  Formations
+                <strong>Formations</strong>
                 </a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#" style="color: #001730;">Developpement web</a></li>
@@ -60,22 +61,25 @@
                 </ul>
               </li>
               <li class="nav-item ">
-                <a class="nav-link" href="projets.html" style="color: white;">Projets</a>
+                <a class="nav-link" href="articles.html" style="color: white;"><strong>Articles & blog</strong></a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="projets.html" style="color: white;"><strong>Projets</strong></a>
               </li>
 
               <li class="nav-item r">
-                <a class="nav-link" href="contact.html" style="color: white;">Contact</a>
+                <a class="nav-link" href="contact.html" style="color: white;"><strong>Contact</strong></a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <form class="d-flex " role="search">
+              <input class="form-control me-2 modal-fullscreen-sm-down" type="search" placeholder="Search" aria-label="Search">
               <button class="btn" type="submit" style="background-color: #D05A0B;"><img src="assets/search.png" alt="" width="30"></button>
             </form>
           </div>
         </div>
       </nav>
 
-
+    
 
     <!--  section entete de slide d'acceuil   -->
 
@@ -89,25 +93,40 @@
           <div class="carousel-item active text-center">
             <img src="images/header_slide11.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block vertical-center">
-              <h1 style="margin-top: 0%;">L'alliance Parfaite de la creation et du code</h1><br>
-              <p>Nous sommes votre partenaire de confiance 
-                pour des solutions informatiques fiables et innovantes</p>
+<!--                   
+              bouton a propos et demande de devis
+              <p class="d-inline-flex gap-1">
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                  Link with href
+                </a>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                  Button with data-bs-target
+                </button>
+              </p>
+              <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                </div>
+              </div>
+
+               fin bouton a propos et demande de devis
+                -->
+              <h1 style="position: absolute; top: 200px; align-items: center; z-index: 9;">h1. Bootstrap heading</h1>
+              
+              <h3>h3. Bootstrap heading</h3>
+             
             </div>
           </div>
           <div class="carousel-item text-center">
             <img src="images/header_slide22.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block vertical-center">
-                <h1 style="margin-top: 0%;">L'alliance Parfaite de la creation et du code</h1><br>
-                <p>Nous sommes votre partenaire de confiance 
-                  pour des solutions informatiques fiables et innovantes</p>
+                
             </div>
           </div>
           <div class="carousel-item text-center">
             <img src="images/header_slide33.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block vertical-center">
-                <h1 style="margin-top: 0%;">L'alliance Parfaite de la creation et du code</h1><br>
-                <p>Nous sommes votre partenaire de confiance 
-                  pour des solutions informatiques fiables et innovantes</p>
+               
             </div>
           </div>
         </div>
@@ -119,10 +138,7 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
-        <div class="centered-buttons d-flex justify-content-center mt-3">
-            <a class="btn me-2" href="#" style="background-color: #D05A0B; width: 150px; height: auto;"><font color="white" size="3">A propos</font></a>
-            <a class="btn ms-2" href="#" style="background-color: #2671F8; width: 200px; height: auto;"><font color="white" size="3">Demander un devis</font></a>
-        </div>
+       
       </div>
    
     <!--   section valeurs -->
@@ -149,220 +165,237 @@
     <br><br>
     <!-- fin section valeurs-->
     
-    <!-- section a propos-->
-
-
     
-    <section class="apropos">
-        <div class="gauche" id="apropos">
-           <h2>A propos</h2>
-           <br>
-           <p>DAVE PROCODE, fondée en février 2023, est une entreprise spécialisée 
-            en technologies de l'information, basée au Sénégal (Dakar) et au Congo-Brazzaville. 
-            Elle propose une variété de services informatiques, y compris la création d'identités 
-            de marque et des solutions web pour répondre aux besoins de clients particuliers 
-            et entreprises, les aidant à concrétiser leurs projets ambitieux.</p> 
-            <br>
-            
-            <span class="aproposplus"><a href="#" class="voir1">Voir plus</a></span>
-            <br><br>
-            <span class="client1"><img src="assets/Guardian.png" width="40"></span>
-            <span class="client1"><strong>20+ Clients satisfaits</strong></span>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <span class="client1"><img src="assets/ProjectSetup.png" width="40"></span>
-            <span class="client1"><strong>30+ projets réalisés</strong></span>
-            
-        </div>
-        <div class="droite">
-             <img src="images/header_slide2.jpg" alt="" class="imgdroite">
-        </div>
-     
-    </section>
-    <br><br>
+    <!-- A propos -->
 
-    <!-- fin section a propos -->
-     
-    <!--  Section nos services -->
-    <div class="card" style="width: 18rem;">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <div style="height: 100px; display: flex;
+    align-items: center;
+    justify-content: center;" >
+    
+      <div class="h-100 d-inline-block" style="width: 500px;"><h4><strong>Qui sommes-nous?</strong></h4>
+          <p style="text-align: justify; padding-right: 10px;">En tant qu'entreprise commerciale, nous mettons un point d'honneur à offrir des solutions
+             informatiques sur mesure à nos clients. Nous sommes convaincus que chaque projet est unique 
+             et que les besoins de chacun diffèrent. C'est pourquoi nous mettons à leur disposition une 
+             équipe de professionnels passionnés et expérimentés, capables de relever tous les défis en
+              matière de programmation et de graphisme. Nous sommes fiers de fournir un service de qualité
+               supérieure à nos clients et de contribuer à leur succès sur le marché numérique.</p>
+               <a href="about.html" class="btn btn-primary">voir plus</a>
+      </div> 
+
+      <div class="h-100 d-inline-block" style="width: 500px;">
+        <img src="images/header_slide2.jpg" class="img-fluid" alt="...">
+      </div>
+      
+    </div>
+    <br><br><br><br><br><br>   <br><br><br><br><br>
+    <!-- fin A propos -->
+
+    <div class="container d-flex align-items-center justify-content-center">
+      <h4><strong>Nos services</strong></h4>
+    </div>
+    <br>
+
+    <!-- services -->
+    <div class="d-flex flex-wrap justify-content-around">
+      <!-- Première ligne -->
+      <div class="card mb-3" style="width: 18rem; border-radius: 20px;">
+        <img src="images/webimg.jpg" class="card-img-top" alt="..." style="height: 200px; border-radius: 20px 20px 0 0;">
+        <div class="card-body text-center">
+          <h5 class="card-title">Developpement web</h5>
+          <p class="card-text"> sites web interactifs, applications innovantes. Nous concrétisons vos idées avec une expertise de pointe.</p>
+          <a href="#" class="btn btn-primary">Voir plus</a>
+        </div>
+      </div>
+    
+      <div class="card mb-3" style="width: 18rem; border-radius: 20px;">
+        <img src="images/marketingimg.jpg" class="card-img-top img-fluid" alt="..." style="height: 200px; border-radius: 20px 20px 0 0;">
+        <div class="card-body text-center">
+          <h5 class="card-title">Marketing Digital</h5>
+          <p class="card-text">Du référencement à la stratégie sur les réseaux sociaux, nous maximisons votre présence en ligne pour atteindre votre public cible.</p>
+          <a href="#" class="btn btn-primary">Voir plus</a>
+        </div>
+      </div>
+    
+      <div class="card mb-3" style="width: 18rem; border-radius: 20px;">
+        <img src="images/design.jpg" class="card-img-top img-fluid" alt="..." style="height: 200px; border-radius: 20px 20px 0 0;">
+        <div class="card-body text-center">
+          <h5 class="card-title">Design</h5>
+          <p class="card-text">Conception graphique, interfaces élégantes : chaque pixel compte pour une expérience visuelle mémorable.</p>
+          <a href="#" class="btn btn-primary">voir plus</a>
+        </div>
+      </div>
+    
+    </div>
+    <br>
+    
+    <div class="d-flex flex-wrap justify-content-around">
+      <!-- Deuxième ligne -->
+      <div class="card mb-3" style="width: 18rem; border-radius: 20px;">
+        <img src="images/infographieimg.jpg" class="card-img-top img-fluid" alt="..." style="height: 200px; border-radius: 20px 20px 0 0;">
+        <div class="card-body text-center">
+          <h5 class="card-title">Infographie</h5>
+          <p class="card-text">Notre équipe d'infographistes donne vie à vos idées avec des graphismes créatifs et des illustrations captivantes.</p>
+          <a href="#" class="btn btn-primary">voir plus</a>
+        </div>
+      </div>
+    
+      <div class="card mb-3" style="width: 18rem; border-radius: 20px;">
+        <img src="images/maintenance.jpg" class="card-img-top img-fluid" alt="..." style="height: 200px; border-radius: 20px 20px 0 0;">
+        <div class="card-body text-center">
+          <h5 class="card-title">Maintenance</h5>
+          <p class="card-text">Avec notre expertise en maintenance informatique, assurez la performance continue de votre système sans interruption.</p>
+          <a href="#" class="btn btn-primary">voir plus</a>
+        </div>
+      </div>
+    
+      <div class="card mb-3" style="width: 18rem; border-radius: 20px;">
+        <img src="images/formation.jpg" class="card-img-top img-fluid" alt="..." style="height: 200px; border-radius: 20px 20px 0 0;">
+        <div class="card-body text-center">
+          <h5 class="card-title">Formations</h5>
+          <p class="card-text"> Nos formations personnalisées vous équipent des compétences essentielles pour exceller dans le monde digital en constante évolution.</p>
+          <a href="#" class="btn btn-primary">voir plus</a>
+        </div>
+      </div>
+    </div>
+    
+  
+
+    <!-- fin services -->
+
+     <!-- pourquoi nous choisir -->
+       <br><br><br>
+     <div class="container d-flex align-items-center justify-content-center">
+      <h4><strong>Pourquoi nous choisir</strong></h4>
+    </div>
+    <br>
+        
+     <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          First in DOM, no order applied
+        </div>
+        <div class="col">
+          <div class="col order-5">
+            <video width="320" height="240" controls au>
+                <source src="videos/Lundi 1.mp4" type="video/mp4">
+                
+            </video>
+        </div>
+       
+      </div>
+        <div class="col order-1">
+          Third in DOM, with an order of 1
+        </div>
+        
       </div>
     </div>
 
-        <!--  Entete  -->
-        <div class="services">
+     <!-- fin pourquoi nous choisir -->
 
-            <span class="traitservice1"></span>
-            &nbsp;&nbsp;
-            <span class="traitservice"><strong><font size="5">NOS SERVICES</font></strong></span>
-            &nbsp;&nbsp;
-            <span class="traitservice2"></span>
+     <!-- demande de devis -->
+
+     <!-- fin demande de devis -->
+
+     <!-- temoignages -->
+        
+     <br><br><br>
+     <div class="container d-flex align-items-center justify-content-center">
+      
+
+      <p class="d-inline-flex gap-1">
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          <h4><strong>
+            Laissez-nous un commentaire</strong></h4>
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"> addresse Email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">Nous ne partagerons jamais votre e-mail avec quelqu'un d'autre.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputMessage" class="form-label">Votre message</label>
+              <textarea class="form-control" id="exampleInputMessage" rows="3"></textarea>
+          </div>          
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">cocher</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Poster</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+    <br>
+     
+    <div class="container px-4 text-center">
+      <div class="row gx-5">
+        <div class="col" >
+         <div class="p-3">
+          <div class="card" style="width: 18rem;">
+        
+            <ul class="list-group list-group-flush align-items-center">
+              <li class="list-group-item">
+                <img src="profils/profil 1.png" class="card-img-top img-fluid" alt="..." style="height: 70px; border-radius: 20px 20px 0 0;">
+              </li>
+              <li class="list-group-item">Adrien</li>
+              <li class="list-group-item">
+                <i> J'ai vachement apprécié la conception de 
+                  la plateforme e-commerce de ma boîte</i>
+              </li>
+            </ul>
+          </div>
+         </div>
+        </div>
+        
+        <div class="col" >
+          <div class="p-3">
+           <div class="card" style="width: 18rem;">
+         
+             <ul class="list-group list-group-flush align-items-center">
+               <li class="list-group-item">
+                 <img src="profils/profil 2.png" class="card-img-top img-fluid" alt="..." style="height: 70px; border-radius: 20px 20px 0 0;">
+               </li>
+               <li class="list-group-item">Duchesse</li>
+               <li class="list-group-item">
+                <i> J'ai vachement apprécié la conception de 
+                  la plateforme e-commerce de ma boîte</i>
+               </li>
+             </ul>
+           </div>
+          </div>
+         </div>
+
+         <div class="col" >
+          <div class="p-3">
+           <div class="card" style="width: 18rem;">
+         
+             <ul class="list-group list-group-flush align-items-center">
+               <li class="list-group-item">
+                 <img src="profils/profil 3.png" class="card-img-top img-fluid" alt="..." style="height: 70px; border-radius: 20px 20px 0 0;">
+               </li>
+               <li class="list-group-item">Genius</li>
+               <li class="list-group-item">
+                <i> J'ai vachement apprécié la conception de 
+                  la plateforme e-commerce de ma boîte</i>
+               </li>
+             </ul>
+           </div>
+          </div>
+         </div>
+
+      </div>
+    </div>
+     <!-- fin temoignages -->
+
     
-        </div>
-        <br><br>
-        <div class="paraservice">
-        <h2>Découvrez notre éventail de solutions informatiques 
-            innovantes conçues pour répondre à vos besoins, car 
-            votre succès est au cœur de notre expertise.</h2>
-        </div>
-        <br><br>
-        <!--  Fin Entete  -->
-        
-        <!-- corps de la section services-->
-       
-        <div class="nosservices">
-            
-            <!--service 1-->
-            <div class="service">
-                <div class="head">
-                   <img src="images/webimg.jpg" alt="" class="imgservice">
-                </div>
-                <div class="foot"><br>
-                    <h3>Developpement web</h3>
-                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5><br>
-                    <span class="serviceplus"><a href="#" class="voir2">Voir plus</a></span>
-                </div>
-            </div>
-               
-         <!--service 2-->
-            <div class="service">
-                <div class="head">
-                   <img src="images/marketingimg.jpg" alt="" class="imgservice">
-                </div>
-                <div class="foot"><br>
-                    <h3>Marketing Digital</h3>
-                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5><br>
-                    <span class="serviceplus"><a href="#" class="voir2">Voir plus</a></span>
-                </div>
-            </div>
-
-            <!--service 3-->
-            <div class="service">
-                <div class="head">
-                   <img src="images/infographieimg.jpg" alt="" class="imgservice">
-                </div>
-                <div class="foot"><br>
-                    <h3>Infographie</h3>
-                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5><br>
-                    <span class="serviceplus"><a href="#" class="voir2">Voir plus</a></span>
-                </div>
-            </div>
-        </div>
-
-        <br><br><br>
-        <div class="nosservices">
-            
-            <!--service 4-->
-            <div class="service">
-                <div class="head">
-                   <img src="images/webimg.jpg" alt="" class="imgservice">
-                </div>
-                <div class="foot"><br>
-                    <h3>Design</h3>
-                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5><br>
-                    <span class="serviceplus"><a href="#" class="voir2">Voir plus</a></span>
-                </div>
-            </div>
-
-            <!--service 5-->
-            <div class="service">
-                <div class="head">
-                   <img src="images/marketingimg.jpg" alt="" class="imgservice">
-                </div>
-                <div class="foot"><br>
-                    <h3>Maintenace informatique</h3>
-                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5><br>
-                    <span class="serviceplus"><a href="#" class="voir2">Voir plus</a></span>
-                </div>
-            </div>
-
-            <!--service 6-->
-            <div class="service">
-                <div class="head">
-                   <img src="images/infographieimg.jpg" alt="" class="imgservice">
-                </div>
-                <div class="foot"><br>
-                    <h3>Formations informatique</h3>
-                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5><br>
-                    <span class="serviceplus"><a href="#" class="voir2">Voir plus</a></span>
-                </div>
-            </div>
-        </div>
-        <br><br>
-        
-        <!-- fin section service -->
-
-         <!--  Section pourquoi nous choisir -->
-
-            <!--  Entete  -->
-        <div class="choix">
-
-            <span class="traitchoix1"></span>
-            &nbsp;&nbsp;
-            <span class="traitchoix"><strong><font size="5">POURQUOI NOUS CHOISIR</font></strong></span>
-            &nbsp;&nbsp;
-            <span class="traitchoix2"></span>
-           
-        </div>
-        <br><br>
-        <div class="parachoix">
-        <h2>Optez pour nous. Nos solutions informatiques de qualité et notre 
-            service client exceptionnel font la différence</h2>
-        </div>
-        <br><br>
-
-           <!--  Fin Entete  -->
-        
-           <!--  corps de section pourquoi nous choisir -->
-        
-        <section class="choisir">
-            <div class="choisir1">
-                <span class="case"><img src="assets/best.png" alt="" class="icon"></span>
-                <span class="titre"><strong>Meilleur de l'industrie</strong></span><br><br>
-                    <p class="parachoisir">Notre équipe d'experts en informatique 
-                        reste à la pointe des dernières technologies 
-                        et des meilleures pratiques de l'industrie 
-                        grâce à une formation continue.
-                     </p>
-                     <br>
-                <span class="case"><img src="assets/reward.png" alt="" class="icon"></span>
-                <span class="titre"><strong>Recompenses</strong></span><br><br>
-                    <p class="parachoisir">Nous sommes honorés pour notre expertise 
-                        technique de haut niveau dans le développement 
-                        de logiciels personnalisés, adaptés aux 
-                        besoins uniques de chaque entreprise.
-                    </p>
-                    <br>
-            </div>
-            <div class="choisirmilieu">
-                <video width="320" height="240" controls class="video1">
-                    <source src="video.mp4" type="video/mp4">
-                    <source src="video.webm" type="video/webm">
-                    <source src="video.ogv" type="video/ogg">
-                  </video>
-            </div>
-            <div class="choisir1">
-                <span class="case"><img src="assets/pro.png" alt="" class="icon"></span>
-                <span class="titre"><strong>Travail professionel</strong></span><br><br>
-                <p class="parachoisir">Nous nous engageons à offrir des solutions 
-                    informatiques innovantes et durables pour
-                     les entreprises, en respectant les normes 
-                     de qualité et de professionnalisme les plus élevées.
-                </p>
-                <br>
-                <span class="case"><img src="assets/appel.png" alt="" class="icon"></span>
-                <span class="titre"><strong>Assistance</strong></span><br><br>
-                 <p class="parachoisir">
-                    Notre équipe vous assiste du lundi à 
-                    dimanche selon les horaires de Travail.
-                 </p>
-                 <br>
-            </div>
-        </section>
 
         <!-- debut footer -->
-        <footer class="footer-10">
+        <footer class="footer-10" style="position: relative; bottom: 0px;">
           <div class="container">
             <div class="row mb-5 pb-3 no-gutters">
               <div class="col-md-4 mb-md-0 mb-4 d-flex">
@@ -397,9 +430,7 @@
                       <span class="ion-ios-pin"></span>
                     </div>
                     <div class="text">
-                      <span>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3858.5086285651105!2d-17.460352725830646!3d14.740350473641762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec10d5dd70d25cf%3A0x1c13eddbaea8e6b!2sDave%20procode!5e0!3m2!1sfr!2ssn!4v1699821532145!5m2!1sfr!2ss"></iframe>
-                      </span>
+                      <span>GY-129 HLM Grand-Yoff</span>
                     </div>
                   </div>
                 </div>
@@ -466,11 +497,13 @@
      
 
          <!-- fin footer -->
-         <script src="bootstrap-footer-20/bootstrap-footer-20/js/jquery.min.js"></script>
-      <script src="bootstrap-footer-20/bootstrap-footer-20/js/popper.js"></script>
-      <script src="bootstrap-footer-20/bootstrap-footer-20/js/bootstrap.min.js"></script>
-      <script src="bootstrap-footer-20/bootstrap-footer-20/js/main.js"></script>
+          <script src="bootstrap-footer-20/bootstrap-footer-20/js/jquery.min.js"></script>
+         <script src="bootstrap-footer-20/bootstrap-footer-20/js/main.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
          integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        
+      <script src="bootstrap-footer-20/bootstrap-footer-20/js/popper.js"></script>
+      <script src="bootstrap-footer-20/bootstrap-footer-20/js/bootstrap.min.js"></script>
+      
 </body>
 </html>
