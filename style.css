@@ -1,3 +1,45 @@
+        /************* Preload **********************/
+
+
+/* Style pour la classe preload-page */
+.preload-page {
+    overflow: hidden;
+  }
+  
+  /* Style pour l'image de preload */
+  .preload-page::before {
+    content: "";
+    background: url('images/preload4.gif') center center no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999; /* Assure que l'image est au-dessus de tout le contenu */
+  }
+  
+  /* Style pour le contenu principal */
+  .preload-page body {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+  }
+  
+  /* Supprime la classe preload-page après le chargement de la page */
+  .loaded .preload-page::before {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+  }
+  
+  .loaded body {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+
+
 
 /****************** global *********************/
 
@@ -82,6 +124,9 @@ span.valeur4{
     padding: 15px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
 }
+
+
+
 
 /************* section a propos **********************/
 
