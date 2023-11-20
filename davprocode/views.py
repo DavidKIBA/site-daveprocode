@@ -14,6 +14,7 @@ def home(request):
                 NewsLetters.objects.create(email_news_letter=email)
             except ValidationError:
                 # L'email n'est pas valide, faites quelque chose en conséquence
-                message = messages.error(request, "votre mail n'est pas valide")
-        context = {"message": message}
-    return render(request, 'home/index.html', context)
+                ValidationError("veuillez saisir un email valide cool")
+                # pass
+                # message = messages.error(request, "votre mail n'est pas valide")
+    return render(request, 'home/index.html')

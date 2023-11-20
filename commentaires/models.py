@@ -6,7 +6,6 @@ from utilisateurs.models import Utilisateurs
 
 
 class Commentaires(models.Model):
-    id_commentaire = models.AutoField(primary_key=True)
     username = models.ForeignKey(Utilisateurs, on_delete=models.CASCADE)
     id_product_service = models.ForeignKey(
         Services, on_delete=models.CASCADE, null=True)

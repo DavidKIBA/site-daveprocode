@@ -470,11 +470,13 @@
           <form class="subscribe-form" method="POST">
             {% csrf_token %}
             <div class="form-group d-flex">
-              {{message}}
               <input type="email" class="form-control rounded-left" placeholder="Enter email address"
                 name="email_news_letter">
               <button type="submit" class="form-control submit rounded-right" name="btn_news_letter">S'inscrire</button>
             </div>
+            <!-- <span class="subheading">
+              {{message}}
+            </span> -->
             <span class="subheading">Ne manquer pas nos actualités sur nos différents articles</span>
           </form>
         </div>

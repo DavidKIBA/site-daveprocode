@@ -15,7 +15,6 @@ class Utilisateurs(models.Model):
         return self.user
 
 class NewsLetters(models.Model):
-    id_email_news_letter = models.AutoField(primary_key=True)
     email_news_letter = models.EmailField()
 
     class Meta:

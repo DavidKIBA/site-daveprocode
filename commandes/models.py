@@ -13,7 +13,6 @@ class Commandes(models.Model):
         ('livré', 'livré'),
     ]
 
-    id_commande = models.AutoField(primary_key=True)
     username = models.ForeignKey(Utilisateurs, on_delete=models.CASCADE)
     statue_commande = models.CharField(max_length = 255, choices=STATUE, default='attente')
     quantite = models.PositiveSmallIntegerField()
