@@ -44,9 +44,9 @@
 /****************** global *********************/
 
 * {
-    margin: 0;
-    padding: 0;
-    font-family: poppins;
+    margin: 0 ;
+    padding: 0 ;
+    font-family: poppins !important;
 }
 body {
     overflow-x: hidden;
@@ -56,11 +56,12 @@ a{
     text-decoration: none;
 }
 
+
 /****************** menu principal *********************/
 
-.navbar-nav li.nav-item:hover {
-    background-color: #D05A0B; /* Couleur de fond au survol */
-}
+.nav-link:hover {
+    color: #001730 !important; /* Couleur de survol spécifiée */
+  }
 
 .navbar-nav li.nav-item {
     margin-right: 15px; 
@@ -72,7 +73,9 @@ a{
 
 
 /************* image slider  **********************/
-
+.btn-primary{
+    background-color: #2671F8 !important;
+}
 
 
 
