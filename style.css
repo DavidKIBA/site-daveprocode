@@ -132,6 +132,18 @@ span.valeur4{
 
 
 /************* section a propos **********************/
+/* classe pour définir l'animation de descente */
+.slide-down-animation {
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+/*  classe pour déclencher l'animation lorsque l'élément devient visible */
+.slide-down-animation.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 
 /************* section a propos (gauche) **********************/

@@ -1,4 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
+     // Ajout d'une fonction pour déclencher l'animation de descente
+     function animateAboutDave() {
+        const aboutDave = document.getElementById("aboutDave");
+        aboutDave.classList.add("slide-down-animation");
+    }
+
+    // Appelez la fonction pour déclencher l'animation après un certain délai (par exemple, 1000 millisecondes)
+    setTimeout(animateAboutDave, 1000);
     const images = [
         "images/header_slide1.jpg",
         "images/header_slide2.jpg",
@@ -74,26 +82,27 @@ document.addEventListener("DOMContentLoaded", function () {
 
     //services 
     // Fonction pour appliquer l'effet de superposition sur l'image
-    function applyImageOverlay() {
-        const images = document.querySelectorAll(".imgservice");
-
-        images.forEach((img) => {
-            img.addEventListener("mouseenter", () => {
-                img.style.transition = "transform 0.3s, filter 0.3s";
-                img.style.transform = "scale(0.9)"; // Rétrécit l'image
-                img.style.filter = "blur(5px)";
-            });
-
-            img.addEventListener("mouseleave", () => {
-                img.style.transition = "transform 0.3s, filter 0.3s";
-                img.style.transform = "scale(1)";
-                img.style.filter = "blur(0)";
-            });
+    function applyCardZoomEffect() {
+        const serviceCards = document.querySelectorAll(".card.mb-3");
+      
+        serviceCards.forEach((card) => {
+          card.addEventListener("mouseenter", () => {
+            console.log("Mouse enter");
+            card.style.transition = "transform 0.3s";
+            card.style.transform = "scale(1.1)"; // Zoom in
+          });
+      
+          card.addEventListener("mouseleave", () => {
+            console.log("Mouse leave");
+            card.style.transition = "transform 0.3s";
+            card.style.transform = "scale(1)"; // Zoom back to normal
+          });
         });
-    }
-
-    // Appel de la fonction d'effet de superposition
-    applyImageOverlay();
+      }
+      
+      // Appel de la fonction pour ajouter l'effet de zoom aux cartes de service
+      applyCardZoomEffect();
+      
 
     // Fonction pour détecter le défilement et ajouter des animations
     function handleScroll() {
