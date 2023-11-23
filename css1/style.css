@@ -1,4 +1,9 @@
 /********** Template CSS **********/
+.footer-10{
+    margin: 0 !important;
+    padding: 0 !important;
+
+}
 :root {
     --primary: #06A3DA;
     --secondary: #34AD54;
