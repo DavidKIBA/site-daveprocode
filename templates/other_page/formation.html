@@ -19,62 +19,91 @@
 </head>
 <body>
 
-
+ 
     <!--  menu principal   -->
-    <nav class="navbar  navbar-expand-lg container-fluid" style="position: fixed; z-index: 10; background-color:#2671F8; margin-top: 0px;" >
-        <div class="container-fluid">
-          <a class="navbar-brand " href="https://maps.app.goo.gl/Q3yaSTd4J3cmWXrU8"><img src="images/Logo dave procode officiel_Plan de travail 1.png" width="60"></a>
-          
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto ms-10 mb-2 mb-lg-0">
-              <li class="nav-item ">
-                <a class="nav-link active " aria-current="page" href="index.html" style="color: white;">Acceuil</a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="about.html" style="color: white;">A propos</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
-                  Services
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#" style="color: #001730;">Developpement web</a></li>
-                  <li><a class="dropdown-item" href="#" style="color: #001730;">Marketing Digital</a></li>
-                  <li><a class="dropdown-item" href="#" style="color: #001730;">Maintenace informatique</a></li>
-                  <li><a class="dropdown-item" href="#" style="color: #001730;">Photographie & vidéographie</a></li>
-                  <li><a class="dropdown-item" href="#" style="color: #001730;">Infographie</a></li>
-                  <li><a class="dropdown-item" href="#" style="color: #001730;">Design</a></li>
-                </ul>
-              </li>
+    <nav class="navbar  navbar-expand-lg container-fluid navbar-light" style="position: fixed; z-index: 10; background-color:#2671F8; margin-top: 0px;" >
+      <div class="container-fluid">
+        <a class="navbar-brand " href="https://maps.app.goo.gl/Q3yaSTd4J3cmWXrU8"><img src="images/Logo dave procode officiel_Plan de travail 1.png" width="60"></a>
+        <button class="navbar-toggler navbar-toggler-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button> 
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto ms-10 mb-2 mb-lg-0">
+            <li class="nav-item ">
+              <a class="nav-link active " aria-current="page" href="index.html" style="color: white;"><strong>Acceuil</strong></a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="about.html" style="color: white;"><strong>A propos</strong></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+              <strong>Services</strong>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#" style="color: #001730;">Developpement web</a></li>
+                <li><a class="dropdown-item" href="#" style="color: #001730;">Marketing Digital</a></li>
+                <li><a class="dropdown-item" href="#" style="color: #001730;">Maintenace informatique</a></li>
+                <li><a class="dropdown-item" href="#" style="color: #001730;">Photographie & vidéographie</a></li>
+                <li><a class="dropdown-item" href="#" style="color: #001730;">Infographie</a></li>
+                <li><a class="dropdown-item" href="#" style="color: #001730;">Design</a></li>
+              </ul>
+            </li>
 
-              <li class="nav-item dropdown ">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
-                  Formations
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#" style="color: #001730;">Developpement web</a></li>
-                  <li><a class="dropdown-item" href="#" style="color: #001730;">Marketing Digital</a></li>
-                  <li><a class="dropdown-item" href="#" style="color: #001730;">Infographie</a></li>
-                  <li><a class="dropdown-item" href="#" style="color: #001730;">Design</a></li>
-                  <li><a class="dropdown-item" href="#" style="color: #001730;">Bureautique</a></li>
-                </ul>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="projets.html" style="color: white;">Projets</a>
-              </li>
+            <li class="nav-item dropdown ">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+              <strong>Formations</strong>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#" style="color: #001730;">Developpement web</a></li>
+                <li><a class="dropdown-item" href="#" style="color: #001730;">Marketing Digital</a></li>
+                <li><a class="dropdown-item" href="#" style="color: #001730;">Infographie</a></li>
+                <li><a class="dropdown-item" href="#" style="color: #001730;">Design</a></li>
+                <li><a class="dropdown-item" href="#" style="color: #001730;">Bureautique</a></li>
+              </ul>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="articles.html" style="color: white;"><strong>Articles & blog</strong></a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="projets.html" style="color: white;"><strong>Projets</strong></a>
+            </li>
 
-              <li class="nav-item r">
-                <a class="nav-link" href="contact.html" style="color: white;">Contact</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn" type="submit" style="background-color: #D05A0B;"><img src="assets/search.png" alt="" width="30"></button>
-            </form>
-          </div>
+            <li class="nav-item r">
+              <a class="nav-link" href="contact.html" style="color: white;"><strong>Contact</strong></a>
+            </li>
+          </ul>
+          <form class="d-flex " role="search">
+            <input class="form-control me-2 modal-fullscreen-sm-down" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn" type="submit" style="background-color: #D05A0B;"><img src="assets/search.png" alt="" width="30"></button>
+          </form>
         </div>
-      </nav>
+      </div>
+    </nav>
 
+    <!--  section entete   -->
+    <br>
+   <div id="carouselExampleCaptions" class="carousel slide" style="z-index: 1;">
+
+    <div class="carousel-inner">
+  
+      <div class="carousel-item active text-center">
+        <img src="images/header_slide11.jpg" class="d-block " alt="..." style="height: 350px; width: 100%;  object-fit: cover;" >
+        <div class="carousel-caption d-none d-md-block vertical-center horizontal-center">
+          <h1 class="display-5" style="position: absolute; top: -100px; font-family: poppins;">
+            <strong>
+              A propos de Dave procode
+            </strong>
+          </h1>
+  
+        </div>
+      </div>
+  
+    </div>
+  
+  </div>
+  
+  <br>
+     <!-- fin image entete-->
 
 
 

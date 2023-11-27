@@ -1,204 +1,136 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    
-    <link rel="stylesheet" href="style.css">
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
-     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700&display=swap" rel="stylesheet">
-	
-		<link rel="stylesheet" href="bootstrap-footer-20/bootstrap-footer-20/css/ionicons.min.css">
-		<link rel="stylesheet" href="bootstrap-footer-20/bootstrap-footer-20/css/style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% extends 'base/base.html' %}
 
-    <title>Acceuil</title>
-    <script src="script.js" defer></script>
+{% block content %}
 
-</head>
-<body>
+<!--  section entete   -->
+<br>
+<div id="carouselExampleCaptions" class="carousel slide" style="z-index: 1;">
+
+  <div class="carousel-inner">
+
+    <div class="carousel-item active text-center">
+      <img src="/images/header_slide11.jpg" class="d-block " alt="..."
+        style="height: 350px; width: 100%;  object-fit: cover;">
+      <div class="carousel-caption d-none d-md-block vertical-center horizontal-center">
+        <h1 class="display-5" style="position: absolute; top: -100px; font-family: poppins;">
+          <strong>
+            Devenez partenaire
+          </strong>
+        </h1>
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
 
 
-    <!--  menu principal   -->
-    <nav class="navbar  navbar-expand-lg container-fluid" style="position: fixed; z-index: 10; background-color:#2671F8; margin-top: 0px;" >
-        <div class="container-fluid">
-          <a class="navbar-brand " href="https://maps.app.goo.gl/Q3yaSTd4J3cmWXrU8"><img src="images/Logo dave procode officiel_Plan de travail 1.png" width="60"></a>
-          
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto ms-10 mb-2 mb-lg-0">
-              <li class="nav-item ">
-                <a class="nav-link active " aria-current="page" href="index.html" style="color: white;">Acceuil</a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="about.html" style="color: white;">A propos</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
-                  Services
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#" style="color: #001730;">Developpement web</a></li>
-                  <li><a class="dropdown-item" href="#" style="color: #001730;">Marketing Digital</a></li>
-                  <li><a class="dropdown-item" href="#" style="color: #001730;">Maintenace informatique</a></li>
-                  <li><a class="dropdown-item" href="#" style="color: #001730;">Photographie & vidéographie</a></li>
-                  <li><a class="dropdown-item" href="#" style="color: #001730;">Infographie</a></li>
-                  <li><a class="dropdown-item" href="#" style="color: #001730;">Design</a></li>
-                </ul>
-              </li>
+<!-- fin image entete-->
+<!-- debut formulaire -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 text-center">
+      <!-- Section de présentation -->
+      <h2>Nous Contacter</h2>
+      <p>Remplissez le formulaire ci-dessous pour nous contacter.</p>
+      <!-- message d'erreur  -->
+      <div class="wrapper mt-4">
+        {% for message in messages %}
+        <div class="alert {{message.tags}} alert-dismissible fade show" role="alert">
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+          </button>
+          {% if message.tags == 'alert-success' %}
+          <i class="bi bi-check-circle-fill"></i> {{message|safe}}
+          {% else %}
+          <i class="bi bi-x-circle-fill"></i> {{message|safe}}
+          {% endif %}
+        </div>
+        {% endfor %}
+      </div>
+      <!-- fin message d'erreur  -->
+    </div>
+  </div>
 
-              <li class="nav-item dropdown ">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
-                  Formations
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#" style="color: #001730;">Developpement web</a></li>
-                  <li><a class="dropdown-item" href="#" style="color: #001730;">Marketing Digital</a></li>
-                  <li><a class="dropdown-item" href="#" style="color: #001730;">Infographie</a></li>
-                  <li><a class="dropdown-item" href="#" style="color: #001730;">Design</a></li>
-                  <li><a class="dropdown-item" href="#" style="color: #001730;">Bureautique</a></li>
-                </ul>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="projets.html" style="color: white;">Projets</a>
-              </li>
+  <div class="row justify-content-center">
+    <div class="col-md-12">
+      <!-- Formulaire au centre -->
+      <form method="POST">
+        {% csrf_token %}
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="nomUtilisateur">Nom d'utilisateur :</label>
+            <!-- <input type="text" class="form-control" id="nomUtilisateur" name="nomUtilisateur" required> -->
+            {{contact_form.nom}}
+          </div>
 
-              <li class="nav-item r">
-                <a class="nav-link" href="contact.html" style="color: white;">Contact</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn" type="submit" style="background-color: #D05A0B;"><img src="assets/search.png" alt="" width="30"></button>
-            </form>
+          <div class="form-group col-md-6">
+            <label for="email">Email :</label>
+            <!-- <input type="email" class="form-control" id="email" name="email" required> -->
+            {{contact_form.email_user_contact}}
           </div>
         </div>
-      </nav>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-        <!-- debut footer -->
-        <footer class="footer-10">
-          <div class="container">
-            <div class="row mb-5 pb-3 no-gutters">
-              <div class="col-md-4 mb-md-0 mb-4 d-flex">
-                <div class="con con-1 w-100 py-5">
-                  <div class="con-info w-100 text-center">
-                    <div class="icon d-flex align-items-center justify-content-center">
-                      <span class="ion-ios-call"></span>
-                    </div>
-                    <div class="text">
-                      <span>+221 77 723 40 84</span><br>
-                      <span>+242 06 485 3160</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 mb-md-0 mb-4 d-flex">
-                <div class="con con-2 w-100 py-5">
-                  <div class="con-info w-100 text-center">
-                    <div class="icon d-flex align-items-center justify-content-center">
-                      <span class="ion-ios-mail"></span>
-                    </div>
-                    <div class="text">
-                      <span>procodedave@gmail.com</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 mb-md-0 mb-4 d-flex">
-                <div class="con con-3 w-100 py-5">
-                  <div class="con-info w-100 text-center">
-                    <div class="icon d-flex align-items-center justify-content-center">
-                      <span class="ion-ios-pin"></span>
-                    </div>
-                    <div class="text">
-                      <span>GY-129 HLM Grand-Yoff</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-7">
-                <div class="row">
-                  <div class="col-md-4 mb-md-0 mb-4">
-                    <h2 class="footer-heading" ><a href="about.html">A propos</a> </h2>
-                    <ul class="list-unstyled">
-                <li><a href="about.html" class="d-block">Notre histoire</a></li>
-                <li><a href="index.html" class="d-block">Acceuil</a></li>
-                <li><a href="about.html" class="d-block">Notre Equipe</a></li>
-              </ul>
-                  </div>
-                  <div class="col-md-4 mb-md-0 mb-4">
-                    <h2 class="footer-heading">Dave procode</h2>
-                    <ul class="list-unstyled">
-                <li><a href="services.html" class="d-block">Nos services</a></li>
-                <li><a href="projets.html" class="d-block">Projets</a></li>
-                <li><a href="contact.html" class="d-block">Contact</a></li>
-                <li><a href="formation.html" class="d-block">Formations</a></li>
-              </ul>
-                  </div>
-                  <div class="col-md-4 mb-md-0 mb-4">
-                    <h2 class="footer-heading">Resources</h2>
-                    <ul class="list-unstyled">
-                <li><a href="projets.html" class="d-block">Projets</a></li>
-                <li><a href="#" class="d-block">Newsletter</a></li>
-                <li><a href="#" class="d-block">Règles de confidentialité</a></li>
-              </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-5 mb-md-0 mb-4">
-                <h2 class="footer-heading">S'inscrire</h2>
-                <form action="#" class="subscribe-form">
-            <div class="form-group d-flex">
-            <input type="text" class="form-control rounded-left" placeholder="Enter email address">
-            <button type="submit" class="form-control submit rounded-right">S'inscrire</button>
-            </div>
-            <span class="subheading">Ne manquer pas nos actualités sur nos différents articles</span>
-          </form>
-              </div>
-            </div>
-            <div class="row mt-5 pt-4 border-top">
-          <div class="col-md-6 col-lg-8 mb-md-0 mb-4">
-          <p class="copyright mb-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-      Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved Dave Procode. | This template is made with <i class="ion-ios-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
-      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="telephone">Téléphone :</label>
+            <!-- <input type="tel" class="form-control" id="telephone" name="telephone" required> -->
+            {{contact_form.telephone}}
           </div>
-          <div class="col-md-6 col-lg-4 text-md-right">
-            <ul class="ftco-footer-social p-0">
-            <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><span class="ion-logo-twitter"></span></a></li>
-            <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><span class="ion-logo-facebook"></span></a></li>
-            <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><span class="ion-logo-instagram"></span></a></li>
-          </ul>
+
+          <div class="form-group col-md-6">
+            <label for="ville">Ville :</label>
+            <!-- <input type="text" class="form-control" id="ville" name="ville" required> -->
+            {{contact_form.ville}}
           </div>
         </div>
-          </div>
-        </footer>
-      
-     
 
-         <!-- fin footer -->
-   <script src="bootstrap-footer-20/bootstrap-footer-20/js/jquery.min.js"></script>
-<script src="bootstrap-footer-20/bootstrap-footer-20/js/popper.js"></script>
-<script src="bootstrap-footer-20/bootstrap-footer-20/js/bootstrap.min.js"></script>
-<script src="bootstrap-footer-20/bootstrap-footer-20/js/main.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-   integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</body>
-</html>
+
+        <div class="container">
+          <div class="row d-flex align-items-center">
+            <!-- Informations de contact à gauche -->
+            <div class="col-md-4 mb-md-0 mb-3">
+              <h2 class="footer-heading">Nous Contacter</h2>
+              <p>Vous avez un besoin? veillez nous contacter en suivants ces informations </p>
+              <p><strong><i><img src="/images/assets/téléphone.png" alt="Téléphone"
+                      style="width: 50px; height: 50px;"></i> +221
+                  77 723 40 84 ;</strong> +242 06 485 3160</p>
+              <p><strong><i><img src="/images/assets/horaire.png" alt="horaires" style="width: 50px; height: 50px;"></i>
+                  Horaires:</strong> Lun-Ven :9H00-18H00</p>
+              <p><strong><i><img src="/images/assets/adresse.png" alt="Localisation"
+                      style="width: 50px; height: 50px;"></i>
+                  Localisation :</strong> GY-129 HLM Grand-Yoff </p>
+
+
+            </div>
+
+            <div class="col-md-8 mb-md-0 mb-8">
+              <div class="form-group">
+                <label for="services">Services :</label>
+                {{contact_form.service}}
+              </div>
+            </div>
+
+            <div class="form-group">
+
+
+              <label for="message">Message :</label>
+              {{contact_form.message}}
+
+            </div>
+
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="accepter" name="accepter" required>
+              <label class="form-check-label" for="accepter">J'accepte que mes données soient collectées.</label>
+            </div>
+
+            <!-- Ajoutez d'autres champs selon vos besoins -->
+
+            <button type="submit" class="btn btn-primary">Envoyer</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+{% endblock content %}

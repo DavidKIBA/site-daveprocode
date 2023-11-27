@@ -1,0 +1,110 @@
+<footer class="footer-10" style="position: relative; bottom: 0px;">
+    <div class="container">
+        <div class="row mb-5 pb-3 no-gutters">
+            <div class="col-md-4 mb-md-0 mb-4 d-flex">
+                <div class="con con-1 w-100 py-5">
+                    <div class="con-info w-100 text-center">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="ion-ios-call"></span>
+                        </div>
+                        <div class="text">
+                            <span>+221 77 723 40 84</span><br>
+                            <span>+242 06 485 3160</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-md-0 mb-4 d-flex">
+                <div class="con con-2 w-100 py-5">
+                    <div class="con-info w-100 text-center">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="ion-ios-mail"></span>
+                        </div>
+                        <div class="text">
+                            <span>procodedave@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-md-0 mb-4 d-flex">
+                <div class="con con-3 w-100 py-5">
+                    <div class="con-info w-100 text-center">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="ion-ios-pin"></span>
+                        </div>
+                        <div class="text">
+                            <span>GY-129 HLM Grand-Yoff</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-7">
+                <div class="row">
+                    <div class="col-md-4 mb-md-0 mb-4">
+                        <h2 class="footer-heading"><a href="about.html">A propos</a> </h2>
+                        <ul class="list-unstyled">
+                            <li><a href="about.html" class="d-block">Notre histoire</a></li>
+                            <li><a href="index.html" class="d-block">Acceuil</a></li>
+                            <li><a href="about.html" class="d-block">Notre Equipe</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 mb-md-0 mb-4">
+                        <h2 class="footer-heading">Dave procode</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="services.html" class="d-block">Nos services</a></li>
+                            <li><a href="projets.html" class="d-block">Projets</a></li>
+                            <li><a href="contact.html" class="d-block">Contact</a></li>
+                            <li><a href="formation.html" class="d-block">Formations</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 mb-md-0 mb-4">
+                        <h2 class="footer-heading">Resources</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="projets.html" class="d-block">Projets</a></li>
+                            <li><a href="#" class="d-block">Newsletter</a></li>
+                            <li><a href="#" class="d-block">Règles de confidentialité</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 mb-md-0 mb-4">
+                <h2 class="footer-heading">S'inscrire</h2>
+                <form class="subscribe-form" method="POST">
+                    {% csrf_token %}
+                    <div class="form-group d-flex">
+                        <input type="email" class="form-control rounded-left" placeholder="Enter email address"
+                            name="email_news_letter">
+                        <button type="submit" class="form-control submit rounded-right"
+                            name="btn_news_letter">S'inscrire</button>
+                    </div>
+                    <span class="subheading">Ne manquer pas nos actualités sur nos différents articles</span>
+                </form>
+            </div>
+        </div>
+        <div class="row mt-5 pt-4 border-top">
+            <div class="col-md-6 col-lg-8 mb-md-0 mb-4">
+                <p class="copyright mb-0">
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    Copyright &copy;
+                    <script>document.write(new Date().getFullYear());</script> All rights reserved Dave Procode. | This
+                    template
+                    is made with <i class="ion-ios-heart" aria-hidden="true"></i> by <a href="https://colorlib.com"
+                        target="_blank">Colorlib.com</a>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                </p>
+            </div>
+            <div class="col-md-6 col-lg-4 text-md-right">
+                <ul class="ftco-footer-social p-0">
+                    <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top"
+                            title="Twitter"><span class="ion-logo-twitter"></span></a></li>
+                    <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top"
+                            title="Facebook"><span class="ion-logo-facebook"></span></a></li>
+                    <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top"
+                            title="Instagram"><span class="ion-logo-instagram"></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>

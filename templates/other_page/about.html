@@ -1,204 +1,175 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    
-    <link rel="stylesheet" href="style.css">
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
-     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700&display=swap" rel="stylesheet">
-	
-		<link rel="stylesheet" href="bootstrap-footer-20/bootstrap-footer-20/css/ionicons.min.css">
-		<link rel="stylesheet" href="bootstrap-footer-20/bootstrap-footer-20/css/style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% extends 'base/base.html' %}
+{% block content %}
 
-    <title>Acceuil</title>
-    <script src="script.js" defer></script>
+<!--  section entete   -->
 
-</head>
-<body>
+<div id="carouselExampleCaptions" class="carousel slide" style="z-index: 1;">
+
+  <div class="carousel-inner">
+
+    <div class="carousel-item active text-center">
+      <img src="/images/header_slide11.jpg" class="d-block " alt="..."
+        style="height: 350px; width: 100%;  object-fit: cover;">
+      <div class="carousel-caption d-none d-md-block vertical-center horizontal-center">
+        <h1 class="display-5" style="position: absolute; top: -100px; font-family: poppins;">
+          <strong>
+            A propos de Dave procode
+          </strong>
+        </h1>
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
 
 
-    <!--  menu principal   -->
-    <nav class="navbar  navbar-expand-lg container-fluid" style="position: fixed; z-index: 10; background-color:#2671F8; margin-top: 0px;" >
-        <div class="container-fluid">
-          <a class="navbar-brand " href="https://maps.app.goo.gl/Q3yaSTd4J3cmWXrU8"><img src="images/Logo dave procode officiel_Plan de travail 1.png" width="60"></a>
-          
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto ms-10 mb-2 mb-lg-0">
-              <li class="nav-item ">
-                <a class="nav-link active " aria-current="page" href="index.html" style="color: white;">Acceuil</a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="about.html" style="color: white;">A propos</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
-                  Services
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#" style="color: #001730;">Developpement web</a></li>
-                  <li><a class="dropdown-item" href="#" style="color: #001730;">Marketing Digital</a></li>
-                  <li><a class="dropdown-item" href="#" style="color: #001730;">Maintenace informatique</a></li>
-                  <li><a class="dropdown-item" href="#" style="color: #001730;">Photographie & vidéographie</a></li>
-                  <li><a class="dropdown-item" href="#" style="color: #001730;">Infographie</a></li>
-                  <li><a class="dropdown-item" href="#" style="color: #001730;">Design</a></li>
-                </ul>
-              </li>
+<!-- fin image entete-->
 
-              <li class="nav-item dropdown ">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
-                  Formations
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#" style="color: #001730;">Developpement web</a></li>
-                  <li><a class="dropdown-item" href="#" style="color: #001730;">Marketing Digital</a></li>
-                  <li><a class="dropdown-item" href="#" style="color: #001730;">Infographie</a></li>
-                  <li><a class="dropdown-item" href="#" style="color: #001730;">Design</a></li>
-                  <li><a class="dropdown-item" href="#" style="color: #001730;">Bureautique</a></li>
-                </ul>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="projets.html" style="color: white;">Projets</a>
-              </li>
+<!-- Qui sommes nous -->
 
-              <li class="nav-item r">
-                <a class="nav-link" href="contact.html" style="color: white;">Contact</a>
-              </li>
+<br>
+
+<nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
+  <a class="navbar-brand" href="#">A propos de Dave procode</a>
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link" href="#scrollspyHeading1">Vision</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#scrollspyHeading2">Mission</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="#scrollspyHeading3">Objectifs</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="#scrollspyHeading4">Valeurs</a>
+    </li>
+    <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
+              <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn" type="submit" style="background-color: #D05A0B;"><img src="assets/search.png" alt="" width="30"></button>
-            </form>
-          </div>
-        </div>
-      </nav>
+          </li> -->
+
+  </ul>
+</nav>
+
+</div>
+</div>
+<div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+  data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+
+  <div class="container text-center">
+    <div class="row align-items-center">
+      <div class="col">
+        <p style="text-align: justify; padding-right: 20px;">
+          DAVE PROCODE est une entreprise spécialisée dans les technologies de l'information,
+          fondée en février 2023, basée au Sénégal à Dakar et au Congo-Brazzaville. Fort de
+          notre expertise diversifiée dans les domaines du numérique, nous nous engageons à
+          répondre aux besoins informatiques de nos clients, qu'ils soient particuliers ou
+          entreprises. Nous proposons une gamme complète de services, notamment la création
+          d’identités de marque composer de services informatiques notamment sur le web, afin
+          de les accompagner dans la réalisation de leurs projets les plus ambitieux. <br>
+          En tant qu'entreprise commerciale, nous mettons un point d'honneur à offrir des
+          solutions informatiques sur mesure à nos clients. Nous sommes convaincus que
+          chaque projet est unique et que les besoins de chacun diffèrent. C'est pourquoi nous
+          mettons à leur disposition une équipe de professionnels passionnés et expérimentés,
+          capables de relever tous les défis en matière de programmation et de graphisme. Nous
+          sommes fiers de fournir un service de qualité supérieure à nos clients et de contribuer
+          à leur succès sur le marché numérique.
+
+        </p>
+      </div>
+      <div class="col">
+        <img src="/images/header_slide1.jpg" class="card-img-top img-fluid" alt="..."
+          style="height: 500px; width: 100%; object-fit: cover; border-radius: 20px 20px 20px 20px;">
+
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="container text-center">
+    <div class="row align-items-center">
+      <div class="col">
+        <img src="/images/objectif.jpg" class="card-img-top img-fluid" alt="..."
+          style="height: 500px; width: 100%; object-fit: cover; border-radius: 20px 20px 20px 20px;">
+      </div>
+      <div class="col">
+
+        <h4 id="scrollspyHeading1">Vision</h4>
+        <p style="text-align: justify;">
+          DAVE PROCODE a pour vision d’être la référence numéro 1 des
+          entreprises de technologie de l’information dans le monde.
+          Notre détermination à être à l'avant-garde de l'industrie se
+          traduit par un investissement constant dans la recherche et
+          le développement, ainsi que par la formation continue de nos
+          équipes pour garantir une expertise de premier plan dans un
+          paysage technologique en constante évolution.
+        </p>
+        <h4 id="scrollspyHeading2">Mission</h4>
+        <p style="text-align: justify;">
+          Gagner la confiance des clients de tous horizons, qu'ils évoluent
+          dans les domaines de la finance, de la santé, de l'éducation ou
+          d'autres secteurs, constitue la pierre angulaire de la mission de
+          DAVE PROCODE. Nous nous efforçons d'instaurer une relation de
+          partenariat solide en offrant des solutions numériques fiables
+          et sur mesure, adaptées aux besoins spécifiques de chaque domaine
+          d'activité.
+        </p>
+        <h4 id="scrollspyHeading3">Objectifs</h4>
+        <p style="text-align: justify;">
+          Gagner la confiance des clients de
+          tout types de domaine dont intervient le numérique.
+
+        </p>
+      </div>
+    </div>
+  </div>
 
 
 
+  <h4 id="scrollspyHeading4">Valeurs</h4>
+  <p style="text-align: justify;">...</p>
+  <!-- <h4 id="scrollspyHeading5">Fifth heading</h4>
+        <p>...</p> -->
+</div>
+<!-- fin qui sommes-nous -->
 
+<!-- partenaires -->
+<br><br><br><br>
+<div class="container d-flex align-items-center justify-content-center">
+  <h4><strong>Nos partenaires</strong></h4>
+</div>
+<br>
 
+<img src="/images/Logo Officiel Rostel High-Tech.png" class="img-fluid border rounded " alt="..." width="100">
+<img src="/images/logo.png" class="img-fluid border rounded" alt="..." width="100">
+<img src="..." class="object-fit-fill border rounded" alt="...">
+<img src="..." class="object-fit-scale border rounded" alt="...">
+<img src="..." class="object-fit-none border rounded" alt="...">
+<!-- fin partenaires -->
 
+<!-- pagination -->
 
+<nav aria-label="Page navigation example">
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="#">précédents</a></li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">suivant</a></li>
+  </ul>
+</nav>
 
+<!-- fin pagination -->
 
+<br><br>
 
-
-
-
-
-
-
- 
-        <!-- debut footer -->
-        <footer class="footer-10">
-          <div class="container">
-            <div class="row mb-5 pb-3 no-gutters">
-              <div class="col-md-4 mb-md-0 mb-4 d-flex">
-                <div class="con con-1 w-100 py-5">
-                  <div class="con-info w-100 text-center">
-                    <div class="icon d-flex align-items-center justify-content-center">
-                      <span class="ion-ios-call"></span>
-                    </div>
-                    <div class="text">
-                      <span>+221 77 723 40 84</span><br>
-                      <span>+242 06 485 3160</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 mb-md-0 mb-4 d-flex">
-                <div class="con con-2 w-100 py-5">
-                  <div class="con-info w-100 text-center">
-                    <div class="icon d-flex align-items-center justify-content-center">
-                      <span class="ion-ios-mail"></span>
-                    </div>
-                    <div class="text">
-                      <span>procodedave@gmail.com</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 mb-md-0 mb-4 d-flex">
-                <div class="con con-3 w-100 py-5">
-                  <div class="con-info w-100 text-center">
-                    <div class="icon d-flex align-items-center justify-content-center">
-                      <span class="ion-ios-pin"></span>
-                    </div>
-                    <div class="text">
-                      <span>GY-129 HLM Grand-Yoff</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-7">
-                <div class="row">
-                  <div class="col-md-4 mb-md-0 mb-4">
-                    <h2 class="footer-heading" ><a href="about.html">A propos</a> </h2>
-                    <ul class="list-unstyled">
-                <li><a href="about.html" class="d-block">Notre histoire</a></li>
-                <li><a href="index.html" class="d-block">Acceuil</a></li>
-                <li><a href="about.html" class="d-block">Notre Equipe</a></li>
-              </ul>
-                  </div>
-                  <div class="col-md-4 mb-md-0 mb-4">
-                    <h2 class="footer-heading">Dave procode</h2>
-                    <ul class="list-unstyled">
-                <li><a href="services.html" class="d-block">Nos services</a></li>
-                <li><a href="projets.html" class="d-block">Projets</a></li>
-                <li><a href="contact.html" class="d-block">Contact</a></li>
-                <li><a href="formation.html" class="d-block">Formations</a></li>
-              </ul>
-                  </div>
-                  <div class="col-md-4 mb-md-0 mb-4">
-                    <h2 class="footer-heading">Resources</h2>
-                    <ul class="list-unstyled">
-                <li><a href="projets.html" class="d-block">Projets</a></li>
-                <li><a href="#" class="d-block">Newsletter</a></li>
-                <li><a href="#" class="d-block">Règles de confidentialité</a></li>
-              </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-5 mb-md-0 mb-4">
-                <h2 class="footer-heading">S'inscrire</h2>
-                <form action="#" class="subscribe-form">
-            <div class="form-group d-flex">
-            <input type="text" class="form-control rounded-left" placeholder="Enter email address">
-            <button type="submit" class="form-control submit rounded-right">S'inscrire</button>
-            </div>
-            <span class="subheading">Ne manquer pas nos actualités sur nos différents articles</span>
-          </form>
-              </div>
-            </div>
-            <div class="row mt-5 pt-4 border-top">
-          <div class="col-md-6 col-lg-8 mb-md-0 mb-4">
-          <p class="copyright mb-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-      Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved Dave Procode. | This template is made with <i class="ion-ios-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
-      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-          </div>
-          <div class="col-md-6 col-lg-4 text-md-right">
-            <ul class="ftco-footer-social p-0">
-            <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><span class="ion-logo-twitter"></span></a></li>
-            <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><span class="ion-logo-facebook"></span></a></li>
-            <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><span class="ion-logo-instagram"></span></a></li>
-          </ul>
-          </div>
-        </div>
-          </div>
-        </footer>
-      
-     
-
-         <!-- fin footer -->
-   <script src="bootstrap-footer-20/bootstrap-footer-20/js/jquery.min.js"></script>
-<script src="bootstrap-footer-20/bootstrap-footer-20/js/popper.js"></script>
-<script src="bootstrap-footer-20/bootstrap-footer-20/js/bootstrap.min.js"></script>
-<script src="bootstrap-footer-20/bootstrap-footer-20/js/main.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-   integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</body>
-</html>
+{% endblock content %}

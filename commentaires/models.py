@@ -6,9 +6,7 @@ from utilisateurs.models import Utilisateurs
 
 
 class Commentaires(models.Model):
-    username = models.ForeignKey(Utilisateurs, on_delete=models.CASCADE)
-    id_product_service = models.ForeignKey(
-        Services, on_delete=models.CASCADE, null=True)
+    email_user_commentaire = models.EmailField()
     contenu = models.TextField()
     date = models.DateTimeField(auto_now_add=True)
 
@@ -17,4 +15,4 @@ class Commentaires(models.Model):
         verbose_name_plural = "Commentaires"
 
     def __str__(self):
-        return self.contenu
+        return self.email_user_commentaire

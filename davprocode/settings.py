@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'services',
     'commandes',
     'utilisateurs',
+    'contacts',
 ]
 
 MIDDLEWARE = [
@@ -53,6 +54,18 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+try:
+    from django.contrib.messages import constants as messages
+    MESSAGE_TAGS = {
+        messages.DEBUG: 'alert-info',
+        messages.INFO: 'alert-info',
+        messages.SUCCESS: 'alert-success',
+        messages.ERROR: 'alert-danger',
+        messages.WARNING: 'alert-warning',
+    }
+except Exception as e:
+    pass
 
 ROOT_URLCONF = 'davprocode.urls'
 

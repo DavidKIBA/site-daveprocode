@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 0,5%;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100%;
+}
+
+#why-connectedu, #get-started, #features {
+    padding: 2em;
+    width: 70%;
+    margin: 0 auto;
+}
+
+#why-connectedu ul, #features ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#why-connectedu ul li, #features ul li {
+    margin-bottom: 1em;
+}
+
+#get-started a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2ecc71;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+footer {
+    background-color: #ecf0f1;
+    text-align: center;
+    padding: 1em 0;
+    width: 100%;
+    margin-top: auto;
+}
+

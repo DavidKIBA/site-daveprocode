@@ -1,0 +1,92 @@
+1. Page d'Accueil :
+
+    Brève présentation de ConnectEdu et de ses avantages.
+    Liens vers la page de connexion/inscription et le formulaire d'inscription pour les écoles.
+
+2. Page de Connexion / Inscription :
+
+    Formulaire de connexion pour les administrateurs existants.
+    Formulaire d'inscription pour les écoles, collectant des informations essentielles.
+    Lien vers l'accord sur le contrat préétabli.
+
+3. Accord sur Contrat Prédéfini :
+
+    Affichage des termes et conditions spécifiques.
+    Possibilité pour les écoles de lire et accepter le contrat.
+
+4. Tableau de Bord :
+
+    Barre de navigation statique en haut de la page.
+    Barre latérale statique avec des options alignées.
+    Options dans la barre latérale :
+
+        Gestion des Étudiants :
+            Ajout de la liste des étudiants.
+            Attribution d'un ID unique à chaque élève.
+
+        Communication avec les Parents :
+            Envoi de messages à un parent spécifique.
+            Envoi de messages à tous les parents ou aux parents d'une classe donnée.
+
+        Gestion des Données Académiques :
+            Ajout des résultats des élèves aux examens d'une classe donnée.
+            Insertion de l'emploi du temps d'une classe.
+            Insertion du calendrier scolaire.
+            Marquage du statut financier d'un élève.
+            Ajout de la progression des élèves d'une classe donnée.
+
+        Importation de Données :
+            Ajout d'un fichier Excel pour mettre à jour la liste des apprenants ou autres informations dans la base de données.
+
+5. Gestion des Données :
+
+    Pages spécifiques pour chaque fonctionnalité avec des formulaires intuitifs et conviviaux.
+    Possibilité d'importer des fichiers Excel.
+
+6. Page de Profil de l'École :
+
+    Affichage des informations de l'école.
+    Historique des activités et des mises à jour.
+
+7. Page de Support :
+
+    Contacts pour le support technique.
+    FAQ et ressources d'aide.
+
+Remarques :
+
+    S'assurer que le site soit sécurisé, en particulier pour les données sensibles des écoles et des élèves.
+    Implémenter une gestion des sessions sécurisée.
+    La conception doit être conviviale et intuitive pour les utilisateurs.
+    
+### Titre du Site: ConnectEdu - Plateforme de Gestion Scolaire
+
+#### 1. Page d'Accueil (Introduction)
+La page d'accueil de ConnectEdu accueille les visiteurs avec une présentation engageante des avantages et des fonctionnalités de la plateforme. Des liens vers la page de connexion/inscription et le formulaire d'inscription pour les écoles sont facilement accessibles.
+
+#### 2. Page de Connexion / Inscription
+Cette section permet aux administrateurs d'écoles de se connecter à leurs comptes existants ou de s'inscrire pour rejoindre ConnectEdu. Le formulaire d'inscription collecte des informations essentielles, y compris les coordonnées de l'école, tandis que l'accord sur le contrat préétabli présente les termes et conditions spécifiques.
+
+#### 3. Tableau de Bord
+Le tableau de bord offre une expérience utilisateur intuitive avec une barre de navigation statique en haut de la page et une barre latérale statique. Les fonctionnalités sont organisées de manière claire, permettant aux écoles de gérer efficacement divers aspects de la vie scolaire.
+
+##### 3.1 Gestion des Étudiants
+Cette section permet aux écoles d'ajouter et de gérer la liste des étudiants. Chaque élève se voit attribuer un ID unique basé sur le format spécifié, facilitant une identification rapide.
+
+##### 3.2 Communication avec les Parents
+Facilitant la communication entre l'école et les parents, cette fonctionnalité permet d'envoyer des messages spécifiques à un parent ou à tous les parents d'une classe donnée.
+
+##### 3.3 Gestion des Données Académiques
+Les écoles peuvent ajouter les résultats des élèves aux examens d'une classe, insérer l'emploi du temps, le calendrier scolaire, marquer le statut financier des élèves et suivre la progression des élèves.
+
+##### 3.4 Importation de Données
+Facilitant les mises à jour rapides, cette fonctionnalité permet aux écoles d'ajouter un fichier Excel pour mettre à jour la liste des apprenants ou toute autre information dans la base de données.
+
+#### 4. Gestion des Données
+Chaque fonctionnalité dispose de pages spécifiques avec des formulaires intuitifs et conviviaux. L'importation de données est simplifiée pour assurer une mise à jour efficace.
+
+#### 5. Page de Profil de l'École
+Cette section affiche les informations de l'école et offre un historique des activités et des mises à jour, créant une vue complète de l'engagement de l'école avec la plateforme.
+
+#### 6. Page de Support
+Les utilisateurs peuvent accéder à des contacts pour le support technique, des FAQ et d'autres ressources d'aide pour une utilisation optimale de la plateforme.
