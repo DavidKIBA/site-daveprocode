@@ -9,7 +9,7 @@
   /* Style pour l'image de preload */
   .preload-page::before {
     content: "";
-    background: url('images/preload4.gif') center center no-repeat;
+    background: url('images/loading.gif') center center no-repeat;
     background-size: cover;
     position: fixed;
     top: 0;
@@ -132,6 +132,7 @@ span.valeur4{
 
 
 /************* section a propos **********************/
+s
 /* classe pour définir l'animation de descente */
 .slide-down-animation {
     opacity: 0;
