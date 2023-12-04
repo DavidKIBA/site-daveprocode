@@ -71,6 +71,28 @@ function applyImageOverlay() {
     });
 }
 
+// option voir plus //
+
+<script>
+    // Ajoutez ce script pour activer l'effet "Voir plus"
+    $(document).ready(function () {
+        $(".toggle-text").click(function () {
+            var $this = $(this);
+            var $text = $this.parent().next().find(".truncated-text");
+
+            $text.toggleClass("expanded");
+
+            if ($text.hasClass("expanded")) {
+                $text.text("Création de stratégies de contenu personnalisées, du marketing engageant aux campagnes sur les réseaux sociaux, pour renforcer la notoriété de votre marque.");
+                $this.text("Voir moins");
+            } else {
+                $text.text("Création de stratégies de contenu personnalisées, du marketing engageant aux campagnes sur les réseaux sociaux, pour renforcer la notoriété de votre marque.");
+                $this.text("Voir plus");
+            }
+        });
+    });
+</script>
+
 // Appel de la fonction d'effet de superposition
 applyImageOverlay();
 
