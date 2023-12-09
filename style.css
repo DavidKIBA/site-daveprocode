@@ -1,0 +1,161 @@
+        /************* Preload **********************/
+
+
+/* Style pour la classe preload-page */
+.preload-page {
+    overflow: hidden;
+  }
+  
+  /* Style pour l'image de preload */
+  .preload-page::before {
+    content: "";
+    background: url('images/loading.gif') center center no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999; /* Assure que l'image est au-dessus de tout le contenu */
+  }
+  
+  /* Style pour le contenu principal */
+  .preload-page body {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+  }
+  
+  /* Supprime la classe preload-page après le chargement de la page */
+  .loaded .preload-page::before {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+  }
+  
+  .loaded body {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+
+
+
+/****************** global *********************/
+
+* {
+    margin: 0 ;
+    padding: 0 ;
+    font-family: poppins !important;
+}
+body {
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/****************** menu principal *********************/
+
+.nav-link:hover {
+    color: #001730 !important; /* Couleur de survol spécifiée */
+  }
+
+.navbar-nav li.nav-item {
+    margin-right: 15px; 
+}
+
+.navbar{
+    box-shadow: 0 10px 4px -2px rgba(0, 0, 0, 0.2);
+}
+
+
+/************* image slider  **********************/
+.btn-primary{
+    background-color: #2671F8 !important;
+}
+
+
+
+/************* section valeurs **********************/
+.valeurs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.valeurs span, h3{
+    color: white;
+    text-align: center;
+}
+
+.valeurs span, img.val{
+    width: 40px;
+}
+span.valeur1{
+    background-color: #2671F8;
+    border-radius: 10px 0 0 10px;
+    width: 180px;
+    height: 60px;
+    padding: 15px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+span.valeur2{
+    background-color: #D05A0B;
+    width: 180px;
+    height: 60px;
+    padding: 15px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+span.valeur3{
+    background-color: #2671F8;
+    width: 180px;
+    height: 60px;
+    padding: 15px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+span.valeur4{
+    background-color: #D05A0B;
+    border-radius: 0 10px 10px 0;
+    width: 180px;
+    height: 60px;
+    padding: 15px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+/************* section a propos **********************/
+s
+/* classe pour définir l'animation de descente */
+.slide-down-animation {
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+/*  classe pour déclencher l'animation lorsque l'élément devient visible */
+.slide-down-animation.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/************* section a propos (gauche) **********************/
+
+/************* section a propos (droite) **********************/
+
+
+
+/************* section nos services **********************/
+
+/************* Entete section nos services **********************/
+
+/************* corps section nos services **********************/
+
