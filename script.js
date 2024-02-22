@@ -96,4 +96,4 @@ function applyImageOverlay() {
 // Appel de la fonction d'effet de superposition
 applyImageOverlay();
 
-  
+
