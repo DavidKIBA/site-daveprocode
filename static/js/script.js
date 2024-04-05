@@ -1,14 +1,14 @@
 //Acceille
 document.addEventListener("DOMContentLoaded", function () {
     const images = [
-        "images/header_slide1.jpg",
-        "images/header_slide2.jpg",
-        "images/header_slide3.jpg",
+        "/media/header_slide1.jpg",
+        "/media/header_slide2.jpg",
+        "/media/header_slide3.jpg",
     ];
 
     const imgElement = document.querySelector(".overlay img");
     let currentIndex = 0;
-
+    console.log(imgElement);
     function changeImage() {
         if (currentIndex === 0) {
             // Slide 1: De la droite vers la gauche
@@ -89,7 +89,7 @@ function applyImageOverlay() {
                 $text.text("Création de stratégies de contenu personnalisées, du marketing engageant aux campagnes sur les réseaux sociaux, pour renforcer la notoriété de votre marque.");
                 $this.text("Voir plus");
             }
-        });
+        })
     });
 </script>
 

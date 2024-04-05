@@ -1,89 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    
-    <link rel="stylesheet" href="style.css">
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
-     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700&display=swap" rel="stylesheet">
-	
-		<link rel="stylesheet" href="bootstrap-footer-20/bootstrap-footer-20/css/ionicons.min.css">
-		<link rel="stylesheet" href="bootstrap-footer-20/bootstrap-footer-20/css/style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Acceuil</title>
-    <script src="script.js" defer></script>
-
-
-</head>
-<body>
+{% extends 'base/base.html' %}
      
-
-    <!--  menu principal   -->
-    <nav class="navbar  navbar-expand-lg container-fluid navbar-light" style="position: fixed; z-index: 10; background-color:#2671F8; margin-top: 0px;" >
-      <div class="container-fluid">
-        <a class="navbar-brand " href="https://maps.app.goo.gl/Q3yaSTd4J3cmWXrU8"><img src="images/Logo dave procode officiel_Plan de travail 1.png" width="60"></a>
-        <button class="navbar-toggler navbar-toggler-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button> 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto ms-10 mb-2 mb-lg-0">
-            <li class="nav-item ">
-              <a class="nav-link active " aria-current="page" href="index.html" style="color: white;"><strong>Acceuil</strong></a>
-            </li>
-            <li class="nav-item ">
-              <a class="nav-link" href="about.html" style="color: white;"><strong>A propos</strong></a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
-              <strong>Services</strong>
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="services.html" style="color: #001730;">Developpement web</a></li>
-                <li><a class="dropdown-item" href="services.html" style="color: #001730;">Marketing Digital</a></li>
-                <li><a class="dropdown-item" href="services.html" style="color: #001730;">Maintenace informatique</a></li>
-                <li><a class="dropdown-item" href="services.html" style="color: #001730;">Photographie & vidéographie</a></li>
-                <li><a class="dropdown-item" href="services.html" style="color: #001730;">Infographie</a></li>
-                <li><a class="dropdown-item" href="services.html" style="color: #001730;">Design</a></li>
-              </ul>
-            </li>
-
-            <li class="nav-item dropdown ">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
-              <strong>Formations</strong>
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="formation.html" style="color: #001730;">Developpement web</a></li>
-                <li><a class="dropdown-item" href="formation.html" style="color: #001730;">Marketing Digital</a></li>
-                <li><a class="dropdown-item" href="formation.html" style="color: #001730;">Infographie</a></li>
-                <li><a class="dropdown-item" href="formation.html" style="color: #001730;">Design</a></li>
-                <li><a class="dropdown-item" href="formation.html" style="color: #001730;">Bureautique</a></li>
-              </ul>
-            </li>
-            <li class="nav-item ">
-              <a class="nav-link" href="articles.html" style="color: white;"><strong>Articles</strong></a>
-            </li>
-            <!-- <li class="nav-item ">
-              <a class="nav-link" href="projets.html" style="color: white;"><strong>Projets</strong></a>
-            </li> -->
-
-            <li class="nav-item r">
-              <a class="nav-link" href="contact.html" style="color: white;"><strong>Contact</strong></a>
-            </li>
-          </ul>
-          <form class="d-flex " role="search">
-            <input class="form-control me-2 modal-fullscreen-sm-down" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn" type="submit" style="background-color: #D05A0B;"><img src="assets/search.png" alt="" width="30"></button>
-          </form>
-        </div>
-      </div>
-    </nav>
-
-   <!-- fin menu principal -->
-     
-
+{% block content %}
    
     <!--  section entete   -->
 
@@ -92,7 +9,7 @@
   <div class="carousel-inner">
 
     <div class="carousel-item active text-center">
-      <img src="images/about1.jpg" class="d-block " alt="..." style="height: 350px; width: 100%;  object-fit: cover;" >
+      <img src="/media/about1.jpg" class="d-block " alt="..." style="height: 350px; width: 100%;  object-fit: cover;" >
       <div class="carousel-caption d-none d-md-block vertical-center horizontal-center">
         <h1 class="display-5" style="position: absolute; top: -100px; font-family: poppins;">
           <strong>
@@ -168,7 +85,7 @@
               </p>
             </div>
             <div class="col">
-              <img src="images/header_slide1.jpg" class="card-img-top img-fluid" alt="..." style="height: 500px; width: 100%; object-fit: cover; border-radius: 20px 20px 20px 20px;">
+              <img src="/media/header_slide1.jpg" class="card-img-top img-fluid" alt="..." style="height: 500px; width: 100%; object-fit: cover; border-radius: 20px 20px 20px 20px;">
 
             </div>
           </div>
@@ -177,7 +94,7 @@
         <div class="container text-center">
           <div class="row align-items-center">
             <div class="col">
-              <img src="images/objectif.jpg" class="card-img-top img-fluid" alt="..." style="height: 500px; width: 100%; object-fit: cover; border-radius: 20px 20px 20px 20px;">
+              <img src="/media/objectif.jpg" class="card-img-top img-fluid" alt="..." style="height: 500px; width: 100%; object-fit: cover; border-radius: 20px 20px 20px 20px;">
             </div>
             <div class="col">
              
@@ -226,7 +143,7 @@
     <div class="d-flex flex-wrap justify-content-around">
       <!-- Première ligne -->
       <div class="card mb-3" style="width: 18rem; border-radius: 20px;">
-        <img src="images/Duchesse.png" class="card-img-top" alt="..." style="height: 200px; border-radius: 20px 20px 0 0; object-fit: cover;">
+        <img src="/media/Duchesse.png" class="card-img-top" alt="..." style="height: 200px; border-radius: 20px 20px 0 0; object-fit: cover;">
         <div class="card-body text-center" style="height: auto;">
           <h6 class="card-title"><strong>Thérésa Duchesse BANDZOUZI</strong></h6>
           <h6 class="card-title">Developper full stack</h6>
@@ -235,7 +152,7 @@
       </div>
     
       <div class="card mb-3" style="width: 18rem; border-radius: 20px;">
-        <img src="images/Elmiche.png" class="card-img-top" alt="..." style="height: 200px; border-radius: 20px 20px 0 0; object-fit: cover;">
+        <img src="/media/Elmiche.png" class="card-img-top" alt="..." style="height: 200px; border-radius: 20px 20px 0 0; object-fit: cover;">
         <div class="card-body text-center" style="height: auto;">
           <h6 class="card-title"><strong>Striche Elmiche IKONGA</strong></h6>
           <h6 class="card-title">Developper full stack</h6>
@@ -244,7 +161,7 @@
       </div>
     
       <div class="card mb-3" style="width: 18rem; border-radius: 20px;">
-        <img src="images/webimg.jpg" class="card-img-top" alt="..." style="height: 200px; border-radius: 20px 20px 0 0; object-fit: cover;">
+        <img src="/media/webimg.jpg" class="card-img-top" alt="..." style="height: 200px; border-radius: 20px 20px 0 0; object-fit: cover;">
         <div class="card-body text-center" style="height: auto;">
           <h6 class="card-title"><strong>Myvek Pabocha PANGOU</strong></h6>
           <h6 class="card-title">Developper back-end</h6>
@@ -258,7 +175,7 @@
     <div class="d-flex flex-wrap justify-content-around">
       <!-- Deuxième ligne -->
       <div class="card mb-3" style="width: 18rem; border-radius: 20px;">
-        <img src="images/dav.png" class="card-img-top" alt="..." style="height: 200px; border-radius: 20px 20px 0 0; object-fit:cover; ">
+        <img src="/media/dav.png" class="card-img-top" alt="..." style="height: 200px; border-radius: 20px 20px 0 0; object-fit:cover; ">
         <div class="card-body text-center" style="height: auto;">
           <h6 class="card-title"><strong>David KIBA</strong></h6>
           <h6 class="card-title">Web Designer</h6>
@@ -267,7 +184,7 @@
       </div>
     
       <div class="card mb-3" style="width: 18rem; border-radius: 20px;">
-        <img src="images/webimg.jpg" class="card-img-top" alt="..." style="height: 200px; border-radius: 20px 20px 0 0; object-fit: cover;">
+        <img src="/media/webimg.jpg" class="card-img-top" alt="..." style="height: 200px; border-radius: 20px 20px 0 0; object-fit: cover;">
         <div class="card-body text-center" style="height: auto;">
           <h6 class="card-title"><strong>Christ MAKITA</strong></h6>
           <h6 class="card-title">Business developper</h6>
@@ -276,7 +193,7 @@
       </div>
     
       <div class="card mb-3" style="width: 18rem; border-radius: 20px;">
-        <img src="images/webimg.jpg" class="card-img-top" alt="..." style="height: 200px; border-radius: 20px 20px 0 0; object-fit: cover;">
+        <img src="/media/webimg.jpg" class="card-img-top" alt="..." style="height: 200px; border-radius: 20px 20px 0 0; object-fit: cover;">
         <div class="card-body text-center" style="height: auto;">
           <h6 class="card-title"><strong>Dieu-veille Juslavy BANZOUZI</strong></h6>
           <h6 class="card-title">Office Manager</h6>
@@ -289,7 +206,7 @@
     <!-- troisième ligne -->
        
       <div class="card mb-3" style="width: 18rem; border-radius: 20px;">
-        <img src="images/Eunice.png" class="card-img-top" alt="..." style="height: 200px; border-radius: 20px 20px 0 0; object-fit: cover; ">
+        <img src="/media/Eunice.png" class="card-img-top" alt="..." style="height: 200px; border-radius: 20px 20px 0 0; object-fit: cover; ">
         <div class="card-body text-center" style="height: auto;">
           <h6 class="card-title"><strong>Eunice Exaucée MOUTSEMO</strong></h6>
           <h6 class="card-title">Gérante</h6>
@@ -316,8 +233,8 @@
     </div>
     <br>
 
-     <img src="images/Logo Officiel Rostel High-Tech.png" class="img-fluid border rounded " alt="..." width="100">
-     <img src="images/logo.png" class="img-fluid border rounded" alt="..." width="100">
+     <img src="/media/Logo Officiel Rostel High-Tech.png" class="img-fluid border rounded " alt="..." width="100">
+     <img src="/media/logo.png" class="img-fluid border rounded" alt="..." width="100">
      
      <!-- fin partenaires -->
      
@@ -339,127 +256,6 @@
     
      <br><br>
 
+{% endblock content %}
 
-
-
-
-
-
-
-
-
-
- 
-
-
-        <!-- debut footer -->
-        <footer class="footer-10">
-          <div class="container">
-            <div class="row mb-5 pb-3 no-gutters">
-              <div class="col-md-4 mb-md-0 mb-4 d-flex">
-                <div class="con con-1 w-100 py-5">
-                  <div class="con-info w-100 text-center">
-                    <div class="icon d-flex align-items-center justify-content-center">
-                      <span class="ion-ios-call"></span>
-                    </div>
-                    <div class="text">
-                      <span>+221 77 723 40 84</span><br>
-                      <span>+242 06 485 3160</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 mb-md-0 mb-4 d-flex">
-                <div class="con con-2 w-100 py-5">
-                  <div class="con-info w-100 text-center">
-                    <div class="icon d-flex align-items-center justify-content-center">
-                      <span class="ion-ios-mail"></span>
-                    </div>
-                    <div class="text">
-                      <span>procodedave@gmail.com</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 mb-md-0 mb-4 d-flex">
-                <div class="con con-3 w-100 py-5">
-                  <div class="con-info w-100 text-center">
-                    <div class="icon d-flex align-items-center justify-content-center">
-                      <span class="ion-ios-pin"></span>
-                    </div>
-                    <div class="text">
-                      <span>GY-129 HLM Grand-Yoff</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-7">
-                <div class="row">
-                  <div class="col-md-4 mb-md-0 mb-4">
-                    <h2 class="footer-heading" ><a href="about.html">A propos</a> </h2>
-                    <ul class="list-unstyled">
-                <li><a href="about.html" class="d-block">Notre histoire</a></li>
-                <li><a href="index.html" class="d-block">Acceuil</a></li>
-                <li><a href="about.html" class="d-block">Notre Equipe</a></li>
-              </ul>
-                  </div>
-                  <div class="col-md-4 mb-md-0 mb-4">
-                    <h2 class="footer-heading">Dave procode</h2>
-                    <ul class="list-unstyled">
-                <li><a href="services.html" class="d-block">Nos services</a></li>
-                <li><a href="projets.html" class="d-block">Projets</a></li>
-                <li><a href="contact.html" class="d-block">Contact</a></li>
-                <li><a href="formation.html" class="d-block">Formations</a></li>
-              </ul>
-                  </div>
-                  <div class="col-md-4 mb-md-0 mb-4">
-                    <h2 class="footer-heading">Resources</h2>
-                    <ul class="list-unstyled">
-                <li><a href="projets.html" class="d-block">Projets</a></li>
-                <li><a href="#" class="d-block">Newsletter</a></li>
-                <li><a href="#" class="d-block">Règles de confidentialité</a></li>
-              </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-5 mb-md-0 mb-4">
-                <h2 class="footer-heading">S'inscrire</h2>
-                <form action="#" class="subscribe-form">
-            <div class="form-group d-flex">
-            <input type="text" class="form-control rounded-left" placeholder="Enter email address">
-            <button type="submit" class="form-control submit rounded-right">S'inscrire</button>
-            </div>
-            <span class="subheading">Ne manquer pas nos actualités sur nos différents articles</span>
-          </form>
-              </div>
-            </div>
-            <div class="row mt-5 pt-4 border-top">
-          <div class="col-md-6 col-lg-8 mb-md-0 mb-4">
-          <p class="copyright mb-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-      Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved Dave Procode. | This template is made with <i class="ion-ios-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
-      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-          </div>
-          <div class="col-md-6 col-lg-4 text-md-right">
-            <ul class="ftco-footer-social p-0">
-            <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><span class="ion-logo-twitter"></span></a></li>
-            <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><span class="ion-logo-facebook"></span></a></li>
-            <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><span class="ion-logo-instagram"></span></a></li>
-          </ul>
-          </div>
-        </div>
-          </div>
-        </footer>
-
-         <!-- fin footer -->
-   <script src="bootstrap-footer-20/bootstrap-footer-20/js/jquery.min.js"></script>
-<script src="bootstrap-footer-20/bootstrap-footer-20/js/popper.js"></script>
-<script src="bootstrap-footer-20/bootstrap-footer-20/js/bootstrap.min.js"></script>
-<script src="bootstrap-footer-20/bootstrap-footer-20/js/main.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-   integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
-  
-</body>
-</html>
+       
