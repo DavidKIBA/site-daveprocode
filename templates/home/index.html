@@ -1,361 +1,663 @@
-{% extends 'base/base.html' %}
-{% block content %}
+{% extends 'base/base.html' %} {% block content %}
 
-<!--  section entete de slide d'acceuil   -->
-
-<div id="carouselExampleCaptions" class="carousel slide" style="z-index: 1;">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-      aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+<!-- Carousel Start -->
+<div class="container-fluid p-0 pb-5">
+  <div
+    class="owl-carousel header-carousel position-relative owl-loaded owl-drag"
+  >
+    <div class="owl-carousel-item position-relative">
+      <img class="img-fluid" src="/media/header_slide1.jpg" alt="" />
+      <div
+        class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+        style="background: #00173096"
+      >
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-8 text-center">
+              <h5 class="text-white text-uppercase mb-3 animated slideInDown">
+                Bienvenue sur Dave Procode
+              </h5>
+              <h1 class="display-3 text-white animated slideInDown mb-4">
+                L'alliance parfaite de la création et du code
+              </h1>
+              <p class="fs-5 fw-medium text-white mb-4 pb-2">
+                Fiabilité à chaque solution, expérience garantie
+              </p>
+              <a
+                href="#devisacceuil"
+                class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft"
+                >Demander un devis</a
+              >
+              <a
+                href=""
+                class="btn btn-light py-md-3 px-md-5 animated slideInRight"
+                >A propos</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="owl-carousel-item position-relative">
+      <img class="img-fluid" src="/media/header_slide2.jpg" alt="" />
+      <div
+        class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+        style="background: #00173096"
+      >
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-8 text-center">
+              <h5 class="text-white text-uppercase mb-3 animated slideInDown">
+                Bienvenue sur Dave Procode
+              </h5>
+              <h1 class="display-3 text-white animated slideInDown mb-4">
+                L'alliance parfaite de la création et du code
+              </h1>
+              <p class="fs-5 fw-medium text-white mb-4 pb-2">
+                Fiabilité à chaque solution, expérience garantie
+              </p>
+              <a
+                href="#devisacceuil"
+                class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft"
+                >Demander un devis</a
+              >
+              <a
+                href=""
+                class="btn btn-light py-md-3 px-md-5 animated slideInRight"
+                >A propos</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="owl-carousel-item position-relative">
+      <img
+        class="img-fluid"
+        src="/media/header_slide3.jpg"
+        alt=""
+        style="object-fit: cover"
+      />
+      <div
+        class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+        style="background: #00173096"
+      >
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-8 text-center">
+              <h5 class="text-white text-uppercase mb-3 animated slideInDown">
+                Bienvenue sur Dave Procode
+              </h5>
+              <h1 class="display-3 text-white animated slideInDown mb-4">
+                L'alliance parfaite de la création et du code
+              </h1>
+              <p class="fs-5 fw-medium text-white mb-4 pb-2">
+                Fiabilité à chaque solution, expérience garantie
+              </p>
+              <a
+                href="#devisacceuil"
+                class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft"
+                >Demander un devis</a
+              >
+              <a
+                href=""
+                class="btn btn-light py-md-3 px-md-5 animated slideInRight"
+                >A propos</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="carousel-inner">
-
-    <div class="carousel-item active text-center">
-      <img src="images/header_slide11.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block vertical-center">
-        <h1 class="display-3" style="position: absolute; top: -450px; font-family: poppins;">
-          <strong>
-            L'alliance parfaite de la création et du code
-          </strong>
-        </h1>
-
-        <h1 class="display-6" style="position: absolute; top: -250px; color: #D05A0B; ">
-          <strong>
-            Fiabilité à chaque solution, expérience garantie
-          </strong>
-        </h1>
-
-      </div>
-    </div>
-    <div class="carousel-item text-center">
-      <img src="images/header_slide22.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block vertical-center">
-        <h1 class="display-3" style="position: absolute; top: -450px; font-family: poppins;">
-          <strong>
-            L'alliance parfaite de la création et du code
-          </strong>
-        </h1>
-
-        <h1 class="display-6" style="position: absolute; top: -250px; color: #D05A0B; ">
-          <strong>
-            Fiabilité à chaque solution, expérience garantie
-          </strong>
-        </h1>
-
-      </div>
-    </div>
-    <div class="carousel-item text-center">
-      <img src="images/header_slide33.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block vertical-center">
-        <h1 class="display-3" style="position: absolute; top: -450px; font-family: poppins;">
-          <strong>
-            L'alliance parfaite de la création et du code
-          </strong>
-        </h1>
-
-        <h1 class="display-6" style="position: absolute; top: -250px; color: #D05A0B; ">
-          <strong>
-            Fiabilité à chaque solution, expérience garantie
-          </strong>
-        </h1>
-
-      </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-
 </div>
+<!-- Carousel End -->
+<!-- <div class="container-fluid p-0 pb-5">
+  <div
+    class="owl-carousel header-carousel position-relative owl-loaded owl-drag"
+  >
+    <div class="owl-stage-outer">
+      <div
+        class="owl-stage"
+        style="
+          transform: translate3d(-1784px, 0px, 0px);
+          transition: all 0s ease 0s;
+          width: 3122px;
+        "
+      >
+        <div class="owl-item cloned" style="width: 446px">
+          <div class="owl-carousel-item position-relative">
+            <img class="img-fluid" src="/media/header_slide2.jpg" alt="" />
+            <div
+              class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+              style="background: #00173096"
+            >
+              <div class="container">
+                <div class="row justify-content-center">
+                  <div class="col-12 col-lg-8 text-center">
+                    <h5
+                      class="text-white text-uppercase mb-3 animated slideInDown"
+                    >
+                      Bienvenue sur Dave Procode
+                    </h5>
+                    <h1 class="display-3 text-white animated slideInDown mb-4">
+                      L'alliance parfaite de la création et du code
+                    </h1>
+                    <p class="fs-5 fw-medium text-white mb-4 pb-2">
+                      Fiabilité à chaque solution, expérience garantie
+                    </p>
+                    <a
+                      href="#devisacceuil"
+                      class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft"
+                      >Demander un devis</a
+                    >
+                    <a
+                      href=""
+                      class="btn btn-light py-md-3 px-md-5 animated slideInRight"
+                      >A propos</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+<!-- <div class="owl-nav">
+      <div class="owl-prev"><i class="bi bi-chevron-left"></i></div>
+      <div class="owl-next"><i class="bi bi-chevron-right"></i></div>
+    </div>
+    <div class="owl-dots">
+      <div class="owl-dot"><span></span></div>
+      <div class="owl-dot"><span></span></div>
+      <div class="owl-dot active"><span></span></div>
+    </div>
+  </div>
+</div> -->
 
 <!--   section valeurs -->
 
-<br><br>
+<br /><br />
 
 <div class="container text-center">
   <div class="row align-items-center">
-    <div class="col" style="background-color: #2671F8;">
-      <img src="/images/assets/Creativite.png" class="val"><br>
-      <h4>
-        <font color="white">Créativité</font>
-      </h4>
+    <div class="col" style="background-color: #2671f8">
+      <img src="/media/assets/Creativite.png" class="val" /><br />
+      <h4><font color="white">Créativité</font></h4>
     </div>
-    <div class="col" style="background-color: #D05A0B;">
-      <img src="/images/assets/professionalisme.png" class="val"><br>
-      <h4>
-        <font color="white">Professionnalisme</font>
-      </h4>
+    <div class="col" style="background-color: #d05a0b">
+      <img src="/media/assets/professionalisme.png" class="val" /><br />
+      <h4><font color="white">Professionnalisme</font></h4>
     </div>
-    <div class="col" style="background-color: #2671F8;">
-      <img src="/images/assets/perfection.png" class="val"><br>
-      <h4>
-        <font color="white">Perfection</font>
-      </h4>
+    <div class="col" style="background-color: #2671f8">
+      <img src="/media/assets/perfection.png" class="val" /><br />
+      <h4><font color="white">Perfection</font></h4>
     </div>
-    <div class="col" style="background-color: #D05A0B;">
-      <img src="/images/assets/efficacite.png" class="val"><br>
-      <h4>
-        <font color="white">Efficacité</font>
-      </h4>
+    <div class="col" style="background-color: #d05a0b">
+      <img src="/media/assets/efficacite.png" class="val" /><br />
+      <h4><font color="white">Efficacité</font></h4>
     </div>
   </div>
 </div>
 
-<br><br>
+<br /><br />
 <!-- fin section valeurs-->
-
 
 <!-- A propos -->
 
-<div style="height: 100px; display: flex;
+<div
+  style="
+    height: 100px;
+    display: flex;
     align-items: center;
-    justify-content: center;">
-
-  <div class="h-100 d-inline-block" style="width: 500px;">
-    <h4><strong>Qui sommes-nous?</strong></h4>
-    <p style="text-align: justify; padding-right: 10px;">En tant qu'entreprise commerciale, nous mettons un point
-      d'honneur à offrir des solutions
-      informatiques sur mesure à nos clients. Nous sommes convaincus que chaque projet est unique
-      et que les besoins de chacun diffèrent. C'est pourquoi nous mettons à leur disposition une
-      équipe de professionnels passionnés et expérimentés, capables de relever tous les défis en
-      matière de programmation et de graphisme. Nous sommes fiers de fournir un service de qualité
-      supérieure à nos clients et de contribuer à leur succès sur le marché numérique.</p>
+    justify-content: center;
+  "
+>
+  <div class="h-100 d-inline-block" style="width: 500px">
+    <h4 style="color: #001730"><strong>Qui sommes-nous?</strong></h4>
+    <p style="text-align: justify; padding-right: 10px">
+      En tant qu'entreprise commerciale, nous mettons un point d'honneur à
+      offrir des solutions informatiques sur mesure à nos clients. Nous sommes
+      convaincus que chaque projet est unique et que les besoins de chacun
+      diffèrent. C'est pourquoi nous mettons à leur disposition une équipe de
+      professionnels passionnés et expérimentés, capables de relever tous les
+      défis en matière de programmation et de graphisme. Nous sommes fiers de
+      fournir un service de qualité supérieure à nos clients et de contribuer à
+      leur succès sur le marché numérique.
+    </p>
     <a href="about.html" class="btn btn-primary">voir plus</a>
   </div>
 
-  <div class="h-100 d-inline-block" style="width: 500px;">
-    <img src="images/header_slide2.jpg" class="img-fluid" alt="...">
+  <div class="h-100 d-inline-block" style="width: 500px">
+    <img src="/media/header_slide2.jpg" class="img-fluid" alt="..." />
   </div>
-
 </div>
-<br><br><br><br><br><br> <br><br><br><br><br>
+<br /><br /><br /><br /><br /><br />
+<br /><br /><br /><br /><br />
 <!-- fin A propos -->
 
-<div class="container d-flex align-items-center justify-content-center">
+<!-- services -->
+
+<div
+  class="container d-flex align-items-center justify-content-center"
+  style="color: #001730"
+>
   <h4><strong>Nos services</strong></h4>
 </div>
-<br>
+<br />
 
-<!-- services -->
 <div class="d-flex flex-wrap justify-content-around">
   <!-- Première ligne -->
-  <div class="card mb-3" style="width: 18rem; border-radius: 20px;">
-    <img src="images/webimg.jpg" class="card-img-top" alt="..." style="height: 200px; border-radius: 20px 20px 0 0;">
+  <div class="card mb-3" style="width: 18rem; border-radius: 20px">
+    <img
+      src="/media/webimg.jpg"
+      class="card-img-top"
+      alt="..."
+      style="height: 200px; border-radius: 20px 20px 0 0; object-fit: cover"
+    />
     <div class="card-body text-center">
       <h5 class="card-title">Developpement web</h5>
-      <p class="card-text"> sites web interactifs, applications innovantes. Nous concrétisons vos idées avec une
-        expertise de pointe.</p>
-      <a href="#" class="btn btn-primary">Voir plus</a>
+      <p class="card-text">
+        sites web interactifs, applications innovantes. Nous concrétisons vos
+        idées avec une expertise de pointe.
+      </p>
+      <a href="services.html" class="btn btn-primary">Voir plus</a>
     </div>
   </div>
 
-  <div class="card mb-3" style="width: 18rem; border-radius: 20px;">
-    <img src="images/marketingimg.jpg" class="card-img-top img-fluid" alt="..."
-      style="height: 200px; border-radius: 20px 20px 0 0;">
+  <div class="card mb-3" style="width: 18rem; border-radius: 20px">
+    <img
+      src="/media/marketingimg.jpg"
+      class="card-img-top img-fluid"
+      alt="..."
+      style="height: 200px; border-radius: 20px 20px 0 0; object-fit: cover"
+    />
     <div class="card-body text-center">
       <h5 class="card-title">Marketing Digital</h5>
-      <p class="card-text">Du référencement à la stratégie sur les réseaux sociaux, nous maximisons votre présence en
-        ligne pour atteindre votre public cible.</p>
-      <a href="#" class="btn btn-primary">Voir plus</a>
+      <p class="card-text">
+        Du référencement à la stratégie sur les réseaux sociaux, nous maximisons
+        votre présence en ligne pour atteindre votre public cible.
+      </p>
+      <a href="services.html" class="btn btn-primary">Voir plus</a>
     </div>
   </div>
 
-  <div class="card mb-3" style="width: 18rem; border-radius: 20px;">
-    <img src="images/design.jpg" class="card-img-top img-fluid" alt="..."
-      style="height: 200px; border-radius: 20px 20px 0 0;">
+  <div class="card mb-3" style="width: 18rem; border-radius: 20px">
+    <img
+      src="/media/design.jpg"
+      class="card-img-top img-fluid"
+      alt="..."
+      style="height: 200px; border-radius: 20px 20px 0 0; object-fit: cover"
+    />
     <div class="card-body text-center">
       <h5 class="card-title">Design</h5>
-      <p class="card-text">Conception graphique, interfaces élégantes : chaque pixel compte pour une expérience
-        visuelle mémorable.</p>
-      <a href="#" class="btn btn-primary">voir plus</a>
+      <p class="card-text">
+        Conception graphique, interfaces élégantes : chaque pixel compte pour
+        une expérience visuelle mémorable.
+      </p>
+      <a href="services.html" class="btn btn-primary">voir plus</a>
     </div>
   </div>
-
 </div>
-<br>
+<br />
 
 <div class="d-flex flex-wrap justify-content-around">
   <!-- Deuxième ligne -->
-  <div class="card mb-3" style="width: 18rem; border-radius: 20px;">
-    <img src="images/infographieimg.jpg" class="card-img-top img-fluid" alt="..."
-      style="height: 200px; border-radius: 20px 20px 0 0;">
+  <div class="card mb-3" style="width: 18rem; border-radius: 20px">
+    <img
+      src="/media/infographieimg.jpg"
+      class="card-img-top img-fluid"
+      alt="..."
+      style="height: 200px; border-radius: 20px 20px 0 0; object-fit: cover"
+    />
     <div class="card-body text-center">
       <h5 class="card-title">Infographie</h5>
-      <p class="card-text">Notre équipe d'infographistes donne vie à vos idées avec des graphismes créatifs et des
-        illustrations captivantes.</p>
-      <a href="#" class="btn btn-primary">voir plus</a>
+      <p class="card-text">
+        Notre équipe d'infographistes donne vie à vos idées avec des graphismes
+        créatifs et des illustrations captivantes.
+      </p>
+      <a href="services.html" class="btn btn-primary">voir plus</a>
     </div>
   </div>
 
-  <div class="card mb-3" style="width: 18rem; border-radius: 20px;">
-    <img src="images/maintenance.jpg" class="card-img-top img-fluid" alt="..."
-      style="height: 200px; border-radius: 20px 20px 0 0;">
+  <div class="card mb-3" style="width: 18rem; border-radius: 20px">
+    <img
+      src="/media/maintenance.jpg"
+      class="card-img-top img-fluid"
+      alt="..."
+      style="height: 200px; border-radius: 20px 20px 0 0; object-fit: cover"
+    />
     <div class="card-body text-center">
       <h5 class="card-title">Maintenance</h5>
-      <p class="card-text">Avec notre expertise en maintenance informatique, assurez la performance continue de votre
-        système sans interruption.</p>
-      <a href="#" class="btn btn-primary">voir plus</a>
+      <p class="card-text">
+        Avec notre expertise en maintenance informatique, assurez la performance
+        continue de votre système sans interruption.
+      </p>
+      <a href="services.html" class="btn btn-primary">voir plus</a>
     </div>
   </div>
 
-  <div class="card mb-3" style="width: 18rem; border-radius: 20px;">
-    <img src="images/formation.jpg" class="card-img-top img-fluid" alt="..."
-      style="height: 200px; border-radius: 20px 20px 0 0;">
+  <div class="card mb-3" style="width: 18rem; border-radius: 20px">
+    <img
+      src="/media/formation.jpg"
+      class="card-img-top img-fluid"
+      alt="..."
+      style="height: 200px; border-radius: 20px 20px 0 0; object-fit: cover"
+    />
     <div class="card-body text-center">
-      <h5 class="card-title">Formations</h5>
-      <p class="card-text"> Nos formations personnalisées vous équipent des compétences essentielles pour exceller
-        dans le monde digital en constante évolution.</p>
-      <a href="#" class="btn btn-primary">voir plus</a>
+      <h5 class="card-title" style="color: #001730">Formations</h5>
+      <p class="card-text">
+        Nos formations personnalisées vous équipent des compétences essentielles
+        pour exceller dans le monde digital en constante évolution.
+      </p>
+      <a href="formation.html" class="btn btn-primary">voir plus</a>
     </div>
   </div>
 </div>
-
-
 
 <!-- fin services -->
 
-<!-- pourquoi nous choisir -->
-<br><br><br>
-<div class="container d-flex align-items-center justify-content-center">
-  <h4><strong>Pourquoi nous choisir</strong></h4>
-</div>
-<br>
-
-<div class="container text-center">
-  <div class="row">
-    <div class="col">
-      First in DOM, no order applied
-    </div>
-    <div class="col">
-      <div class="col order-5">
-        <video width="320" height="240" controls au>
-          <source src="/images/videos/Lundi 1.mp4" type="video/mp4">
-
-        </video>
+<!-- Feature Start -->
+<div
+  class="container-fluid bg-light overflow-hidden px-lg-0"
+  style="margin: 6rem 0"
+>
+  <div class="container feature px-lg-0">
+    <div class="row g-0 mx-lg-0">
+      <div class="col-lg-6 feature-text py-5 wow fadeIn" data-wow-delay="0.5s">
+        <div class="p-lg-5 ps-lg-0">
+          <div class="section-title text-start">
+            <h3 class="display-7 mb-4" style="color: #001730">
+              Pourquoi nous choisir
+            </h3>
+          </div>
+          <p class="mb-4 pb-2 text-justify" style="color: #001730">
+            <strong>Travail professionnel</strong><br />
+            Nous sommes engagés à respecter les normes les plus élevées en
+            matière de qualité et de professionnalisme, offrant des solutions
+            informatiques innovantes et durables pour les entreprises de toutes
+            tailles.
+          </p>
+          <div class="row g-4">
+            <div class="col-6">
+              <div class="d-flex align-items-center">
+                <div
+                  class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white"
+                  style="width: 60px; height: 60px"
+                >
+                  <i class="fa fa-check fa-2x text-primary"></i>
+                </div>
+                <div class="ms-4">
+                  <h5 class="mb-0" style="color: #001730">Services</h5>
+                  <p class="mb-2" style="color: #001730">qualité</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="d-flex align-items-center">
+                <div
+                  class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white"
+                  style="width: 60px; height: 60px"
+                >
+                  <i class="fa fa-user-check fa-2x text-primary"></i>
+                </div>
+                <div class="ms-4">
+                  <h5 class="mb-0" style="color: #001730">Travail</h5>
+                  <p class="mb-2" style="color: #001730">Creatifs</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="d-flex align-items-center">
+                <div
+                  class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white"
+                  style="width: 60px; height: 60px"
+                >
+                  <i class="fa fa-drafting-compass fa-2x text-primary"></i>
+                </div>
+                <div class="ms-4">
+                  <h5 class="mb-0" style="color: #001730">Devis</h5>
+                  <p class="mb-2" style="color: #001730">gratuit</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="d-flex align-items-center">
+                <div
+                  class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white"
+                  style="width: 60px; height: 60px"
+                >
+                  <i class="fa fa-headphones fa-2x text-primary"></i>
+                </div>
+                <div class="ms-4">
+                  <h5 class="mb-0" style="color: #001730">Assistance</h5>
+                  <p class="mb-2" style="color: #001730">Client</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-
+      <div class="col-lg-6 pe-lg-0" style="min-height: 400px">
+        <div class="position-relative h-100">
+          <img
+            class="position-absolute img-fluid w-100 h-100"
+            src="/media/about.jpg"
+            style="object-fit: cover"
+            alt=""
+          />
+        </div>
+      </div>
     </div>
-    <div class="col order-1">
-      Third in DOM, with an order of 1
-    </div>
-
   </div>
 </div>
 
 <!-- fin pourquoi nous choisir -->
 
-<!-- demande de devis -->
+<!-- Demande de devis -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+  <div class="container py-5">
+    <div class="row g-5">
+      <div class="col-lg-7">
+        <div class="section-title position-relative pb-3 mb-5">
+          <h3 class="mb-0" style="color: #001730" id="devisacceuil">
+            Voulez-vous un devis gratuit? Laissez un message
+          </h3>
+        </div>
+        <div class="row gx-3">
+          <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
+            <h5 class="mb-4" style="color: #001730">
+              <i
+                class="fa fa-reply text-primary me-3"
+                style="color: #d05a0b !important"
+              ></i
+              >Reponse dans 24 heures
+            </h5>
+          </div>
+          <div class="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
+            <h5 class="mb-4" style="color: #001730">
+              <i
+                class="fa fa-phone-alt text-primary me-3"
+                style="color: #001730 !important"
+              ></i
+              >Assistance 24/24
+            </h5>
+          </div>
+        </div>
+        <p class="mb-4"></p>
+        <p>
+          Faites une demande de devis dès maintenant et découvrez comment notre
+          équipe dévouée peut vous offrir une solution personnalisée adaptée à
+          vos exigences.
+        </p>
+        <p>
+          Nous vous garantissons un service de qualité, des tarifs compétitifs
+          et une réponse rapide à votre demande. N'hésitez pas à nous contacter,
+          nous sommes impatients de travailler avec vous pour réaliser vos
+          projets.
+        </p>
+        <div
+          class="d-flex align-items-center mt-2 wow zoomIn"
+          data-wow-delay="0.6s"
+        >
+          <div
+            class="bg-primary d-flex align-items-center justify-content-center rounded"
+            style="width: 60px; height: 60px; background-color: #d05a0b"
+          >
+            <i class="fa fa-phone-alt text-white"></i>
+          </div>
+          <div class="ps-4">
+            <h5 class="mb-2" style="color: #001730 !important">
+              Appeller pour vos questions
+            </h5>
+            <h4 class="text-primary mb-0" style="color: #d05a0b !important">
+              +221 77 723 40 84 / +242 06 485 3160
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5" style="background-color: #d05a0b !important">
+        <div
+          class="bg-primary rounded h-100 d-flex align-items-center p-5 wow zoomIn"
+          data-wow-delay="0.9s"
+          style="background-color: #d05a0b !important; color: white"
+        >
+          <form>
+            <div class="row g-3">
+              <div class="col-xl-12">
+                <input
+                  type="text"
+                  class="form-control bg-light border-0"
+                  placeholder="Votre nom"
+                  style="height: 55px"
+                />
+              </div>
+              <div class="col-12">
+                <input
+                  type="email"
+                  class="form-control bg-light border-0"
+                  placeholder="E-mail"
+                  style="height: 55px"
+                />
+              </div>
+              <div class="col-12">
+                <select
+                  class="form-select bg-light border-0"
+                  style="height: 55px"
+                >
+                  <option selected>Selectionner un service</option>
+                  <option value="service1">Developpement web</option>
+                  <option value="service2">Marketing Digital</option>
+                  <option value="service3">Maintenace informatique</option>
+                  <option value="service4">Photographie & vidéographie</option>
+                  <option value="service5">Infographie</option>
+                  <option value="service6">Design</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <textarea
+                  class="form-control bg-light border-0"
+                  rows="3"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="accepter"
+                  name="accepter"
+                  required
+                />
+                <label class="form-check-label" for="accepter"
+                  >J'accepte que mes données soient collectées.
+                  <a href="#" style="color: #001730"
+                    ><u> termes et conditions</u>
+                  </a>
+                </label>
+              </div>
+              <div class="col-12">
+                <button
+                  class="btn btn-dark w-100 py-3"
+                  type="submit"
+                  style="background-color: #001730"
+                >
+                  Envoyer
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- fin de demande de devis-->
 
-<!-- fin demande de devis -->
+<!-- commentaires -->
+<div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+  <div class="container">
+    <div class="section-title text-center">
+      <h3 class="display-7 mb-5" style="color: #001730">Témoignages</h3>
+    </div>
+    <div class="owl-carousel testimonial-carousel">
+      <div class="testimonial-item text-center">
+        <img
+          class="img-fluid bg-light p-2 mx-auto mb-3"
+          src="/media/img/testimonial-1.jpg"
+          style="width: 90px; height: 90px"
+        />
+        <div class="testimonial-text text-center p-4">
+          <p>
+            Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo
+            duo labore sed sed. Magna ut diam sit et amet stet eos sed clita
+            erat magna elitr erat sit sit erat at rebum justo sea clita.
+          </p>
+          <h5 class="mb-1">Client Name</h5>
+          <span class="fst-italic">Profession</span>
+        </div>
+      </div>
+      <div class="testimonial-item text-center">
+        <img
+          class="img-fluid bg-light p-2 mx-auto mb-3"
+          src="/media/img/testimonial-2.jpg"
+          style="width: 90px; height: 90px"
+        />
+        <div class="testimonial-text text-center p-4">
+          <p>
+            Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo
+            duo labore sed sed. Magna ut diam sit et amet stet eos sed clita
+            erat magna elitr erat sit sit erat at rebum justo sea clita.
+          </p>
+          <h5 class="mb-1">Client Name</h5>
+          <span class="fst-italic">Profession</span>
+        </div>
+      </div>
+      <div class="testimonial-item text-center">
+        <img
+          class="img-fluid bg-light p-2 mx-auto mb-3"
+          src="/media/img/testimonial-3.jpg"
+          style="width: 90px; height: 90px"
+        />
+        <div class="testimonial-text text-center p-4">
+          <p>
+            Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo
+            duo labore sed sed. Magna ut diam sit et amet stet eos sed clita
+            erat magna elitr erat sit sit erat at rebum justo sea clita.
+          </p>
+          <h5 class="mb-1">Client Name</h5>
+          <span class="fst-italic">Profession</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- commentaires  End -->
 
 <!-- temoignages -->
 
-<br><br><br>
-<div class="container d-flex align-items-center justify-content-center">
+<br /><br /><br />
+<!-- <div class="container d-flex align-items-center -justifycontent-center"> -->
 
-
-  <p class="d-inline-flex gap-1">
-    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
-      aria-controls="collapseExample">
-      <h4><strong>
-          Laissez-nous un commentaire</strong></h4>
-    </a>
-  </p>
-  <div class="collapse" id="collapseExample">
-    <div class="card card-body">
-      <form method="POST">
-        {% csrf_token %}
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label"> addresse Email</label>
-          <!-- <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> -->
-          {{ commentaires_form.email_user_commentaire }}
-          {{ commentaires_form.email_user_commentaire.errors }}
-          <div id="emailHelp" class="form-text">Nous ne partagerons jamais votre e-mail avec quelqu'un d'autre.</div>
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputMessage" class="form-label">Votre message</label>
-          {{ commentaires_form.contenu }}
-          <!-- <textarea class="form-control" id="exampleInputMessage" rows="3"></textarea> -->
-        </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">cocher</label>
-        </div>
-        <button type="submit" class="btn btn-primary" name="btn_send_commentaire">Poster</button>
-      </form>
-
-    </div>
-  </div>
-</div>
-<br>
-
-<div class="container px-4 text-center">
-  <div class="row gx-5">
-    <div class="col">
-      <div class="p-3">
-        <div class="card" style="width: 18rem;">
-
-          <ul class="list-group list-group-flush align-items-center">
-            <li class="list-group-item">
-              <img src="/images/profils/profil 1.png" class="card-img-top img-fluid" alt="..."
-                style="height: 70px; border-radius: 20px 20px 0 0;">
-            </li>
-            <li class="list-group-item">Adrien</li>
-            <li class="list-group-item">
-              <i> J'ai vachement apprécié la conception de
-                la plateforme e-commerce de ma boîte</i>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="col">
-      <div class="p-3">
-        <div class="card" style="width: 18rem;">
-
-          <ul class="list-group list-group-flush align-items-center">
-            <li class="list-group-item">
-              <img src="/images/profils/profil 2.png" class="card-img-top img-fluid" alt="..."
-                style="height: 70px; border-radius: 20px 20px 0 0;">
-            </li>
-            <li class="list-group-item">Duchesse</li>
-            <li class="list-group-item">
-              <i> J'ai vachement apprécié la conception de
-                la plateforme e-commerce de ma boîte</i>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="col">
-      <div class="p-3">
-        <div class="card" style="width: 18rem;">
-
-          <ul class="list-group list-group-flush align-items-center">
-            <li class="list-group-item">
-              <img src="/images/profils/profil 3.png" class="card-img-top img-fluid" alt="..."
-                style="height: 70px; border-radius: 20px 20px 0 0;">
-            </li>
-            <li class="list-group-item">Genius</li>
-            <li class="list-group-item">
-              <i> J'ai vachement apprécié la conception de
-                la plateforme e-commerce de ma boîte</i>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-{% endblock content %}
+{% endblock %}

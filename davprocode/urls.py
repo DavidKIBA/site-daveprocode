@@ -17,14 +17,15 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf.urls.static import static
 from django.conf import settings
-from . import views
+from django.conf.urls import handler404
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home, name='home'),
-    path('about/', views.about_page, name='about'),
+    path('', include('page_app.urls')),
     path('contact/', include('contacts.urls')),
 ]
+
+handler404 = 'page_app.views.handle404'
 
 if settings.DEBUG:
     urlpatterns +=static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
