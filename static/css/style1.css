@@ -1,0 +1,103 @@
+
+/****************** global *********************/
+
+* {
+    margin: 0 ;
+    padding: 0 ;
+    font-family: poppins !important;
+}
+body {
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/****************** menu principal *********************/
+
+.nav-link:hover {
+    color: #001730 !important; /* Couleur de survol spécifiée */
+  }
+
+.navbar-nav li.nav-item {
+    margin-right: 15px; 
+}
+
+.navbar{
+    box-shadow: 0 10px 4px -2px rgba(0, 0, 0, 0.2);
+}
+
+
+/************* image slider  **********************/
+.btn-primary{
+    background-color: #2671F8 !important;
+}
+
+
+
+/************* section valeurs **********************/
+.valeurs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.valeurs span, h3{
+    color: white;
+    text-align: center;
+}
+
+.valeurs span, img.val{
+    width: 40px;
+}
+span.valeur1{
+    background-color: #2671F8;
+    border-radius: 10px 0 0 10px;
+    width: 180px;
+    height: 60px;
+    padding: 15px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+span.valeur2{
+    background-color: #D05A0B;
+    width: 180px;
+    height: 60px;
+    padding: 15px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+span.valeur3{
+    background-color: #2671F8;
+    width: 180px;
+    height: 60px;
+    padding: 15px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+span.valeur4{
+    background-color: #D05A0B;
+    border-radius: 0 10px 10px 0;
+    width: 180px;
+    height: 60px;
+    padding: 15px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+/************* section a propos **********************/
+
+
+/************* section a propos (gauche) **********************/
+
+/************* section a propos (droite) **********************/
+
+
+
+/************* section nos services **********************/
+
+/************* Entete section nos services **********************/
+
+/************* corps section nos services **********************/
+
