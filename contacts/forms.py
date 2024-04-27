@@ -6,7 +6,7 @@ class ContactForm(forms.ModelForm):
 
     class Meta:
         model = Contacts
-        fields = ['nom', 'email_user_contact', 'telephone', 'ville', 'service', 'message']
+        fields = ['nom', 'email_user_contact', 'telephone', 'ville', 'message']
 
 
     nom = forms.CharField(
@@ -19,7 +19,7 @@ class ContactForm(forms.ModelForm):
 
     telephone = forms.CharField(
         widget = forms.NumberInput(
-        attrs={'class': 'form-control', 'id': 'telephone', 'name': 'telephone', 'placeholder': 'Votre numéro de téléphone', 'min': '0', 'pattern': '[0-9]+'}
+        attrs={'class': 'form-control', 'id': 'telephone', 'name': 'telephone',  'min': '0', 'pattern': '[0-9]+'}
         )
     )
 
@@ -30,13 +30,8 @@ class ContactForm(forms.ModelForm):
         
     )
 
-    service = forms.ModelChoiceField(
-        queryset=Services.objects.all(), 
-        widget=forms.Select(attrs={'class': 'form-control', 'id': 'services', 'name': 'services'})
-    )
-
     message = forms.CharField(
         widget= forms.Textarea(
-        attrs={'class': 'form-control', 'id': 'message', 'name': 'message', 'rows': "4"}
+        attrs={'class': 'form-control', 'id': 'message', 'name': 'message', 'rows': '6', 'style': 'font-size: 14px', 'placeholder':'Comment pouvons-nous vous aider?' }
         )
     )

@@ -1,13 +1,7 @@
 <!-- debut footer -->
 {% load static %}
-<link
-  rel="stylesheet"
-  href="{% static 'bootstrap-footer-20/bootstrap-footer-20/css/ionicons.min.css' %}"
-/>
-<link
-  rel="stylesheet"
-  href="{% static 'bootstrap-footer-20/bootstrap-footer-20/css/style.css' %}"
-/>
+<link rel="stylesheet" href="{% static 'bootstrap-footer-20/bootstrap-footer-20/css/ionicons.min.css' %}" />
+<link rel="stylesheet" href="{% static 'bootstrap-footer-20/bootstrap-footer-20/css/style.css' %}" />
 
 <footer class="footer-10">
   <div class="container">
@@ -79,9 +73,7 @@
               <!-- <li><a href="projets.html" class="d-block">Projets</a></li> -->
 
               <li>
-                <a href="#" id="regles" class="d-block"
-                  >Règles de confidentialité</a
-                >
+                <a href="#" id="regles" class="d-block">Règles de confidentialité</a>
               </li>
             </ul>
           </div>
@@ -89,20 +81,16 @@
       </div>
       <div class="col-md-5 mb-md-0 mb-4">
         <h2 class="footer-heading">S'inscrire à la Newsletter</h2>
-        <form action="#" class="subscribe-form">
+        <form method="post" class="subscribe-form">
+          {% csrf_token %}
           <div class="form-group d-flex">
-            <input
-              type="text"
-              class="form-control rounded-left"
-              placeholder="Enter email address"
-            />
-            <button type="submit" class="form-control submit rounded-right">
+            <input type="email" class="form-control rounded-left" name="email_news_letter"
+              placeholder="Enter email address" />
+            <button type="submit" class="form-control submit rounded-right" name="btn_news_letter">
               S'inscrire
             </button>
           </div>
-          <span class="subheading"
-            >Ne manquer pas nos actualités sur nos différents articles</span
-          >
+          <span class="subheading">Ne manquer pas nos actualités sur nos différents articles</span>
         </form>
       </div>
     </div>
@@ -114,10 +102,7 @@
           <script>
             document.write(new Date().getFullYear());
           </script>
-          All rights reserved Dave Procode.<i
-            class="ion-ios-heart"
-            aria-hidden="true"
-          ></i>
+          All rights reserved Dave Procode.<i class="ion-ios-heart" aria-hidden="true"></i>
           <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
           <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
         </p>
@@ -125,34 +110,16 @@
       <div class="col-md-6 col-lg-4 text-md-right">
         <ul class="ftco-footer-social p-0">
           <li class="ftco-animate">
-            <a
-              href="https://www.linkedin.com/company/102593163/admin/feed/posts/"
-              target="_blank"
-              data-toggle="tooltip"
-              data-placement="top"
-              title="Linkedin"
-              ><span class="ion-logo-linkedin"></span
-            ></a>
+            <a href="https://www.linkedin.com/company/102593163/admin/feed/posts/" target="_blank" data-toggle="tooltip"
+              data-placement="top" title="Linkedin"><span class="ion-logo-linkedin"></span></a>
           </li>
           <li class="ftco-animate">
-            <a
-              href="https://www.facebook.com/profile.php?id=100090052973249"
-              target="_blank"
-              data-toggle="tooltip"
-              data-placement="top"
-              title="Facebook"
-              ><span class="ion-logo-facebook"></span
-            ></a>
+            <a href="https://www.facebook.com/profile.php?id=100090052973249" target="_blank" data-toggle="tooltip"
+              data-placement="top" title="Facebook"><span class="ion-logo-facebook"></span></a>
           </li>
           <li class="ftco-animate">
-            <a
-              href="https://www.instagram.com/daveprocode/"
-              target="_blank"
-              data-toggle="tooltip"
-              data-placement="top"
-              title="Instagram"
-              ><span class="ion-logo-instagram"></span
-            ></a>
+            <a href="https://www.instagram.com/daveprocode/" target="_blank" data-toggle="tooltip" data-placement="top"
+              title="Instagram"><span class="ion-logo-instagram"></span></a>
           </li>
         </ul>
       </div>
