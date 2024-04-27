@@ -688,9 +688,21 @@
                 />
                 <label class="form-check-label" for="accepter"
                   >J'accepte que mes données soient collectées.
-                  <a href="#" style="color: #001730"
+                  <a href="#" style="color: #001730" id="termslink"
                     ><u> termes et conditions</u>
                   </a>
+
+                  <div id="modal" style="display: none">
+                    <div id="modalContent">
+                      <!-- Contenu des termes et conditions -->
+                      <h2>Termes et Conditions</h2>
+                      <p>
+                        Ici, vous pouvez insérer le texte complet de vos termes
+                        et conditions.
+                      </p>
+                    </div>
+                    <button id="closeModal">Fermer</button>
+                  </div>
                 </label>
               </div>
               <div class="col-12">
