@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=D:\Work space\Mon business\Mon business\Site web\back-end\site-daveprocode\venv
+set VIRTUAL_ENV=E:\project_procode\daveprocode\site-daveprocode\venv
 
 if not defined PROMPT set PROMPT=$P$G
 

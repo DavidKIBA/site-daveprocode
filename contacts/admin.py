@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Contacts
+from .models import Contacts, NewsLetters
 
 # Register your models here.
 
@@ -8,3 +8,4 @@ class AdminContact(admin.ModelAdmin):
 
 
 admin.site.register(Contacts, AdminContact)
+admin.site.register(NewsLetters)
