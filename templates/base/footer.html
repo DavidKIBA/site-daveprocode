@@ -1,7 +1,13 @@
 <!-- debut footer -->
 {% load static %}
-<link rel="stylesheet" href="{% static 'bootstrap-footer-20/bootstrap-footer-20/css/ionicons.min.css' %}" />
-<link rel="stylesheet" href="{% static 'bootstrap-footer-20/bootstrap-footer-20/css/style.css' %}" />
+<link
+  rel="stylesheet"
+  href="{% static 'bootstrap-footer-20/bootstrap-footer-20/css/ionicons.min.css' %}"
+/>
+<link
+  rel="stylesheet"
+  href="{% static 'bootstrap-footer-20/bootstrap-footer-20/css/style.css' %}"
+/>
 
 <footer class="footer-10">
   <div class="container">
@@ -26,7 +32,7 @@
               <span class="ion-ios-mail"></span>
             </div>
             <div class="text">
-              <span>procodedave@gmail.com</span>
+              <span>contact@daveprocode.com</span>
             </div>
           </div>
         </div>
@@ -48,12 +54,18 @@
       <div class="col-md-7">
         <div class="row">
           <div class="col-md-4 mb-md-0 mb-4">
-            <h2 class="footer-heading"><a href="about.html">A propos</a></h2>
+            <h2 class="footer-heading">
+              <a href="{% url 'about' %}">A propos</a>
+            </h2>
             <ul class="list-unstyled">
-              <li><a href="about.html" class="d-block">Notre histoire</a></li>
-              <li><a href="index.html" class="d-block">Acceuil</a></li>
               <li>
-                <a href="about.html #equipe" class="d-block">Notre Equipe</a>
+                <a href="{% url 'about' %}" class="d-block">Notre histoire</a>
+              </li>
+              <li><a href="{% url 'home' %}" class="d-block">Acceuil</a></li>
+              <li>
+                <a href="{% url 'about' %}#equipe" class="d-block"
+                  >Notre Equipe</a
+                >
               </li>
             </ul>
           </div>
@@ -61,10 +73,14 @@
           <div class="col-md-4 mb-md-0 mb-4">
             <h2 class="footer-heading">Dave procode</h2>
             <ul class="list-unstyled">
-              <li><a href="services.html" class="d-block">Nos services</a></li>
+              <li>
+                <a href="{% url 'service' %}" class="d-block">Nos services</a>
+              </li>
               <!-- <li><a href="projets.html" class="d-block">Projets</a></li> -->
               <li><a href="{% url 'contact' %}" class="d-block">Contact</a></li>
-              <li><a href="formation.html" class="d-block">Formations</a></li>
+              <li>
+                <a href="{% url 'formation' %}" class="d-block">Formations</a>
+              </li>
             </ul>
           </div>
           <div class="col-md-4 mb-md-0 mb-4">
@@ -73,7 +89,13 @@
               <!-- <li><a href="projets.html" class="d-block">Projets</a></li> -->
 
               <li>
-                <a href="#" id="regles" class="d-block">Règles de confidentialité</a>
+                <a
+                  href="{% url 'termes' %}"
+                  id="regles"
+                  class="d-block"
+                  target="_blank"
+                  >Règles de confidentialité</a
+                >
               </li>
             </ul>
           </div>
@@ -84,13 +106,23 @@
         <form method="post" class="subscribe-form">
           {% csrf_token %}
           <div class="form-group d-flex">
-            <input type="email" class="form-control rounded-left" name="email_news_letter"
-              placeholder="Enter email address" />
-            <button type="submit" class="form-control submit rounded-right" name="btn_news_letter">
+            <input
+              type="email"
+              class="form-control rounded-left"
+              name="email_news_letter"
+              placeholder="Enter email address"
+            />
+            <button
+              type="submit"
+              class="form-control submit rounded-right"
+              name="btn_news_letter"
+            >
               S'inscrire
             </button>
           </div>
-          <span class="subheading">Ne manquer pas nos actualités sur nos différents articles</span>
+          <span class="subheading"
+            >Ne manquer pas nos actualités sur nos différents articles</span
+          >
         </form>
       </div>
     </div>
@@ -102,7 +134,10 @@
           <script>
             document.write(new Date().getFullYear());
           </script>
-          All rights reserved Dave Procode.<i class="ion-ios-heart" aria-hidden="true"></i>
+          All rights reserved Dave Procode.<i
+            class="ion-ios-heart"
+            aria-hidden="true"
+          ></i>
           <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
           <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
         </p>
@@ -110,16 +145,34 @@
       <div class="col-md-6 col-lg-4 text-md-right">
         <ul class="ftco-footer-social p-0">
           <li class="ftco-animate">
-            <a href="https://www.linkedin.com/company/102593163/admin/feed/posts/" target="_blank" data-toggle="tooltip"
-              data-placement="top" title="Linkedin"><span class="ion-logo-linkedin"></span></a>
+            <a
+              href="https://www.linkedin.com/company/102593163/admin/feed/posts/"
+              target="_blank"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Linkedin"
+              ><span class="ion-logo-linkedin"></span
+            ></a>
           </li>
           <li class="ftco-animate">
-            <a href="https://www.facebook.com/profile.php?id=100090052973249" target="_blank" data-toggle="tooltip"
-              data-placement="top" title="Facebook"><span class="ion-logo-facebook"></span></a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100090052973249"
+              target="_blank"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Facebook"
+              ><span class="ion-logo-facebook"></span
+            ></a>
           </li>
           <li class="ftco-animate">
-            <a href="https://www.instagram.com/daveprocode/" target="_blank" data-toggle="tooltip" data-placement="top"
-              title="Instagram"><span class="ion-logo-instagram"></span></a>
+            <a
+              href="https://www.instagram.com/daveprocode/"
+              target="_blank"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Instagram"
+              ><span class="ion-logo-instagram"></span
+            ></a>
           </li>
         </ul>
       </div>

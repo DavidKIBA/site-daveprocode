@@ -28,7 +28,7 @@
                 >Demander un devis</a
               >
               <a
-                href=""
+                href="{% url 'about' %}"
                 class="btn btn-light py-md-3 px-md-5 animated slideInRight"
                 >A propos</a
               >
@@ -299,8 +299,6 @@
 
 <!--   section valeurs -->
 
-<br /><br />
-
 <div class="container text-center">
   <div class="row align-items-center">
     <div class="col" style="background-color: #2671f8">
@@ -330,40 +328,53 @@
   </div>
 </div>
 
-<br /><br />
 <!-- fin section valeurs-->
+
+<!-- Feature Start -->
+<div
+  class="container-fluid bg-light overflow-hidden px-lg-0"
+  style="margin: 16rem 10"
+>
+  <div class="container feature px-lg-0">
+    <div class="row g-0 mx-lg-0">
+      <div class="col-lg-6 feature-text py-5 wow fadeIn" data-wow-delay="0.5s">
+        <div class="p-lg-5 ps-lg-0">
+          <div class="section-title text-start">
+            <h3 class="display-7 mb-4" style="color: #001730">
+              Qui sommes-nous?
+            </h3>
+          </div>
+          <p class="mb-4 pb-2 text-justify" style="color: #001730">
+            En tant qu'entreprise commerciale, nous mettons un point d'honneur à
+            offrir des solutions informatiques sur mesure à nos clients. Nous
+            sommes convaincus que chaque projet est unique et que les besoins de
+            chacun diffèrent.
+          </p>
+          <a href="{% url 'about' %}" class="btn btn-primary">En savoir plus</a>
+        </div>
+      </div>
+      <div class="col-lg-6 feature-text py-5 wow fadeIn" data-wow-delay="0.5s">
+        <div class="p-lg-5 ps-lg-0">
+          <div class="section-title text-start">
+            <h3 class="display-7 mb-4" style="color: #001730"></h3>
+          </div>
+          <p class="mb-4 pb-2 text-justify" style="color: #001730">
+            C'est pourquoi nous mettons à leur disposition une équipe de
+            professionnels passionnés et expérimentés, capables de relever tous
+            les défis en matière de programmation et de graphisme. Nous sommes
+            fiers de fournir un service de qualité supérieure à nos clients et
+            de contribuer à leur succès sur le marché numérique.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- fin pourquoi nous choisir -->
 
 <!-- A propos -->
 
-<div
-  style="
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  "
->
-  <!-- <div class="h-100 d-inline-block" style="width: 500px">
-    <h4 style="color: #001730"><strong>Qui sommes-nous?</strong></h4>
-    <p style="text-align: justify; padding-right: 10px">
-      En tant qu'entreprise commerciale, nous mettons un point d'honneur à
-      offrir des solutions informatiques sur mesure à nos clients. Nous sommes
-      convaincus que chaque projet est unique et que les besoins de chacun
-      diffèrent. C'est pourquoi nous mettons à leur disposition une équipe de
-      professionnels passionnés et expérimentés, capables de relever tous les
-      défis en matière de programmation et de graphisme. Nous sommes fiers de
-      fournir un service de qualité supérieure à nos clients et de contribuer à
-      leur succès sur le marché numérique.
-    </p>
-    <a href="about.html" class="btn btn-primary">voir plus</a>
-  </div> -->
-
-  <div class="h-100 d-inline-block" style="width: 500px">
-    <img src="/media/header_slide2.jpg" class="img-fluid" alt="..." />
-  </div>
-</div>
-<br /><br /><br /><br /><br /><br />
-<br /><br /><br /><br /><br />
 <!-- fin A propos -->
 
 <!-- services -->
@@ -391,7 +402,11 @@
         sites web interactifs, applications innovantes. Nous concrétisons vos
         idées avec une expertise de pointe.
       </p>
-      <a href="services.html" class="btn btn-primary">Voir plus</a>
+      <a
+        href="{% url 'service' %}#serviceDeveloppementWeb"
+        class="btn btn-primary"
+        >Voir plus</a
+      >
     </div>
   </div>
 
@@ -408,7 +423,11 @@
         Du référencement à la stratégie sur les réseaux sociaux, nous maximisons
         votre présence en ligne pour atteindre votre public cible.
       </p>
-      <a href="services.html" class="btn btn-primary">Voir plus</a>
+      <a
+        href="{% url 'service' %}#serviceDeveloppementWeb"
+        class="btn btn-primary"
+        >Voir plus</a
+      >
     </div>
   </div>
 
@@ -425,7 +444,11 @@
         Conception graphique, interfaces élégantes : chaque pixel compte pour
         une expérience visuelle mémorable.
       </p>
-      <a href="services.html" class="btn btn-primary">voir plus</a>
+      <a
+        href="{% url 'service' %}#serviceDeveloppementWeb"
+        class="btn btn-primary"
+        >voir plus</a
+      >
     </div>
   </div>
 </div>
@@ -446,7 +469,11 @@
         Notre équipe d'infographistes donne vie à vos idées avec des graphismes
         créatifs et des illustrations captivantes.
       </p>
-      <a href="services.html" class="btn btn-primary">voir plus</a>
+      <a
+        href="{% url 'service' %}#serviceDeveloppementWeb"
+        class="btn btn-primary"
+        >voir plus</a
+      >
     </div>
   </div>
 
@@ -463,7 +490,11 @@
         Avec notre expertise en maintenance informatique, assurez la performance
         continue de votre système sans interruption.
       </p>
-      <a href="services.html" class="btn btn-primary">voir plus</a>
+      <a
+        href="{% url 'service' %}#serviceDeveloppementWeb"
+        class="btn btn-primary"
+        >voir plus</a
+      >
     </div>
   </div>
 
@@ -480,7 +511,7 @@
         Nos formations personnalisées vous équipent des compétences essentielles
         pour exceller dans le monde digital en constante évolution.
       </p>
-      <a href="formation.html" class="btn btn-primary">voir plus</a>
+      <a href="{% url 'formation' %}" class="btn btn-primary">voir plus</a>
     </div>
   </div>
 </div>
@@ -669,7 +700,11 @@
                 />
                 <label class="form-check-label" for="accepter"
                   >J'accepte que mes données soient collectées.
-                  <a href="#" style="color: #001730" id="termslink"
+                  <a
+                    href="{% url 'termes' %}"
+                    style="color: #001730"
+                    id="termslink"
+                    target="_blank"
                     ><u> termes et conditions</u>
                   </a>
 
@@ -706,7 +741,7 @@
 <!-- fin de demande de devis-->
 
 <!-- commentaires -->
-<div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+<!-- <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
   <div class="container">
     <div class="section-title text-center">
       <h3 class="display-7 mb-5" style="color: #001730">Témoignages</h3>
@@ -762,11 +797,42 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 <!-- commentaires  End -->
 
 <!-- temoignages -->
 
+<!-- debut partenaires -->
+<div class="container d-flex align-items-center justify-content-center">
+  <h4><strong>Nos partenaires</strong></h4>
+</div>
+<br />
+<img
+  src="/media/Logo Officiel Rostel High-Tech.png"
+  class="img-fluid border rounded"
+  alt="..."
+  width="100"
+/>
+<img
+  src="/media/logo.png"
+  class="img-fluid border rounded"
+  alt="..."
+  width="100"
+/>
+
+<!-- fin partenaires -->
+
+<!-- pagination -->
+
+<!-- <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="#">précédents</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">suivant</a></li>
+      </ul>
+    </nav> -->
 <br /><br /><br />
 
 {% endblock %}

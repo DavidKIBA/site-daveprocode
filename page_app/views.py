@@ -45,6 +45,10 @@ def service_page(request):
     context = {'title': 'Service'}
     return render(request, 'other_page/services.html', context)
 
+def terme_page(request):
+    context = {'title': 'Termes'}
+    return render(request, 'other_page/termes.html', context)
+
 def handle404(request, exception):
     context = {'title': 'Page introuvable'}
     return render(request, 'other_page/404.html', context)
