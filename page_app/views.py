@@ -49,6 +49,10 @@ def terme_page(request):
     context = {'title': 'Termes'}
     return render(request, 'other_page/termes.html', context)
 
+def eitemap(request):
+    context = {'title': 'sitemap'}
+    return render(request, 'other_page/sitemap.xml', context)
+
 def handle404(request, exception):
     context = {'title': 'Page introuvable'}
     return render(request, 'other_page/404.html', context)
