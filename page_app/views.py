@@ -49,7 +49,7 @@ def terme_page(request):
     context = {'title': 'Termes'}
     return render(request, 'other_page/termes.html', context)
 
-def eitemap(request):
+def sitemap(request):
     context = {'title': 'sitemap'}
     return render(request, 'other_page/sitemap.xml', context)
 
