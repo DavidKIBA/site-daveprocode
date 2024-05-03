@@ -62,8 +62,8 @@
                   <i class="fa fa-check fa-2x text-primary"></i>
                 </div>
                 <div class="ms-4">
-                  <h5 class="mb-0">Sur mesure</h5>
-                  <p class="mb-2">Accompagnement</p>
+                  <h5 class="mb-0">Accompagnement</h5>
+                  <p class="mb-2">Sur mesure</p>
                 </div>
               </div>
             </div>
@@ -76,8 +76,8 @@
                   <i class="fa fa-user-check fa-2x text-primary"></i>
                 </div>
                 <div class="ms-4">
-                  <h5 class="mb-0">qualifiées</h5>
-                  <p class="mb-2">Formations</p>
+                  <h5 class="mb-0">Formations</h5>
+                  <p class="mb-2">qualifiées</p>
                 </div>
               </div>
             </div>
@@ -90,8 +90,8 @@
                   <i class="fa fa-drafting-compass fa-2x text-primary"></i>
                 </div>
                 <div class="ms-4">
-                  <h5 class="mb-0">gratuit</h5>
-                  <p class="mb-2">Consultation</p>
+                  <h5 class="mb-0">Consultation</h5>
+                  <p class="mb-2">gratuit</p>
                 </div>
               </div>
             </div>
@@ -163,7 +163,9 @@
                 data-lightbox="portfolio"
                 ><i class="fa fa-eye"></i
               ></a>
-              <a class="btn btn-square btn-outline-light mx-1" href=""
+              <a
+                class="btn btn-square btn-outline-light mx-1"
+                href="{% url 'formationsiteweb' %}"
                 ><i class="fa fa-link"></i
               ></a>
             </div>
@@ -184,7 +186,7 @@
                             expérience utilisateur optimale. -->
             </p>
             <a
-              href="formationSiteStatic.html"
+              href="{% url 'formationsiteweb' %}"
               class="btn align-items-center"
               style="background-color: #2671f8; color: white"
               >voir plus</a

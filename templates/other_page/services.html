@@ -178,7 +178,9 @@
                 data-lightbox="portfolio"
                 ><i class="fa fa-eye"></i
               ></a>
-              <a class="btn btn-square btn-outline-light mx-1" href=""
+              <a
+                class="btn btn-square btn-outline-light mx-1"
+                href="{% url 'servicesiteweb' %}"
                 ><i class="fa fa-link"></i
               ></a>
             </div>
@@ -190,7 +192,7 @@
             <!-- debut voir plus-->
             <p>Une équipe spécialisée créant des solutions web sur mesure...</p>
             <a
-              href="serviceSiteStatic.html"
+              href="{% url 'servicesiteweb' %}"
               class="btn align-items-center"
               style="background-color: #2671f8; color: white"
               >voir plus</a
@@ -214,7 +216,9 @@
                 data-lightbox="portfolio"
                 ><i class="fa fa-eye"></i
               ></a>
-              <a class="btn btn-square btn-outline-light mx-1" href=""
+              <a
+                class="btn btn-square btn-outline-light mx-1"
+                href="{% url 'servicegraphisme' %}"
                 ><i class="fa fa-link"></i
               ></a>
             </div>
@@ -224,9 +228,9 @@
               Conception Graphique
             </p>
             <!-- debut voir plus-->
-            <p>Notre équipe excelle dans la conception graphique ...</p>
+            <p>Notre équipe excelle dans la création de supports ...</p>
             <a
-              href="serviceSiteStatic2.html"
+              href="{% url 'servicegraphisme' %}"
               class="btn align-items-center"
               style="background-color: #2671f8; color: white"
               >voir plus</a
@@ -250,7 +254,9 @@
                 data-lightbox="portfolio"
                 ><i class="fa fa-eye"></i
               ></a>
-              <a class="btn btn-square btn-outline-light mx-1" href=""
+              <a
+                class="btn btn-square btn-outline-light mx-1"
+                href="{% url 'servicestrategienumerique' %}"
                 ><i class="fa fa-link"></i
               ></a>
             </div>
@@ -260,11 +266,9 @@
               Stratégie de Contenu Numérique
             </p>
             <!-- debut voir plus-->
-            <p>
-              Nous concevons des stratégies de contenu personnalisées qui ...
-            </p>
+            <p>Dans le contexte de l'évolution numérique, notre service ...</p>
             <a
-              href="serviceSiteStatic3.html"
+              href="{% url 'servicestrategienumerique' %}"
               class="btn align-items-center"
               style="background-color: #2671f8; color: white"
               >voir plus</a
@@ -288,7 +292,9 @@
                 data-lightbox="portfolio"
                 ><i class="fa fa-eye"></i
               ></a>
-              <a class="btn btn-square btn-outline-light mx-1" href=""
+              <a
+                class="btn btn-square btn-outline-light mx-1"
+                href="{% url 'servicesoftware' %}"
                 ><i class="fa fa-link"></i
               ></a>
             </div>
@@ -298,12 +304,9 @@
               Maintenance Software
             </p>
             <!-- debut voir plus-->
-            <p>
-              Entretien des ordinateurs, Mise à jour du système d’exploitation
-              et ...
-            </p>
+            <p>Notre service de maintenance informatique offre une ...</p>
             <a
-              href="serviceSiteStatic4.html"
+              href="{% url 'servicesoftware' %}"
               class="btn align-items-center"
               style="background-color: #2671f8; color: white"
               >voir plus</a

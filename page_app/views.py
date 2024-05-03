@@ -53,6 +53,26 @@ def sitemap(request):
     context = {'title': 'sitemap'}
     return render(request, 'other_page/sitemap.xml', context)
 
+def servicesiteweb(request):
+    context = {'title': 'servicesiteweb'}
+    return render(request, 'service/servicesiteweb.html', context)
+
+def servicegraphisme(request):
+    context = {'title': 'servicegraphisme'}
+    return render(request, 'service/servicegraphisme.html', context)
+
+def servicestrategienumerique(request):
+    context = {'title': 'servicestrategienumerique'}
+    return render(request, 'service/servicestrategienumerique.html', context)
+
+def servicesoftware(request):
+    context = {'title': 'servicesoftware'}
+    return render(request, 'service/servicesoftware.html', context)
+
+def formationsiteweb(request):
+    context = {'title': 'formationsiteweb'}
+    return render(request, 'formation/formationsiteweb.html', context)
+
 def handle404(request, exception):
     context = {'title': 'Page introuvable'}
     return render(request, 'other_page/404.html', context)
