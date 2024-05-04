@@ -14,5 +14,9 @@ urlpatterns = [
     path('servicestrategienumerique/', views.servicestrategienumerique, name='servicestrategienumerique'),
     path('servicesoftware/', views.servicesoftware, name='servicesoftware'),
     path('formationsiteweb/', views.formationsiteweb, name='formationsiteweb'),
-
+    path('serviceappweb/', views.serviceappweb, name='serviceappweb'),
+    path('servicepub/', views.servicepub, name='servicepub'),
+    path('servicehardware/', views.servicehardware, name='servicehardware'),
+    path('serviceseo/', views.serviceseo, name='serviceseo'),
+    path('servicesupports/', views.servicesupports, name='servicesupports'),
 ] 

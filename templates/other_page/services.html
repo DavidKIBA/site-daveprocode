@@ -150,7 +150,7 @@
     <div class="section-title text-center">
       <h3 class="display-7 mb-5">Nos Services</h3>
     </div>
-    <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.3s">
+    <!-- <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.3s">
       <div class="col-12 text-center">
         <ul class="list-inline mb-5" id="portfolio-flters">
           <li class="mx-2 active" data-filter="*">Toutes</li>
@@ -162,7 +162,7 @@
           <li class="mx-2" data-filter=".fifth">Maintenance informatique</li>
         </ul>
       </div>
-    </div>
+    </div> -->
     <div class="row g-4 portfolio-container">
       <div
         class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp"
@@ -330,7 +330,9 @@
                 data-lightbox="portfolio"
                 ><i class="fa fa-eye"></i
               ></a>
-              <a class="btn btn-square btn-outline-light mx-1" href=""
+              <a
+                class="btn btn-square btn-outline-light mx-1"
+                href="{% url 'serviceappweb'%}"
                 ><i class="fa fa-link"></i
               ></a>
             </div>
@@ -340,9 +342,9 @@
               Création d’application web
             </p>
             <!-- debut voir plus-->
-            <p>Notre service de création d'applications web transforme ...</p>
+            <p>L'évolution rapide du paysage numérique requiert...</p>
             <a
-              href="serviceSiteStatic.html"
+              href="{% url 'serviceappweb'%}"
               class="btn align-items-center"
               style="background-color: #2671f8; color: white"
               >voir plus</a
@@ -352,42 +354,7 @@
         </div>
       </div>
       <br /><br /><br />
-      <div
-        class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp"
-        data-wow-delay="0.1s"
-      >
-        <div class="rounded overflow-hidden">
-          <div class="position-relative overflow-hidden">
-            <img class="img-fluid w-100" src="/media/infographie.jpg" alt="" />
-            <div class="portfolio-overlay">
-              <a
-                class="btn btn-square btn-outline-light mx-1"
-                href="/media/infographie.jpg"
-                data-lightbox="portfolio"
-                ><i class="fa fa-eye"></i
-              ></a>
-              <a class="btn btn-square btn-outline-light mx-1" href=""
-                ><i class="fa fa-link"></i
-              ></a>
-            </div>
-          </div>
-          <div class="border border-5 border-light border-top-0 p-4">
-            <p class="text fw-medium mb-2" style="color: #d05a0b !important">
-              Logos Impactants
-            </p>
-            <!-- debut voir plus-->
-            <p>Nos designers collaborent étroitement avec vous pour ...</p>
-            <a
-              href="serviceSiteStatic2.html"
-              class="btn align-items-center"
-              style="background-color: #2671f8; color: white"
-              >voir plus</a
-            >
-            <!-- fin voir plus-->
-          </div>
-        </div>
-      </div>
-      <br /><br /><br />
+
       <div
         class="col-lg-4 col-md-6 portfolio-item fird wow fadeInUp"
         data-wow-delay="0.1s"
@@ -402,7 +369,9 @@
                 data-lightbox="portfolio"
                 ><i class="fa fa-eye"></i
               ></a>
-              <a class="btn btn-square btn-outline-light mx-1" href=""
+              <a
+                class="btn btn-square btn-outline-light mx-1"
+                href="{% url 'servicepub' %}"
                 ><i class="fa fa-link"></i
               ></a>
             </div>
@@ -414,7 +383,7 @@
             <!-- debut voir plus-->
             <p>Nos spécialistes en publicité en ligne utilisent ...</p>
             <a
-              href="serviceSiteStatic3.html"
+              href="{% url 'servicepub' %}"
               class="btn align-items-center"
               style="background-color: #2671f8; color: white"
               >voir plus</a
@@ -438,7 +407,9 @@
                 data-lightbox="portfolio"
                 ><i class="fa fa-eye"></i
               ></a>
-              <a class="btn btn-square btn-outline-light mx-1" href=""
+              <a
+                class="btn btn-square btn-outline-light mx-1"
+                href="{% url 'servicehardware' %}"
                 ><i class="fa fa-link"></i
               ></a>
             </div>
@@ -452,7 +423,7 @@
               Entretien des ordinateurs,Échange de pièces dans la mesure ...
             </p>
             <a
-              href="serviceSiteStatic4.html"
+              href="{% url 'servicehardware' %}"
               class="btn align-items-center"
               style="background-color: #2671f8; color: white"
               >voir plus</a
@@ -476,7 +447,9 @@
                 data-lightbox="portfolio"
                 ><i class="fa fa-eye"></i
               ></a>
-              <a class="btn btn-square btn-outline-light mx-1" href=""
+              <a
+                class="btn btn-square btn-outline-light mx-1"
+                href="{% url 'serviceseo' %}"
                 ><i class="fa fa-link"></i
               ></a>
             </div>
@@ -488,7 +461,7 @@
             <!-- debut voir plus-->
             <p>Notre service SEO vise à positionner votre site en tête ...</p>
             <a
-              href="serviceSiteStatic.html"
+              href="{% url 'serviceseo' %}"
               class="btn align-items-center"
               style="background-color: #2671f8; color: white"
               >voir plus</a
@@ -512,7 +485,9 @@
                 data-lightbox="portfolio"
                 ><i class="fa fa-eye"></i
               ></a>
-              <a class="btn btn-square btn-outline-light mx-1" href=""
+              <a
+                class="btn btn-square btn-outline-light mx-1"
+                href="{% url 'servicesupports' %}"
                 ><i class="fa fa-link"></i
               ></a>
             </div>
@@ -524,79 +499,7 @@
             <!-- debut voir plus-->
             <p>Que ce soit des brochures, des flyers, des affiches ou ...</p>
             <a
-              href="serviceSiteStatic2.html"
-              class="btn align-items-center"
-              style="background-color: #2671f8; color: white"
-              >voir plus</a
-            >
-            <!-- fin voir plus-->
-          </div>
-        </div>
-      </div>
-      <br /><br /><br />
-      <div
-        class="col-lg-4 col-md-6 portfolio-item fird wow fadeInUp"
-        data-wow-delay="0.1s"
-      >
-        <div class="rounded overflow-hidden">
-          <div class="position-relative overflow-hidden">
-            <img class="img-fluid w-100" src="/media/marketing.jpg" alt="" />
-            <div class="portfolio-overlay">
-              <a
-                class="btn btn-square btn-outline-light mx-1"
-                href="/media/marketing.jpg"
-                data-lightbox="portfolio"
-                ><i class="fa fa-eye"></i
-              ></a>
-              <a class="btn btn-square btn-outline-light mx-1" href=""
-                ><i class="fa fa-link"></i
-              ></a>
-            </div>
-          </div>
-          <div class="border border-5 border-light border-top-0 p-4">
-            <p class="text fw-medium mb-2" style="color: #d05a0b !important">
-              Analyse de Données et Optimisation
-            </p>
-            <!-- debut voir plus-->
-            <p>L'efficacité de nos campagnes est ...</p>
-            <a
-              href="serviceSiteStatic3.html"
-              class="btn align-items-center"
-              style="background-color: #2671f8; color: white"
-              >voir plus</a
-            >
-            <!-- fin voir plus-->
-          </div>
-        </div>
-      </div>
-      <br /><br /><br />
-      <div
-        class="col-lg-4 col-md-6 portfolio-item fifth wow fadeInUp"
-        data-wow-delay="0.1s"
-      >
-        <div class="rounded overflow-hidden">
-          <div class="position-relative overflow-hidden">
-            <img class="img-fluid w-100" src="/media/maintenance.jpg" alt="" />
-            <div class="portfolio-overlay">
-              <a
-                class="btn btn-square btn-outline-light mx-1"
-                href="/media/maintenance.jpg"
-                data-lightbox="portfolio"
-                ><i class="fa fa-eye"></i
-              ></a>
-              <a class="btn btn-square btn-outline-light mx-1" href=""
-                ><i class="fa fa-link"></i
-              ></a>
-            </div>
-          </div>
-          <div class="border border-5 border-light border-top-0 p-4">
-            <p class="text fw-medium mb-2" style="color: #d05a0b !important">
-              Analyse et vérification
-            </p>
-            <!-- debut voir plus-->
-            <p>Nous optimisons les performances en augmentant la RAM et ...</p>
-            <a
-              href="serviceSiteStatic4.html"
+              href="{% url 'servicesupports' %}"
               class="btn align-items-center"
               style="background-color: #2671f8; color: white"
               >voir plus</a
