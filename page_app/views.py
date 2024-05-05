@@ -93,8 +93,20 @@ def servicesupports(request):
     context = {'title': 'servicesupports'}
     return render(request, 'service/servicesupports.html', context)
 
+def bureautique(request):
+    context = {'title': 'bureautique'}
+    return render(request, 'formation/bureautique.html', context)
+
+def formationInfographie(request):
+    context = {'title': 'formationInfographie'}
+    return render(request, 'formation/formationInfographie.html', context)
+
 def handle404(request, exception):
     context = {'title': 'Page introuvable'}
     return render(request, 'other_page/404.html', context)
+
+def recherche(request, exception):
+    context = {'title': 'recherche introuvable'}
+    return render(request, 'other_page/recherche.html', context)
 
 

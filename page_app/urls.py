@@ -19,4 +19,7 @@ urlpatterns = [
     path('servicehardware/', views.servicehardware, name='servicehardware'),
     path('serviceseo/', views.serviceseo, name='serviceseo'),
     path('servicesupports/', views.servicesupports, name='servicesupports'),
+    path('recherche/', views.recherche, name='recherche_introuvable'),
+    path('bureautique/', views.bureautique, name='bureautique'),
+    path('formationInfographie/', views.formationInfographie, name='formationInfographie'),
 ] 
