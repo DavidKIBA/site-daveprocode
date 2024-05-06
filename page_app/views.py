@@ -73,8 +73,40 @@ def formationsiteweb(request):
     context = {'title': 'formationsiteweb'}
     return render(request, 'formation/formationsiteweb.html', context)
 
+def serviceappweb(request):
+    context = {'title': 'serviceappweb'}
+    return render(request, 'service/serviceappweb.html', context)
+
+def servicepub(request):
+    context = {'title': 'servicepub'}
+    return render(request, 'service/servicepub.html', context)
+
+def servicehardware(request):
+    context = {'title': 'servicehardware'}
+    return render(request, 'service/servicehardware.html', context)
+
+def serviceseo(request):
+    context = {'title': 'serviceseo'}
+    return render(request, 'service/serviceseo.html', context)
+
+def servicesupports(request):
+    context = {'title': 'servicesupports'}
+    return render(request, 'service/servicesupports.html', context)
+
+def bureautique(request):
+    context = {'title': 'bureautique'}
+    return render(request, 'formation/bureautique.html', context)
+
+def formationInfographie(request):
+    context = {'title': 'formationInfographie'}
+    return render(request, 'formation/formationInfographie.html', context)
+
 def handle404(request, exception):
     context = {'title': 'Page introuvable'}
     return render(request, 'other_page/404.html', context)
+
+def recherche(request, exception):
+    context = {'title': 'recherche introuvable'}
+    return render(request, 'other_page/recherche.html', context)
 
 

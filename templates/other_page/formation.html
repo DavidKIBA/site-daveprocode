@@ -134,7 +134,7 @@
     <div class="section-title text-center">
       <h3 class="display-7 mb-5">Nos formatoins</h3>
     </div>
-    <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.3s">
+    <!-- <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.3s">
       <div class="col-12 text-center">
         <ul class="list-inline mb-5" id="portfolio-flters">
           <li class="mx-2 active" data-filter="*">Toutes</li>
@@ -147,7 +147,7 @@
           <li class="mx-2" data-filter=".fird" id="bureautique">Bureautique</li>
         </ul>
       </div>
-    </div>
+    </div> -->
     <div class="row g-4 portfolio-container">
       <div
         class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp"
@@ -210,14 +210,16 @@
                 data-lightbox="portfolio"
                 ><i class="fa fa-eye"></i
               ></a>
-              <a class="btn btn-square btn-outline-light mx-1" href=""
+              <a
+                class="btn btn-square btn-outline-light mx-1"
+                href="{% url 'formationInfographie' %}"
                 ><i class="fa fa-link"></i
               ></a>
             </div>
           </div>
           <div class="border border-5 border-light border-top-0 p-4">
             <p class="text fw-medium mb-2" style="color: #d05a0b !important">
-              Infographie
+              Infographie et Design
             </p>
             <!-- debut voir plus-->
             <p>
@@ -225,7 +227,7 @@
               cours...
             </p>
             <a
-              href="formationSiteStatic.html"
+              href="{% url 'formationInfographie' %}"
               class="btn align-items-center"
               style="background-color: #2671f8; color: white"
               >voir plus</a
@@ -245,26 +247,25 @@
             <div class="portfolio-overlay">
               <a
                 class="btn btn-square btn-outline-light mx-1"
-                href="/media/webimg.jpg"
+                href="/media/word.jpg"
                 data-lightbox="portfolio"
                 ><i class="fa fa-eye"></i
               ></a>
-              <a class="btn btn-square btn-outline-light mx-1" href=""
+              <a
+                class="btn btn-square btn-outline-light mx-1"
+                href="{% url 'bureautique' %}"
                 ><i class="fa fa-link"></i
               ></a>
             </div>
           </div>
           <div class="border border-5 border-light border-top-0 p-4">
             <p class="text fw-medium mb-2" style="color: #d05a0b !important">
-              Microsoft Word
+              Bureautique
             </p>
             <!-- debut voir plus-->
-            <p>
-              Création et mise en forme de documents professionnels, gestion...
-              <!-- avancée des styles et des modèles, collaboration en temps réel et suivi des modifications. -->
-            </p>
+            <p>Découvrez l'art de la productivité avec nos formations ...</p>
             <a
-              href="formationSiteStatic.html"
+              href="{% url 'bureautique' %}"
               class="btn align-items-center"
               style="background-color: #2671f8; color: white"
               >voir plus</a
@@ -274,126 +275,7 @@
         </div>
       </div>
       <br /><br /><br />
-
-      <div
-        class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp"
-        data-wow-delay="0.1s"
-      >
-        <div class="rounded overflow-hidden">
-          <div class="position-relative overflow-hidden">
-            <img
-              class="img-fluid w-100"
-              src="/media/applicationweb.jpg"
-              alt=""
-            />
-            <div class="portfolio-overlay">
-              <a
-                class="btn btn-square btn-outline-light mx-1"
-                href="/media/applicationweb.jpg"
-                data-lightbox="portfolio"
-                ><i class="fa fa-eye"></i
-              ></a>
-              <a class="btn btn-square btn-outline-light mx-1" href=""
-                ><i class="fa fa-link"></i
-              ></a>
-            </div>
-          </div>
-          <div class="border border-5 border-light border-top-0 p-4">
-            <p class="text fw-medium mb-2" style="color: #d05a0b !important">
-              Applications web
-            </p>
-            <!-- debut voir plus-->
-            <p>
-              Plongez dans le monde passionnant du développement
-              d'applications...
-            </p>
-            <a
-              href="formationSiteStatic.html"
-              class="btn align-items-center"
-              style="background-color: #2671f8; color: white"
-              >voir plus</a
-            >
-            <!-- fin voir plus-->
-          </div>
-        </div>
-      </div>
-      <div
-        class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp"
-        data-wow-delay="0.1s"
-      >
-        <div class="rounded overflow-hidden">
-          <div class="position-relative overflow-hidden">
-            <img class="img-fluid w-100" src="/media/design.jpg" alt="" />
-            <div class="portfolio-overlay">
-              <a
-                class="btn btn-square btn-outline-light mx-1"
-                href="/media/webimg.jpg"
-                data-lightbox="portfolio"
-                ><i class="fa fa-eye"></i
-              ></a>
-              <a class="btn btn-square btn-outline-light mx-1" href=""
-                ><i class="fa fa-link"></i
-              ></a>
-            </div>
-          </div>
-          <div class="border border-5 border-light border-top-0 p-4">
-            <p class="text fw-medium mb-2" style="color: #d05a0b !important">
-              Design
-            </p>
-            <!-- debut voir plus-->
-            <p>
-              Nos cours de en Design fournissent des compétences approfondies...
-              <a
-                href="formationSiteStatic.html"
-                class="btn align-items-center"
-                style="background-color: #2671f8; color: white"
-                >voir plus</a
-              >
-              <!-- fin voir plus-->
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div
-        class="col-lg-4 col-md-6 portfolio-item fird wow fadeInUp"
-        data-wow-delay="0.1s"
-      >
-        <div class="rounded overflow-hidden">
-          <div class="position-relative overflow-hidden">
-            <img class="img-fluid w-100" src="/media/excel.jpg" alt="" />
-            <div class="portfolio-overlay">
-              <a
-                class="btn btn-square btn-outline-light mx-1"
-                href="/media/webimg.jpg"
-                data-lightbox="portfolio"
-                ><i class="fa fa-eye"></i
-              ></a>
-              <a class="btn btn-square btn-outline-light mx-1" href=""
-                ><i class="fa fa-link"></i
-              ></a>
-            </div>
-          </div>
-          <div class="border border-5 border-light border-top-0 p-4">
-            <p class="text fw-medium mb-2" style="color: #d05a0b !important">
-              Microsoft Excel
-            </p>
-            <!-- debut voir plus-->
-            <p>
-              Création et gestion de feuilles de calcul puissantes, formules...
-              <!-- avancées et fonctions, analyse de données et création de graphiques.  -->
-            </p>
-            <a
-              href="formationSiteStatic.html"
-              class="btn align-items-center"
-              style="background-color: #2671f8; color: white"
-              >voir plus</a
-            >
-            <!-- fin voir plus-->
-          </div>
-        </div>
-      </div>
-
+      <!-- 
       <div
         class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp"
         data-wow-delay="0.1s"
@@ -421,14 +303,14 @@
             <p class="text fw-medium mb-2" style="color: #d05a0b !important">
               programmation
             </p>
-            <!-- debut voir plus-->
-            <p>
+             debut voir plus-->
+      <!-- <p>
               Explorez un éventail de langages de programmation, des
               fondamentaux
-              <!-- tels que PHP,
-                      Python et C++ aux technologies émergentes comme JavaScript pour le développement
+               tels que PHP,
+                      Python aux technologies émergentes comme JavaScript pour le développement
                        web. Nos sessions pratiques couvrent la syntaxe, la logique de programmation 
-                       et les meilleures pratiques de codage. -->
+                       et les meilleures pratiques de codage.
             </p>
             <a
               href="formationProgrammation.html"
@@ -436,86 +318,10 @@
               style="background-color: #2671f8; color: white"
               >voir plus</a
             >
-            <!-- fin voir plus-->
+             fin voir plus
           </div>
         </div>
-      </div>
-      <div
-        class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp"
-        data-wow-delay="0.1s"
-      >
-        <div class="rounded overflow-hidden">
-          <div class="position-relative overflow-hidden">
-            <img class="img-fluid w-100" src="/media/webdesign.jpg" alt="" />
-            <div class="portfolio-overlay">
-              <a
-                class="btn btn-square btn-outline-light mx-1"
-                href="/media/webimg.jpg"
-                data-lightbox="portfolio"
-                ><i class="fa fa-eye"></i
-              ></a>
-              <a class="btn btn-square btn-outline-light mx-1" href=""
-                ><i class="fa fa-link"></i
-              ></a>
-            </div>
-          </div>
-          <div class="border border-5 border-light border-top-0 p-4">
-            <p class="text fw-medium mb-2" style="color: #d05a0b !important">
-              Web Design
-            </p>
-            <!-- debut voir plus-->
-            <p>
-              Nos cours de web design offrent une formation approfondie pour...
-            </p>
-            <a
-              href="formationSiteStatic.html"
-              class="btn align-items-center"
-              style="background-color: #2671f8; color: white"
-              >voir plus</a
-            >
-            <!-- fin voir plus-->
-          </div>
-        </div>
-      </div>
-
-      <div
-        class="col-lg-4 col-md-6 portfolio-item fird wow fadeInUp"
-        data-wow-delay="0.1s"
-      >
-        <div class="rounded overflow-hidden">
-          <div class="position-relative overflow-hidden">
-            <img class="img-fluid w-100" src="/media/powerpoint.jpg" alt="" />
-            <div class="portfolio-overlay">
-              <a
-                class="btn btn-square btn-outline-light mx-1"
-                href="/media/webimg.jpg"
-                data-lightbox="portfolio"
-                ><i class="fa fa-eye"></i
-              ></a>
-              <a class="btn btn-square btn-outline-light mx-1" href=""
-                ><i class="fa fa-link"></i
-              ></a>
-            </div>
-          </div>
-          <div class="border border-5 border-light border-top-0 p-4">
-            <p class="text fw-medium mb-2" style="color: #d05a0b !important">
-              Microsoft PowerPoint
-            </p>
-            <!-- debut voir plus-->
-            <p>
-              Conception de présentations percutantes, utilisation avancée...
-              <!-- des animations et des transitions, intégration de médias pour renforcer l'impact visuel. -->
-            </p>
-            <a
-              href="formationSiteStatic.html"
-              class="btn align-items-center"
-              style="background-color: #2671f8; color: white"
-              >voir plus</a
-            >
-            <!-- fin voir plus-->
-          </div>
-        </div>
-      </div>
+      </div>  -->
     </div>
   </div>
 </div>
