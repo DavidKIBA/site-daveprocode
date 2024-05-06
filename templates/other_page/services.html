@@ -1,43 +1,22 @@
-{% extends 'base/base.html' %} {% load static %} {% block content %}
+{% extends 'base/base.html' %}
+{% load static %}
+{% block content %}
 
-<!-- Libraries Stylesheet -->
-<link href="{% static 'lib/animate/animate.min.css' %}" rel="stylesheet" />
-<link
-  href="{% static 'lib/owlcarousel/assets/owl.carousel.css' %}"
-  rel="stylesheet"
-/>
-<link
-  href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}"
-  rel="stylesheet"
-/>
-<link href="{% static 'lib/lightbox/css/lightbox.min.css'%}" rel="stylesheet" />
 
-<script src="{% static 'js/script.js' %}" defer></script>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
 <!--  section entete   -->
 
 <div id="carouselExampleCaptions" class="carousel slide" style="z-index: 1">
   <div class="carousel-inner">
     <div class="carousel-item active text-center">
-      <img
-        src="/media/about1.jpg"
-        class="d-block"
-        alt="..."
-        style="height: 350px; width: 100%; object-fit: cover"
-      />
-      <div
-        class="carousel-caption d-none d-md-block vertical-center horizontal-center"
-      >
-        <h1
-          class="display-5"
-          style="
+      <img src="/media/about1.jpg" class="d-block" alt="..." style="height: 350px; width: 100%; object-fit: cover" />
+      <div class="carousel-caption d-none d-md-block vertical-center horizontal-center">
+        <h1 class="display-5" style="
             position: absolute;
             top: -100px;
             font-family: Arial Black;
             color: white;
-          "
-        >
+          ">
           Nos Services
         </h1>
       </div>
@@ -48,10 +27,7 @@
 <!-- fin image entete-->
 
 <!-- Developpement web -->
-<div
-  class="container-fluid bg-light overflow-hidden px-lg-0"
-  style="margin: 6rem 0"
->
+<div class="container-fluid bg-light overflow-hidden px-lg-0" style="margin: 6rem 0">
   <div class="container feature px-lg-0">
     <div class="row g-0 mx-lg-0">
       <div class="col-lg-6 feature-text py-5 wow fadeIn" data-wow-delay="0.5s">
@@ -71,10 +47,8 @@
           <div class="row g-4">
             <div class="col-6">
               <div class="d-flex align-items-center">
-                <div
-                  class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white"
-                  style="width: 60px; height: 60px"
-                >
+                <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white"
+                  style="width: 60px; height: 60px">
                   <i class="fa fa-check fa-2x text-primary"></i>
                 </div>
                 <div class="ms-4">
@@ -85,10 +59,8 @@
             </div>
             <div class="col-6">
               <div class="d-flex align-items-center">
-                <div
-                  class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white"
-                  style="width: 60px; height: 60px"
-                >
+                <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white"
+                  style="width: 60px; height: 60px">
                   <i class="fa fa-user-check fa-2x text-primary"></i>
                 </div>
                 <div class="ms-4" style="color: #001730">
@@ -99,10 +71,8 @@
             </div>
             <div class="col-6">
               <div class="d-flex align-items-center">
-                <div
-                  class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white"
-                  style="width: 60px; height: 60px"
-                >
+                <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white"
+                  style="width: 60px; height: 60px">
                   <i class="fa fa-drafting-compass fa-2x text-primary"></i>
                 </div>
                 <div class="ms-4">
@@ -113,10 +83,8 @@
             </div>
             <div class="col-6">
               <div class="d-flex align-items-center">
-                <div
-                  class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white"
-                  style="width: 60px; height: 60px"
-                >
+                <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white"
+                  style="width: 60px; height: 60px">
                   <i class="fa fa-headphones fa-2x text-primary"></i>
                 </div>
                 <div class="ms-4">
@@ -130,12 +98,8 @@
       </div>
       <div class="col-lg-6 pe-lg-0" style="min-height: 400px">
         <div class="position-relative h-100">
-          <img
-            class="position-absolute img-fluid w-100 h-100"
-            src="/media/service.jpg"
-            style="object-fit: cover"
-            alt=""
-          />
+          <img class="position-absolute img-fluid w-100 h-100" src="/media/service.jpg" style="object-fit: cover"
+            alt="" />
         </div>
       </div>
     </div>
@@ -153,7 +117,7 @@
     <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.3s">
       <div class="col-12 text-center">
         <ul class="list-inline mb-5" id="portfolio-flters">
-          <li class="mx-2 active" data-filter="*">Toutes</li>
+          <li class="mx-2 active" data-filter="*">Tous</li>
           <li class="mx-2" data-filter=".first" id="serviceDeveloppementWeb">
             Developpement web
           </li>
@@ -164,25 +128,15 @@
       </div>
     </div>
     <div class="row g-4 portfolio-container">
-      <div
-        class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp"
-        data-wow-delay="0.1s"
-      >
+      <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
         <div class="rounded overflow-hidden">
           <div class="position-relative overflow-hidden">
             <img class="img-fluid w-100" src="/media/webimg.jpg" alt="" />
             <div class="portfolio-overlay">
-              <a
-                class="btn btn-square btn-outline-light mx-1"
-                href="/media/webimg.jpg"
-                data-lightbox="portfolio"
-                ><i class="fa fa-eye"></i
-              ></a>
-              <a
-                class="btn btn-square btn-outline-light mx-1"
-                href="{% url 'servicesiteweb' %}"
-                ><i class="fa fa-link"></i
-              ></a>
+              <a class="btn btn-square btn-outline-light mx-1" href="/media/webimg.jpg" data-lightbox="portfolio"><i
+                  class="fa fa-eye"></i></a>
+              <a class="btn btn-square btn-outline-light mx-1" href="{% url 'servicesiteweb' %}"><i
+                  class="fa fa-link"></i></a>
             </div>
           </div>
           <div class="border border-5 border-light border-top-0 p-4">
@@ -191,36 +145,22 @@
             </p>
             <!-- debut voir plus-->
             <p>Une équipe spécialisée créant des solutions web sur mesure...</p>
-            <a
-              href="{% url 'servicesiteweb' %}"
-              class="btn align-items-center"
-              style="background-color: #2671f8; color: white"
-              >voir plus</a
-            >
+            <a href="{% url 'servicesiteweb' %}" class="btn align-items-center"
+              style="background-color: #2671f8; color: white">voir plus</a>
             <!-- fin voir plus-->
           </div>
         </div>
       </div>
       <br /><br /><br />
-      <div
-        class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp"
-        data-wow-delay="0.1s"
-      >
+      <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.1s">
         <div class="rounded overflow-hidden">
           <div class="position-relative overflow-hidden">
             <img class="img-fluid w-100" src="/media/infographie.jpg" alt="" />
             <div class="portfolio-overlay">
-              <a
-                class="btn btn-square btn-outline-light mx-1"
-                href="/media/infographie.jpg"
-                data-lightbox="portfolio"
-                ><i class="fa fa-eye"></i
-              ></a>
-              <a
-                class="btn btn-square btn-outline-light mx-1"
-                href="{% url 'servicegraphisme' %}"
-                ><i class="fa fa-link"></i
-              ></a>
+              <a class="btn btn-square btn-outline-light mx-1" href="/media/infographie.jpg"
+                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+              <a class="btn btn-square btn-outline-light mx-1" href="{% url 'servicegraphisme' %}"><i
+                  class="fa fa-link"></i></a>
             </div>
           </div>
           <div class="border border-5 border-light border-top-0 p-4">
@@ -229,36 +169,22 @@
             </p>
             <!-- debut voir plus-->
             <p>Notre équipe excelle dans la création de supports ...</p>
-            <a
-              href="{% url 'servicegraphisme' %}"
-              class="btn align-items-center"
-              style="background-color: #2671f8; color: white"
-              >voir plus</a
-            >
+            <a href="{% url 'servicegraphisme' %}" class="btn align-items-center"
+              style="background-color: #2671f8; color: white">voir plus</a>
             <!-- fin voir plus-->
           </div>
         </div>
       </div>
       <br /><br /><br />
-      <div
-        class="col-lg-4 col-md-6 portfolio-item fird wow fadeInUp"
-        data-wow-delay="0.1s"
-      >
+      <div class="col-lg-4 col-md-6 portfolio-item fird wow fadeInUp" data-wow-delay="0.1s">
         <div class="rounded overflow-hidden">
           <div class="position-relative overflow-hidden">
             <img class="img-fluid w-100" src="/media/marketing.jpg" alt="" />
             <div class="portfolio-overlay">
-              <a
-                class="btn btn-square btn-outline-light mx-1"
-                href="/media/marketing.jpg"
-                data-lightbox="portfolio"
-                ><i class="fa fa-eye"></i
-              ></a>
-              <a
-                class="btn btn-square btn-outline-light mx-1"
-                href="{% url 'servicestrategienumerique' %}"
-                ><i class="fa fa-link"></i
-              ></a>
+              <a class="btn btn-square btn-outline-light mx-1" href="/media/marketing.jpg" data-lightbox="portfolio"><i
+                  class="fa fa-eye"></i></a>
+              <a class="btn btn-square btn-outline-light mx-1" href="{% url 'servicestrategienumerique' %}"><i
+                  class="fa fa-link"></i></a>
             </div>
           </div>
           <div class="border border-5 border-light border-top-0 p-4">
@@ -267,36 +193,22 @@
             </p>
             <!-- debut voir plus-->
             <p>Dans le contexte de l'évolution numérique, notre service ...</p>
-            <a
-              href="{% url 'servicestrategienumerique' %}"
-              class="btn align-items-center"
-              style="background-color: #2671f8; color: white"
-              >voir plus</a
-            >
+            <a href="{% url 'servicestrategienumerique' %}" class="btn align-items-center"
+              style="background-color: #2671f8; color: white">voir plus</a>
             <!-- fin voir plus-->
           </div>
         </div>
       </div>
       <br /><br /><br />
-      <div
-        class="col-lg-4 col-md-6 portfolio-item fifth wow fadeInUp"
-        data-wow-delay="0.1s"
-      >
+      <div class="col-lg-4 col-md-6 portfolio-item fifth wow fadeInUp" data-wow-delay="0.1s">
         <div class="rounded overflow-hidden">
           <div class="position-relative overflow-hidden">
             <img class="img-fluid w-100" src="/media/maintenance.jpg" alt="" />
             <div class="portfolio-overlay">
-              <a
-                class="btn btn-square btn-outline-light mx-1"
-                href="/media/maintenance.jpg"
-                data-lightbox="portfolio"
-                ><i class="fa fa-eye"></i
-              ></a>
-              <a
-                class="btn btn-square btn-outline-light mx-1"
-                href="{% url 'servicesoftware' %}"
-                ><i class="fa fa-link"></i
-              ></a>
+              <a class="btn btn-square btn-outline-light mx-1" href="/media/maintenance.jpg"
+                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+              <a class="btn btn-square btn-outline-light mx-1" href="{% url 'servicesoftware' %}"><i
+                  class="fa fa-link"></i></a>
             </div>
           </div>
           <div class="border border-5 border-light border-top-0 p-4">
@@ -305,34 +217,21 @@
             </p>
             <!-- debut voir plus-->
             <p>Notre service de maintenance informatique offre une ...</p>
-            <a
-              href="{% url 'servicesoftware' %}"
-              class="btn align-items-center"
-              style="background-color: #2671f8; color: white"
-              >voir plus</a
-            >
+            <a href="{% url 'servicesoftware' %}" class="btn align-items-center"
+              style="background-color: #2671f8; color: white">voir plus</a>
             <!-- fin voir plus-->
           </div>
         </div>
       </div>
       <br /><br /><br />
-      <div
-        class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp"
-        data-wow-delay="0.1s"
-      >
+      <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
         <div class="rounded overflow-hidden">
           <div class="position-relative overflow-hidden">
             <img class="img-fluid w-100" src="/media/webimg.jpg" alt="" />
             <div class="portfolio-overlay">
-              <a
-                class="btn btn-square btn-outline-light mx-1"
-                href="/media/webimg.jpg"
-                data-lightbox="portfolio"
-                ><i class="fa fa-eye"></i
-              ></a>
-              <a class="btn btn-square btn-outline-light mx-1" href=""
-                ><i class="fa fa-link"></i
-              ></a>
+              <a class="btn btn-square btn-outline-light mx-1" href="/media/webimg.jpg" data-lightbox="portfolio"><i
+                  class="fa fa-eye"></i></a>
+              <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
             </div>
           </div>
           <div class="border border-5 border-light border-top-0 p-4">
@@ -341,34 +240,21 @@
             </p>
             <!-- debut voir plus-->
             <p>Notre service de création d'applications web transforme ...</p>
-            <a
-              href="serviceSiteStatic.html"
-              class="btn align-items-center"
-              style="background-color: #2671f8; color: white"
-              >voir plus</a
-            >
+            <a href="serviceSiteStatic.html" class="btn align-items-center"
+              style="background-color: #2671f8; color: white">voir plus</a>
             <!-- fin voir plus-->
           </div>
         </div>
       </div>
       <br /><br /><br />
-      <div
-        class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp"
-        data-wow-delay="0.1s"
-      >
+      <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.1s">
         <div class="rounded overflow-hidden">
           <div class="position-relative overflow-hidden">
             <img class="img-fluid w-100" src="/media/infographie.jpg" alt="" />
             <div class="portfolio-overlay">
-              <a
-                class="btn btn-square btn-outline-light mx-1"
-                href="/media/infographie.jpg"
-                data-lightbox="portfolio"
-                ><i class="fa fa-eye"></i
-              ></a>
-              <a class="btn btn-square btn-outline-light mx-1" href=""
-                ><i class="fa fa-link"></i
-              ></a>
+              <a class="btn btn-square btn-outline-light mx-1" href="/media/infographie.jpg"
+                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+              <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
             </div>
           </div>
           <div class="border border-5 border-light border-top-0 p-4">
@@ -377,34 +263,21 @@
             </p>
             <!-- debut voir plus-->
             <p>Nos designers collaborent étroitement avec vous pour ...</p>
-            <a
-              href="serviceSiteStatic2.html"
-              class="btn align-items-center"
-              style="background-color: #2671f8; color: white"
-              >voir plus</a
-            >
+            <a href="serviceSiteStatic2.html" class="btn align-items-center"
+              style="background-color: #2671f8; color: white">voir plus</a>
             <!-- fin voir plus-->
           </div>
         </div>
       </div>
       <br /><br /><br />
-      <div
-        class="col-lg-4 col-md-6 portfolio-item fird wow fadeInUp"
-        data-wow-delay="0.1s"
-      >
+      <div class="col-lg-4 col-md-6 portfolio-item fird wow fadeInUp" data-wow-delay="0.1s">
         <div class="rounded overflow-hidden">
           <div class="position-relative overflow-hidden">
             <img class="img-fluid w-100" src="/media/marketing.jpg" alt="" />
             <div class="portfolio-overlay">
-              <a
-                class="btn btn-square btn-outline-light mx-1"
-                href="/media/marketing.jpg"
-                data-lightbox="portfolio"
-                ><i class="fa fa-eye"></i
-              ></a>
-              <a class="btn btn-square btn-outline-light mx-1" href=""
-                ><i class="fa fa-link"></i
-              ></a>
+              <a class="btn btn-square btn-outline-light mx-1" href="/media/marketing.jpg" data-lightbox="portfolio"><i
+                  class="fa fa-eye"></i></a>
+              <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
             </div>
           </div>
           <div class="border border-5 border-light border-top-0 p-4">
@@ -413,34 +286,21 @@
             </p>
             <!-- debut voir plus-->
             <p>Nos spécialistes en publicité en ligne utilisent ...</p>
-            <a
-              href="serviceSiteStatic3.html"
-              class="btn align-items-center"
-              style="background-color: #2671f8; color: white"
-              >voir plus</a
-            >
+            <a href="serviceSiteStatic3.html" class="btn align-items-center"
+              style="background-color: #2671f8; color: white">voir plus</a>
             <!-- fin voir plus-->
           </div>
         </div>
       </div>
       <br /><br /><br />
-      <div
-        class="col-lg-4 col-md-6 portfolio-item fifth wow fadeInUp"
-        data-wow-delay="0.1s"
-      >
+      <div class="col-lg-4 col-md-6 portfolio-item fifth wow fadeInUp" data-wow-delay="0.1s">
         <div class="rounded overflow-hidden">
           <div class="position-relative overflow-hidden">
             <img class="img-fluid w-100" src="/media/maintenance.jpg" alt="" />
             <div class="portfolio-overlay">
-              <a
-                class="btn btn-square btn-outline-light mx-1"
-                href="/media/maintenance.jpg"
-                data-lightbox="portfolio"
-                ><i class="fa fa-eye"></i
-              ></a>
-              <a class="btn btn-square btn-outline-light mx-1" href=""
-                ><i class="fa fa-link"></i
-              ></a>
+              <a class="btn btn-square btn-outline-light mx-1" href="/media/maintenance.jpg"
+                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+              <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
             </div>
           </div>
           <div class="border border-5 border-light border-top-0 p-4">
@@ -451,34 +311,21 @@
             <p>
               Entretien des ordinateurs,Échange de pièces dans la mesure ...
             </p>
-            <a
-              href="serviceSiteStatic4.html"
-              class="btn align-items-center"
-              style="background-color: #2671f8; color: white"
-              >voir plus</a
-            >
+            <a href="serviceSiteStatic4.html" class="btn align-items-center"
+              style="background-color: #2671f8; color: white">voir plus</a>
             <!-- fin voir plus-->
           </div>
         </div>
       </div>
       <br /><br /><br />
-      <div
-        class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp"
-        data-wow-delay="0.1s"
-      >
+      <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
         <div class="rounded overflow-hidden">
           <div class="position-relative overflow-hidden">
             <img class="img-fluid w-100" src="/media/webimg.jpg" alt="" />
             <div class="portfolio-overlay">
-              <a
-                class="btn btn-square btn-outline-light mx-1"
-                href="/media/webimg.jpg"
-                data-lightbox="portfolio"
-                ><i class="fa fa-eye"></i
-              ></a>
-              <a class="btn btn-square btn-outline-light mx-1" href=""
-                ><i class="fa fa-link"></i
-              ></a>
+              <a class="btn btn-square btn-outline-light mx-1" href="/media/webimg.jpg" data-lightbox="portfolio"><i
+                  class="fa fa-eye"></i></a>
+              <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
             </div>
           </div>
           <div class="border border-5 border-light border-top-0 p-4">
@@ -487,34 +334,21 @@
             </p>
             <!-- debut voir plus-->
             <p>Notre service SEO vise à positionner votre site en tête ...</p>
-            <a
-              href="serviceSiteStatic.html"
-              class="btn align-items-center"
-              style="background-color: #2671f8; color: white"
-              >voir plus</a
-            >
+            <a href="serviceSiteStatic.html" class="btn align-items-center"
+              style="background-color: #2671f8; color: white">voir plus</a>
             <!-- fin voir plus-->
           </div>
         </div>
       </div>
       <br /><br /><br />
-      <div
-        class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp"
-        data-wow-delay="0.1s"
-      >
+      <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.1s">
         <div class="rounded overflow-hidden">
           <div class="position-relative overflow-hidden">
             <img class="img-fluid w-100" src="/media/infographie.jpg" alt="" />
             <div class="portfolio-overlay">
-              <a
-                class="btn btn-square btn-outline-light mx-1"
-                href="/media/infographie.jpg"
-                data-lightbox="portfolio"
-                ><i class="fa fa-eye"></i
-              ></a>
-              <a class="btn btn-square btn-outline-light mx-1" href=""
-                ><i class="fa fa-link"></i
-              ></a>
+              <a class="btn btn-square btn-outline-light mx-1" href="/media/infographie.jpg"
+                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+              <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
             </div>
           </div>
           <div class="border border-5 border-light border-top-0 p-4">
@@ -523,34 +357,21 @@
             </p>
             <!-- debut voir plus-->
             <p>Que ce soit des brochures, des flyers, des affiches ou ...</p>
-            <a
-              href="serviceSiteStatic2.html"
-              class="btn align-items-center"
-              style="background-color: #2671f8; color: white"
-              >voir plus</a
-            >
+            <a href="serviceSiteStatic2.html" class="btn align-items-center"
+              style="background-color: #2671f8; color: white">voir plus</a>
             <!-- fin voir plus-->
           </div>
         </div>
       </div>
       <br /><br /><br />
-      <div
-        class="col-lg-4 col-md-6 portfolio-item fird wow fadeInUp"
-        data-wow-delay="0.1s"
-      >
+      <div class="col-lg-4 col-md-6 portfolio-item fird wow fadeInUp" data-wow-delay="0.1s">
         <div class="rounded overflow-hidden">
           <div class="position-relative overflow-hidden">
             <img class="img-fluid w-100" src="/media/marketing.jpg" alt="" />
             <div class="portfolio-overlay">
-              <a
-                class="btn btn-square btn-outline-light mx-1"
-                href="/media/marketing.jpg"
-                data-lightbox="portfolio"
-                ><i class="fa fa-eye"></i
-              ></a>
-              <a class="btn btn-square btn-outline-light mx-1" href=""
-                ><i class="fa fa-link"></i
-              ></a>
+              <a class="btn btn-square btn-outline-light mx-1" href="/media/marketing.jpg" data-lightbox="portfolio"><i
+                  class="fa fa-eye"></i></a>
+              <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
             </div>
           </div>
           <div class="border border-5 border-light border-top-0 p-4">
@@ -559,34 +380,21 @@
             </p>
             <!-- debut voir plus-->
             <p>L'efficacité de nos campagnes est ...</p>
-            <a
-              href="serviceSiteStatic3.html"
-              class="btn align-items-center"
-              style="background-color: #2671f8; color: white"
-              >voir plus</a
-            >
+            <a href="serviceSiteStatic3.html" class="btn align-items-center"
+              style="background-color: #2671f8; color: white">voir plus</a>
             <!-- fin voir plus-->
           </div>
         </div>
       </div>
       <br /><br /><br />
-      <div
-        class="col-lg-4 col-md-6 portfolio-item fifth wow fadeInUp"
-        data-wow-delay="0.1s"
-      >
+      <div class="col-lg-4 col-md-6 portfolio-item fifth wow fadeInUp" data-wow-delay="0.1s">
         <div class="rounded overflow-hidden">
           <div class="position-relative overflow-hidden">
             <img class="img-fluid w-100" src="/media/maintenance.jpg" alt="" />
             <div class="portfolio-overlay">
-              <a
-                class="btn btn-square btn-outline-light mx-1"
-                href="/media/maintenance.jpg"
-                data-lightbox="portfolio"
-                ><i class="fa fa-eye"></i
-              ></a>
-              <a class="btn btn-square btn-outline-light mx-1" href=""
-                ><i class="fa fa-link"></i
-              ></a>
+              <a class="btn btn-square btn-outline-light mx-1" href="/media/maintenance.jpg"
+                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+              <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
             </div>
           </div>
           <div class="border border-5 border-light border-top-0 p-4">
@@ -595,12 +403,8 @@
             </p>
             <!-- debut voir plus-->
             <p>Nous optimisons les performances en augmentant la RAM et ...</p>
-            <a
-              href="serviceSiteStatic4.html"
-              class="btn align-items-center"
-              style="background-color: #2671f8; color: white"
-              >voir plus</a
-            >
+            <a href="serviceSiteStatic4.html" class="btn align-items-center"
+              style="background-color: #2671f8; color: white">voir plus</a>
             <!-- fin voir plus-->
           </div>
         </div>
@@ -610,17 +414,5 @@
 </div>
 
 <!-- Fin nos services-->
-
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-
-<script src="{% static 'lib/wow/wow.min.js' %}"></script>
-<script src="{% static 'lib/easing/easing.min.js' %}"></script>
-<script src="{% static 'lib/waypoints/waypoints.min.js' %}"></script>
-<script src="{% static 'lib/counterup/counterup.min.js' %}"></script>
-<script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
-<script src="{% static 'lib/isotope/isotope.pkgd.min.js' %}"></script>
-<script src="{% static 'lib/lightbox/js/lightbox.min.js' %}"></script>
-
-<script src="{% static 'js/main.js' %}"></script>
 
 {% endblock content %}

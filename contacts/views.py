@@ -4,6 +4,8 @@ from .models import NewsLetters
 from .forms import ContactForm
 from django.contrib import messages
 from django.core.validators import validate_email
+from django.core.mail import send_mail
+from django.conf import settings
 
 
 # Create your views here.
@@ -18,6 +20,14 @@ def contact_page(request):
         contact_form = ContactForm(request.POST)
         if contact_form.is_valid():
             contact_form.save()
+            send_mail(
+                subject="Vous avez un message de la partie contact",
+                message="Un utilisateur vient de laisser un message sur la page contact",
+                from_email=settings.EMAIL_HOST_USER,
+                recipient_list=[settings.EMAIL_HOST_USER],  # Assurez-vous que c'est une liste ou un tuple
+                fail_silently=False
+            )
+
             message = messages.success(request, 'votre message a été envyer avec succes nous allons vous répondre pas mail dans maximum 2 jours')
             return redirect('contact')
      

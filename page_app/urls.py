@@ -9,10 +9,10 @@ urlpatterns = [
     path('service/', views.service_page, name='service'),
     path('termes/', views.terme_page, name='termes'),
     path('sitemap/', views.sitemap, name='sitemap'),
-    path('servicesiteweb/', views.servicesiteweb, name='servicesiteweb'),
-    path('servicegraphisme/', views.servicegraphisme, name='servicegraphisme'),
-    path('servicestrategienumerique/', views.servicestrategienumerique, name='servicestrategienumerique'),
-    path('servicesoftware/', views.servicesoftware, name='servicesoftware'),
-    path('formationsiteweb/', views.formationsiteweb, name='formationsiteweb'),
+    path('service-site-web/', views.servicesiteweb, name='servicesiteweb'),
+    path('service-graphisme/', views.servicegraphisme, name='servicegraphisme'),
+    path('service-strategie-numerique/', views.servicestrategienumerique, name='servicestrategienumerique'),
+    path('service-software/', views.servicesoftware, name='servicesoftware'),
+    path('formation-site-web/', views.formationsiteweb, name='formationsiteweb'),
 
 ] 

@@ -1,6 +1,15 @@
 from django.db import models
+import os
 
 # Create your models here.
+
+def rename_img(instance, filename):
+    upload_to = "media/"
+    extension = filename.split(".")[-1]
+    if instance.titre:
+        name = instance.titre.lower().replace(' ', '_')
+        filename = (f"service/{name}.{extension}")
+        return os.path.join(upload_to, filename)
 
 
 class Services(models.Model):
@@ -15,3 +24,17 @@ class Services(models.Model):
 
     def __str__(self):
         return self.nom
+
+class MiniService(models.Model):
+    titre = models.CharField(max_length=255)
+    image = models.ImageField(upload_to=rename_img)
+    mini_decription = models.TextField()
+    description = models.TextField()
+    service = models.ForeignKey(Services, on_delete=models.CASCADE)
+
+    class Meta:
+        verbose_name = "Mini Service"
+        verbose_name_plural = "Mini Services"
+
+    def __str__(self):
+        return self.titre
