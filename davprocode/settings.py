@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'services',
     'contacts',
     'devis',
+    'formations',
 ]
 
 MIDDLEWARE = [

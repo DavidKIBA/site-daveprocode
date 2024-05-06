@@ -1,5 +1,7 @@
 from django.db import models
+from django.template.defaultfilters import slugify
 import os
+
 
 # Create your models here.
 
@@ -28,13 +30,19 @@ class Services(models.Model):
 class MiniService(models.Model):
     titre = models.CharField(max_length=255)
     image = models.ImageField(upload_to=rename_img)
-    mini_decription = models.TextField()
+    mini_description = models.TextField()
     description = models.TextField()
     service = models.ForeignKey(Services, on_delete=models.CASCADE)
+    slug = models.SlugField()
 
     class Meta:
         verbose_name = "Mini Service"
         verbose_name_plural = "Mini Services"
+
+    def save(self, *args, **kwargs):
+        self.slug = slugify(self.titre)
+        super().save(*args, **kwargs)
+
 
     def __str__(self):
         return self.titre

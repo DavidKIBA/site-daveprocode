@@ -22,6 +22,7 @@ from django.conf.urls import handler404
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('page_app.urls')),
+    path('service/', include('services.urls')),
     path('contact/', include('contacts.urls')),
 ]
 

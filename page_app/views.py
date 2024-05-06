@@ -41,9 +41,6 @@ def formation_page(request):
     context = {'title': 'Formation'}
     return render(request, 'other_page/formation.html', context)
 
-def service_page(request):
-    context = {'title': 'Service'}
-    return render(request, 'other_page/services.html', context)
 
 def terme_page(request):
     context = {'title': 'Termes'}
@@ -53,45 +50,7 @@ def sitemap(request):
     context = {'title': 'sitemap'}
     return render(request, 'other_page/sitemap.xml', context)
 
-def servicesiteweb(request):
-    context = {'title': 'servicesiteweb'}
-    return render(request, 'service/servicesiteweb.html', context)
 
-def servicegraphisme(request):
-    context = {'title': 'servicegraphisme'}
-    return render(request, 'service/servicegraphisme.html', context)
-
-def servicestrategienumerique(request):
-    context = {'title': 'servicestrategienumerique'}
-    return render(request, 'service/servicestrategienumerique.html', context)
-
-def servicesoftware(request):
-    context = {'title': 'servicesoftware'}
-    return render(request, 'service/servicesoftware.html', context)
-
-def formationsiteweb(request):
-    context = {'title': 'formationsiteweb'}
-    return render(request, 'formation/formationsiteweb.html', context)
-
-def serviceappweb(request):
-    context = {'title': 'serviceappweb'}
-    return render(request, 'service/serviceappweb.html', context)
-
-def servicepub(request):
-    context = {'title': 'servicepub'}
-    return render(request, 'service/servicepub.html', context)
-
-def servicehardware(request):
-    context = {'title': 'servicehardware'}
-    return render(request, 'service/servicehardware.html', context)
-
-def serviceseo(request):
-    context = {'title': 'serviceseo'}
-    return render(request, 'service/serviceseo.html', context)
-
-def servicesupports(request):
-    context = {'title': 'servicesupports'}
-    return render(request, 'service/servicesupports.html', context)
 
 def bureautique(request):
     context = {'title': 'bureautique'}
