@@ -24,6 +24,7 @@ urlpatterns = [
     path('', include('page_app.urls')),
     path('service/', include('services.urls')),
     path('contact/', include('contacts.urls')),
+    path('formation/', include('formations.urls')),
 ]
 
 handler404 = 'page_app.views.handle404'

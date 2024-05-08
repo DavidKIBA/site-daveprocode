@@ -33,7 +33,7 @@ class MiniService(models.Model):
     mini_description = models.TextField()
     description = models.TextField()
     service = models.ForeignKey(Services, on_delete=models.CASCADE)
-    slug = models.SlugField()
+    slug = models.SlugField(blank=True)
 
     class Meta:
         verbose_name = "Mini Service"
