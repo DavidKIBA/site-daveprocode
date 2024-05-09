@@ -15,6 +15,7 @@ import django_heroku
 import dj_database_url
 from .info import *
 import os
+from decouple import config
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -23,12 +24,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-67=b_uteu=&ci9dli*9&1n5!@)^p7va%@i&#f^p_xt0p-fw*p&'
+SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['daveprocode.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -102,10 +103,7 @@ WSGI_APPLICATION = 'davprocode.wsgi.application'
 # }
 
 DATABASES = {
-    'default': dj_database_url.config(
-        default=os.environ['DATABASE_URL'],
-        engine='django_tenants.postgresql_backend'
-    )
+    'default': dj_database_url.config()
 }
 
 
