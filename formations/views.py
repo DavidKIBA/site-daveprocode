@@ -7,7 +7,7 @@ from django.views.generic import DetailView
 def formation_page(request):
     formations = Formations.objects.all()
     context = {'title': 'Formation', 'formations': formations}
-    return render(request, 'formation/formation.html', context)
+    return render(request, 'formation/formatio.html', context)
 
 
 class FormationDetailView(DetailView):
