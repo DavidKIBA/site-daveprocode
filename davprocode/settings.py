@@ -102,7 +102,10 @@ WSGI_APPLICATION = 'davprocode.wsgi.application'
 # }
 
 DATABASES = {
-    'default': dj_database_url.config()
+    'default': dj_database_url.config(
+        default=os.environ['DATABASE_URL'],
+        engine='django_tenants.postgresql_backend'
+    )
 }
 
 
