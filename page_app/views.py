@@ -52,6 +52,10 @@ def bureautique(request):
     context = {'title': 'bureautique'}
     return render(request, 'formation/bureautique.html', context)
 
+def services(request):
+    context = {'title': 'services'}
+    return render(request, 'service/services.html', context)
+
 
 
 def formationInfographie(request):

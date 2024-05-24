@@ -9,6 +9,7 @@ urlpatterns = [
     path('sitemap/', views.sitemap, name='sitemap'),
     path('recherche/', views.recherche, name='recherche_introuvable'),
     path('bureautique/', views.bureautique, name='bureautique'),
+    path('service/', views.services, name='services'),
     path('formation-infographie/', views.formationInfographie, name='formationInfographie'),
 
 ] 
