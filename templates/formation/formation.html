@@ -1,0 +1,170 @@
+{% extends 'base/base.html' %} {% block content %}
+<!--  section entete   -->
+
+<div id="carouselExampleCaptions" class="carousel slide" style="z-index: 1">
+  <div class="carousel-inner">
+    <div class="carousel-item active text-center">
+      <img src="/media/about1.jpg" class="d-block" alt="..." style="height: 350px; width: 100%; object-fit: cover" />
+      <div class="carousel-caption d-none d-md-block vertical-center horizontal-center">
+        <h1 class="display-5" style="
+            position: absolute;
+            top: -100px;
+            font-family: Arial Black;
+            color: white;
+          ">
+          Nos formations
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- fin image entete-->
+
+<!-- Developpement web -->
+<div class="container-fluid bg-light overflow-hidden px-lg-0" style="margin: 6rem 0">
+  <div class="container feature px-lg-0">
+    <div class="row g-0 mx-lg-0">
+      <div class="col-lg-6 feature-text py-5 wow fadeIn" data-wow-delay="0.5s">
+        <div class="p-lg-5 ps-lg-0">
+          <div class="section-title text-start">
+            <h3 class="display-7 mb-4">Formations Professionnelles</h3>
+          </div>
+          <p class="mb-4 pb-2 text-justify">
+            <strong></strong><br />
+            Au-delà de nos services exceptionnels, nous croyons en
+            l'autonomisation de nos clients. C'est pourquoi nous offrons des
+            programmes de formation professionnelle dans divers domaines, sauf
+            en maintenance et marketing digital, pour renforcer les compétences
+            de votre équipe
+          </p>
+
+          <div class="row g-4">
+            <div class="col-6">
+              <div class="d-flex align-items-center">
+                <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white"
+                  style="width: 60px; height: 60px">
+                  <i class="fa fa-check fa-2x text-primary"></i>
+                </div>
+                <div class="ms-4">
+                  <h5 class="mb-0">Accompagnement</h5>
+                  <p class="mb-2">Sur mesure</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="d-flex align-items-center">
+                <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white"
+                  style="width: 60px; height: 60px">
+                  <i class="fa fa-user-check fa-2x text-primary"></i>
+                </div>
+                <div class="ms-4">
+                  <h5 class="mb-0">Formations</h5>
+                  <p class="mb-2">qualifiées</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="d-flex align-items-center">
+                <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white"
+                  style="width: 60px; height: 60px">
+                  <i class="fa fa-drafting-compass fa-2x text-primary"></i>
+                </div>
+                <div class="ms-4">
+                  <h5 class="mb-0">Consultation</h5>
+                  <p class="mb-2">gratuit</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="d-flex align-items-center">
+                <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white"
+                  style="width: 60px; height: 60px">
+                  <i class="fa fa-headphones fa-2x text-primary"></i>
+                </div>
+                <div class="ms-4">
+                  <h5 class="mb-0">Assistance</h5>
+                  <p class="mb-2">Clients</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 pe-lg-0" style="min-height: 400px">
+        <div class="position-relative h-100">
+          <img class="position-absolute img-fluid w-100 h-100" src="/media/formation1.jpg" style="object-fit: cover"
+            alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- fin pourquoi nous choisir -->
+
+<!-- Nos formations-->
+<div class="container-xxl py-5">
+  <div class="container">
+    <div class="section-title text-center">
+      <h3 class="display-7 mb-5">Nos formatoins</h3>
+    </div>
+    <!-- <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.3s">
+      <div class="col-12 text-center">
+        <ul class="list-inline mb-5" id="portfolio-flters">
+          <li class="mx-2 active" data-filter="*">Toutes</li>
+          <li class="mx-2" data-filter=".first" id="developpementweb">
+            Developpement web
+          </li>
+          <li class="mx-2" data-filter=".second" id="design">
+            Infographie & Design
+          </li>
+          <li class="mx-2" data-filter=".fird" id="bureautique">Bureautique</li>
+        </ul>
+      </div>
+    </div> -->
+    <div class="row g-4 portfolio-container">
+      {% for formation in formations %}
+      <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
+        <div class="rounded overflow-hidden">
+          <div class="position-relative overflow-hidden">
+            <img class="img-fluid w-100" src="{{formation.image.url}}" alt="" />
+            <div class="portfolio-overlay">
+              <a class="btn btn-square btn-outline-light mx-1" href="{{formation.image.url}}"
+                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+              <a class="btn btn-square btn-outline-light mx-1" href="{% url 'formation-detail' formation.slug %}"><i
+                  class="fa fa-link"></i></a>
+            </div>
+          </div>
+          <div class="border border-5 border-light border-top-0 p-4">
+            <p class="text fw-medium mb-2" style="color: #d05a0b !important">
+              {{formation.titre}}
+            </p>
+            <!-- debut voir plus-->
+            <p>
+              {{formation.mini_description}}
+
+            </p>
+            <a href="{% url 'formation-detail' formation.slug %}" class="btn align-items-center"
+              style="background-color: #2671f8; color: white">voir plus</a>
+            <!-- fin voir plus-->
+          </div>
+        </div>
+      </div>
+      <br /><br /><br />
+      {% endfor %}
+      <!--  -->
+    </div>
+  </div>
+</div>
+<!-- Fin nos formation -->
+
+<!-- dédié aux sites 
+                            statiques et dynamiques. Nos cours spécialisés vous guideront à travers la 
+                            conception et la création de sites statiques élégants, tout en vous 
+                            enseignant les techniques avancées de développement front-end. Explorez les 
+                            frameworks populaires pour assurer une base solide dans la création de sites 
+                            web et perfectionnez vos compétences en gestion de bases de données pour une 
+                            expérience utilisateur optimale. -->
+
+{% endblock content %}

@@ -1,1 +1,1 @@
-web: gunicorn davprocode.wsgi --log-file -
+web gunicorn davprocode.wsgi:application --log-file -

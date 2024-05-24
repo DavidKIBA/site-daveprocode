@@ -134,9 +134,9 @@
           <div class="position-relative overflow-hidden">
             <img class="img-fluid w-100" src="{{service.image.url}}" alt="" />
             <div class="portfolio-overlay">
-              <a class="btn btn-square btn-outline-light mx-1" href="/media/webimg.jpg" data-lightbox="portfolio"><i
+              <a class="btn btn-square btn-outline-light mx-1" href="{{service.image.url}}" data-lightbox="portfolio"><i
                   class="fa fa-eye"></i></a>
-              <a class="btn btn-square btn-outline-light mx-1" href="{% url 'servicesiteweb' %}"><i
+              <a class="btn btn-square btn-outline-light mx-1" href="{% url 'detail-service' service.slug %}"><i
                   class="fa fa-link"></i></a>
             </div>
           </div>

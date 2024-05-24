@@ -37,10 +37,6 @@ def about_page(request):
     return render(request, 'other_page/about.html', context)
 
 
-def formation_page(request):
-    context = {'title': 'Formation'}
-    return render(request, 'other_page/formation.html', context)
-
 
 def terme_page(request):
     context = {'title': 'Termes'}
