@@ -1,11 +1,11 @@
-{% extends 'base/base.html' %} {% block content %}
+{% extends 'base/base.html' %} {% load static %} {% block content %}
 <!--  section entete   -->
 
 <div id="carouselExampleCaptions" class="carousel slide" style="z-index: 1">
   <div class="carousel-inner">
     <div class="carousel-item active text-center">
       <img
-        src="/staticfiles/about1.jpg"
+        src="{% static 'about1.jpg' %}"
         class="d-block"
         alt="..."
         style="height: 350px; width: 100%; object-fit: cover"
@@ -116,7 +116,7 @@
         <div class="position-relative h-100">
           <img
             class="position-absolute img-fluid w-100 h-100"
-            src="/staticfiles/formation1.jpg"
+            src="{% static 'formation1.jpg' %}"
             style="object-fit: cover"
             alt=""
           />
@@ -155,11 +155,15 @@
       >
         <div class="rounded overflow-hidden">
           <div class="position-relative overflow-hidden">
-            <img class="img-fluid w-100" src="/media/webimg.jpg" alt="" />
+            <img
+              class="img-fluid w-100"
+              src="{% static 'webimg.jpg' %}"
+              alt=""
+            />
             <div class="portfolio-overlay">
               <a
                 class="btn btn-square btn-outline-light mx-1"
-                href="/staticfiles/webimg.jpg"
+                href="{% static 'webimg.jpg' %}"
                 data-lightbox="portfolio"
                 ><i class="fa fa-eye"></i
               ></a>
@@ -204,13 +208,13 @@
           <div class="position-relative overflow-hidden">
             <img
               class="img-fluid w-100"
-              src="/staticfiles/infographie.jpg"
+              src="{% static 'infographie.jpg' %}"
               alt=""
             />
             <div class="portfolio-overlay">
               <a
                 class="btn btn-square btn-outline-light mx-1"
-                href="/staticfiles/applicationweb.jpg"
+                href="{% static 'applicationweb.jpg' %}"
                 data-lightbox="portfolio"
                 ><i class="fa fa-eye"></i
               ></a>
@@ -247,11 +251,11 @@
       >
         <div class="rounded overflow-hidden">
           <div class="position-relative overflow-hidden">
-            <img class="img-fluid w-100" src="/staticfiles/word.jpg" alt="" />
+            <img class="img-fluid w-100" src="{% static 'word.jpg' %}" alt="" />
             <div class="portfolio-overlay">
               <a
                 class="btn btn-square btn-outline-light mx-1"
-                href="/staticfiles/word.jpg"
+                href="{% static 'word.jpg' %}"
                 data-lightbox="portfolio"
                 ><i class="fa fa-eye"></i
               ></a>
