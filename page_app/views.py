@@ -66,8 +66,12 @@ def handle404(request, exception):
     context = {'title': 'Page introuvable'}
     return render(request, 'other_page/404.html', context)
 
-def recherche(request, exception):
+def recherche_introuvable(request, exception):
     context = {'title': 'recherche introuvable'}
+    return render(request, 'other_page/recherche_introuvable.html', context)
+
+def recherche(request, exception):
+    context = {'title': 'recherche'}
     return render(request, 'other_page/recherche.html', context)
 
 
