@@ -10,7 +10,7 @@
 >
   <div class="container-fluid">
     <a class="navbar-brand" href="{% url 'home' %}"
-      ><img src="/media/logo_davepro.png" width="60"
+      ><img src="{% static 'logo_davepro.png' %}" width="60"
     /></a>
     <button
       class="navbar-toggler navbar-toggler-light"
@@ -163,7 +163,7 @@
           aria-label="Search"
         />
         <button class="btn" type="submit" style="background-color: #d05a0b">
-          <img src="/media/assets/search.png" alt="" width="30" />
+          <img src="{% static '/assets/search.png' %}" alt="" width="30" />
         </button>
       </form>
     </div>
