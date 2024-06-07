@@ -52,9 +52,7 @@ def bureautique(request):
     context = {'title': 'bureautique'}
     return render(request, 'formation/bureautique.html', context)
 
-def services(request):
-    context = {'title': 'services'}
-    return render(request, 'service/services.html', context)
+
 
 
 
@@ -70,7 +68,7 @@ def recherche_introuvable(request, exception):
     context = {'title': 'recherche introuvable'}
     return render(request, 'other_page/recherche_introuvable.html', context)
 
-def recherche(request, exception):
+def recherche(request):
     context = {'title': 'recherche'}
     return render(request, 'other_page/recherche.html', context)
 
