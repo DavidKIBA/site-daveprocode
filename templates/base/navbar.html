@@ -74,8 +74,8 @@
           <a class="nav-link" href="{% url 'contact' %}" style="color: white"><strong>Contact</strong></a>
         </li>
       </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2 modal-fullscreen-sm-down" type="search" placeholder="Search"
+      <form method="GET" class="d-flex" role="search" action="{% url 'recherche' %}">
+        <input class="form-control me-2 modal-fullscreen-sm-down" type="search" placeholder="Search" name="q"
           aria-label="Search" />
         <button class="btn" type="submit" style="background-color: #d05a0b">
           <img src="{% static 'media/assets/search.png' %}" alt="" width="30" />
