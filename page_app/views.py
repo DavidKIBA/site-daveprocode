@@ -1,10 +1,11 @@
 from django.shortcuts import render, redirect
 from django.core.exceptions import ValidationError
-from django.contrib import messages
 from commentaires.forms import CommentairesForm
 from contacts.views import news_letter_view
 from devis.forms import DevisForm
 from devis.views import devis_view
+from django.db.models import Q
+from services.models import MiniService
 
 
 
@@ -36,6 +37,17 @@ def about_page(request):
     context = {'title': 'A propos'}
     return render(request, 'other_page/about.html', context)
 
+def search_view(request):
+    query = request.GET.get('q')
+    if query:
+        results = MiniService.objects.filter(Q(titre__icontains=query) | Q(description__icontains=query) 
+                                             | Q(service__nom__icontains=query))
+    else:
+        results = MiniService.objects.none()
+
+    context = {'title': 'recherche', 'results': results, 'query': query}
+    
+    return render(request, 'other_page/recherche.html', context)
 
 
 def terme_page(request):
@@ -46,30 +58,9 @@ def sitemap(request):
     context = {'title': 'sitemap'}
     return render(request, 'other_page/sitemap.xml', context)
 
-
-
-def bureautique(request):
-    context = {'title': 'bureautique'}
-    return render(request, 'formation/bureautique.html', context)
-
-
-
-
-
-def formationInfographie(request):
-    context = {'title': 'formationInfographie'}
-    return render(request, 'formation/formationInfographie.html', context)
-
 def handle404(request, exception):
     context = {'title': 'Page introuvable'}
     return render(request, 'other_page/404.html', context)
 
-def recherche_introuvable(request, exception):
-    context = {'title': 'recherche introuvable'}
-    return render(request, 'other_page/recherche_introuvable.html', context)
-
-def recherche(request):
-    context = {'title': 'recherche'}
-    return render(request, 'other_page/recherche.html', context)
 
 
