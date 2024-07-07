@@ -6,7 +6,7 @@ import os
 # Create your models here.
 
 def rename_img(instance, filename):
-    upload_to = "media/"
+    upload_to = "static/media/"
     extension = filename.split(".")[-1]
     if instance.titre:
         name = instance.titre.lower().replace(' ', '_')
